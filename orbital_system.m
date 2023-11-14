@@ -1,6 +1,9 @@
 function dot_mod_param = orbital_system(t, mod_param, mu, pert)
-%ORBITAL_SYSTEM Short description here.
-%   Detailed explanation goes here
+%ORBITAL_SYSTEM Includes the dynamic equations needed for orbital
+%simulation.
+%   The input variable mod_param must be a column vector with the initial
+%   modified equinoctial parameters of the orbit in the order [p, f, g, h,
+%   k, L]'.
 
     % assign individual parameters
     % -orbital elements
