@@ -1,5 +1,5 @@
 function axisPlot(fig,col)
-%AXISPLOT Creates visible axes at 0.
+%AXISPLOT Create visible axes at 0.
 %   AXISPLOT(FIG,COL) plots lines of COL colour crossing the origin. It
 %   applies this to the specified figure with FIG.
     figure(fig)
