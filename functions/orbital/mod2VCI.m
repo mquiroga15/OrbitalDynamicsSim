@@ -1,6 +1,8 @@
 function [u, v, w] = mod2VCI(p, f, g, h, k, L, mu)
-%MOD2VCI Summary of this function goes here
-%   Detailed explanation goes here
+%MOD2VCI Translates modified equinoctial elements into a velocities vector.
+%   Given the orbit parameters around an astronomical body, the output
+%   vector provides the velocities of the orbiting object in the
+%   astronomical body's centred intertial frame (BCI).
     a2 = h.^2 - k.^2;
     s2 = 1 + h.^2 + k.^2;
     u = -1./s2 * sqrt(mu/p) * ( sin(L)+a2*sin(L)-2*h*k*cos(L)+g-2*f*h*k+a2*g);

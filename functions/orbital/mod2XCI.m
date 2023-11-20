@@ -1,6 +1,8 @@
 function [x, y, z] = mod2XCI(p, f, g, h, k, L)
-%MOD2XCI Summary of this function goes here
-%   Detailed explanation goes here
+%MOD2XCI Translates modified equinoctial elements into a position vector.
+%   Given the orbit parameters around an astronomical body, the output
+%   vector provides the positions of the orbiting object in the
+%   astronomical body's centred intertial frame (BCI).
     a2 = h.^2 - k.^2;
     s2 = 1 + h.^2 + k.^2;
     q = 1 + f.*cos(L) + g.*sin(L);
