@@ -24,10 +24,19 @@ function dot_mod_param = orbital_system(t, mod_param, mu, pert)
         - (h*sin(L)-k*cos(L))*g*pert(3)/q );
     gdot = sqrt(p/mu) * ( -pert(1)*cos(L) + ((q+1)*sin(L)+g)*pert(2)/q ...
         + (h*sin(L)-k*cos(L))*g*pert(3)/q );
-    hdot = sqrt(p/mu) * s2*pert(3)*cos(L)/2*q;
-    kdot = sqrt(p/mu) * s2*pert(3)*sin(L)/2*q;
+    hdot = sqrt(p/mu) * s2*pert(3)*cos(L)/(2*q);
+    kdot = sqrt(p/mu) * s2*pert(3)*sin(L)/(2*q);
     Ldot = sqrt(p*mu) * (q/p)^2 + ...
         1/q * sqrt(p/mu)*(h*sin(L)-k*cos(L))*pert(3);
+    if ~isreal(mod_param)
+        disp('oh no')
+    end
 
     dot_mod_param = [pdot fdot gdot hdot kdot Ldot]';
+    if anynan(dot_mod_param)
+        disp('uh oh')
+    end
+    if sum(isinf(dot_mod_param)) ~= 0
+        disp('yikes')
+    end
 end
