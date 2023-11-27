@@ -8,7 +8,7 @@ function rad_force_vec = radiation_pressure(sat_prmt,jdate,area,ref)
     c = 299792458; % m/s
     mu = 3.986004418e14; % m3 s-2. Earth's gravitational parameter
 
-    earth_sun_pos = planetEphemeris(jdate,'Sun','Earth','432t','km')*1000;
+    earth_sun_pos = planetEphemeris(jdate,'Sun','Earth','432t','km')'*1000;
     % [p, f, g, h, k, L] = unpack(sat_prmt(end,:));
     p = sat_prmt(1);
     f = sat_prmt(2);
@@ -21,8 +21,9 @@ function rad_force_vec = radiation_pressure(sat_prmt,jdate,area,ref)
     [u, v, w] = mod2VCI(p, f, g, h, k, L, mu);
     sat_vel = [u, v, w]';
     pos = earth_sun_pos + sat_pos;
+    % pos = earth_sun_pos;
     flux_at_pos = sun_power/(4*pi*norm(pos)^2); % W/m^2
-    rad_force = (1+ref)*(flux_at_pos/c)*area*1e2; % N
+    rad_force = (1+ref)*(flux_at_pos/c)*area; % N
     rad_force_vec = rad_force*pos/norm(pos); % N (vector)
     rad_force_vec = CI2LVLH(rad_force_vec,sat_pos,sat_vel);
 end
