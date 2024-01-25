@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/slsa_mm_parameter_tuning/R2021b">
+  <slsa.mm.parametertuning.VariableRegistry type="slsa.mm.parametertuning.VariableRegistry" uuid="436ec1ef-858c-43f2-9a52-0680c0739e9f">
+    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="65082d70-333a-496e-8f89-d6d9dbc16d96">
+      <blockPath>propagator_mess/plant/Spacecraft Dynamics</blockPath>
+      <parameterName>mass</parameterName>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="6fe2c7c0-81a3-4dbc-925e-738df723662f"/>
+      <isTunable>false</isTunable>
+    </blockParameters>
+    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="c001295d-64c4-4343-be4f-7961eaaf927f">
+      <blockPath>propagator_mess/plant/Spacecraft Dynamics</blockPath>
+      <parameterName>semiMajorAxis</parameterName>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="02686e90-0adc-4343-96df-5995cc684c4a"/>
+      <isTunable>false</isTunable>
+    </blockParameters>
+    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="e0f12f36-0ee4-4c29-8ba5-42533874d95c">
+      <blockPath>propagator_mess/plant/Spacecraft Dynamics</blockPath>
+      <parameterName>inertia</parameterName>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="e242b496-f863-49a3-a332-6156449f5127"/>
+      <isTunable>false</isTunable>
+    </blockParameters>
+    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="a2dc26e2-874b-4994-829f-7d64edb4fadc">
+      <blockPath>propagator_mess/plant/Spacecraft Dynamics</blockPath>
+      <parameterName>trueAnomaly</parameterName>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="24a6d24f-d21f-4906-943d-55da5cb3093c"/>
+      <isTunable>false</isTunable>
+    </blockParameters>
+    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="0a66c011-1101-42ec-a9dd-4b79c7042383">
+      <blockPath>propagator_mess/plant/Spacecraft Dynamics</blockPath>
+      <parameterName>argPeriapsis</parameterName>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="e1c995be-47e0-45dc-8e25-38e641db1c69"/>
+      <isTunable>false</isTunable>
+    </blockParameters>
+    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="826ef74d-5bd2-4843-8965-0f8ddb2b2f71">
+      <blockPath>propagator_mess/plant/Spacecraft Dynamics</blockPath>
+      <parameterName>inclination</parameterName>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="bae3e2d6-1ea9-4da7-b181-cd8f4f965a77"/>
+      <isTunable>false</isTunable>
+    </blockParameters>
+    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="3a0e8928-9cb7-4f18-ae2e-9f02c114e34f">
+      <blockPath>propagator_mess/plant/Spacecraft Dynamics</blockPath>
+      <parameterName>eccentricity</parameterName>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="3034ccfc-3631-4722-b818-166b397e60f1"/>
+      <isTunable>false</isTunable>
+    </blockParameters>
+    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="760498c3-2fbe-49ed-a609-226a44dd29e2">
+      <blockPath>propagator_mess/plant/Spacecraft Dynamics</blockPath>
+      <parameterName>raan</parameterName>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="7ece3927-5645-4a64-88a7-e44e50500951"/>
+      <isTunable>false</isTunable>
+    </blockParameters>
+    <defaultValueCachePath>C:\Users\miqui\OneDrive\University\4º 23-24\TFG\SatControlSim\slprj\raccel\propagator_mess\propagator_mess_default_variable_values.mat</defaultValueCachePath>
+    <expressions type="slsa.mm.parametertuning.Expression" uuid="6fe2c7c0-81a3-4dbc-925e-738df723662f">
+      <expression>mass</expression>
+      <users type="slsa.mm.parametertuning.BlockParameter" uuid="65082d70-333a-496e-8f89-d6d9dbc16d96"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="30ef8040-3618-43d0-902d-5348a1a0c94f"/>
+    </expressions>
+    <expressions type="slsa.mm.parametertuning.Expression" uuid="bae3e2d6-1ea9-4da7-b181-cd8f4f965a77">
+      <expression>inc</expression>
+      <users type="slsa.mm.parametertuning.BlockParameter" uuid="826ef74d-5bd2-4843-8965-0f8ddb2b2f71"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="d022605b-44e1-41dc-ac13-13c8d5703d13"/>
+    </expressions>
+    <expressions type="slsa.mm.parametertuning.Expression" uuid="02686e90-0adc-4343-96df-5995cc684c4a">
+      <expression>sma</expression>
+      <users type="slsa.mm.parametertuning.BlockParameter" uuid="c001295d-64c4-4343-be4f-7961eaaf927f"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="19b9b2cc-d814-4c1a-a1b6-c4ac1ab8d5dc"/>
+    </expressions>
+    <expressions type="slsa.mm.parametertuning.Expression" uuid="e242b496-f863-49a3-a332-6156449f5127">
+      <expression>[1, 0, 0; 0, 1, 0; 0, 0, 1]*mass</expression>
+      <users type="slsa.mm.parametertuning.BlockParameter" uuid="e0f12f36-0ee4-4c29-8ba5-42533874d95c"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="30ef8040-3618-43d0-902d-5348a1a0c94f"/>
+    </expressions>
+    <expressions type="slsa.mm.parametertuning.Expression" uuid="3034ccfc-3631-4722-b818-166b397e60f1">
+      <expression>ecc</expression>
+      <users type="slsa.mm.parametertuning.BlockParameter" uuid="3a0e8928-9cb7-4f18-ae2e-9f02c114e34f"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="253195b3-47d3-45d7-b402-655f79b755a7"/>
+    </expressions>
+    <expressions type="slsa.mm.parametertuning.Expression" uuid="7ece3927-5645-4a64-88a7-e44e50500951">
+      <expression>RAAN</expression>
+      <users type="slsa.mm.parametertuning.BlockParameter" uuid="760498c3-2fbe-49ed-a609-226a44dd29e2"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="232776df-5c01-4dbb-a6ed-dc1d04ea5a37"/>
+    </expressions>
+    <expressions type="slsa.mm.parametertuning.Expression" uuid="e1c995be-47e0-45dc-8e25-38e641db1c69">
+      <expression>aop</expression>
+      <users type="slsa.mm.parametertuning.BlockParameter" uuid="0a66c011-1101-42ec-a9dd-4b79c7042383"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="9d7e61f5-1c6b-44f9-88d7-6e761c060980"/>
+    </expressions>
+    <expressions type="slsa.mm.parametertuning.Expression" uuid="24a6d24f-d21f-4906-943d-55da5cb3093c">
+      <expression>true_an</expression>
+      <users type="slsa.mm.parametertuning.BlockParameter" uuid="a2dc26e2-874b-4994-829f-7d64edb4fadc"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="af6eb766-f74a-4eb7-95b2-e1f2fdeb9fd1"/>
+    </expressions>
+    <name>propagator_mess</name>
+    <variables type="slsa.mm.parametertuning.Variable" uuid="232776df-5c01-4dbb-a6ed-dc1d04ea5a37">
+      <expressions type="slsa.mm.parametertuning.Expression" uuid="7ece3927-5645-4a64-88a7-e44e50500951"/>
+      <name>RAAN</name>
+      <workspace type="slsa.mm.parametertuning.Workspace" uuid="b6a0691e-081d-49e4-a4e7-ab1774f0aae0"/>
+    </variables>
+    <variables type="slsa.mm.parametertuning.Variable" uuid="5b71c33e-4213-49e7-9c2c-b6cba9a5bd03">
+      <name>thrust</name>
+      <workspace type="slsa.mm.parametertuning.Workspace" uuid="b6a0691e-081d-49e4-a4e7-ab1774f0aae0"/>
+    </variables>
+    <variables type="slsa.mm.parametertuning.Variable" uuid="19b9b2cc-d814-4c1a-a1b6-c4ac1ab8d5dc">
+      <expressions type="slsa.mm.parametertuning.Expression" uuid="02686e90-0adc-4343-96df-5995cc684c4a"/>
+      <name>sma</name>
+      <workspace type="slsa.mm.parametertuning.Workspace" uuid="b6a0691e-081d-49e4-a4e7-ab1774f0aae0"/>
+    </variables>
+    <variables type="slsa.mm.parametertuning.Variable" uuid="49ec0606-2006-4795-a6b0-88a56e29bc23">
+      <name>thrustingThreshold</name>
+      <workspace type="slsa.mm.parametertuning.Workspace" uuid="b6a0691e-081d-49e4-a4e7-ab1774f0aae0"/>
+    </variables>
+    <variables type="slsa.mm.parametertuning.Variable" uuid="d022605b-44e1-41dc-ac13-13c8d5703d13">
+      <expressions type="slsa.mm.parametertuning.Expression" uuid="bae3e2d6-1ea9-4da7-b181-cd8f4f965a77"/>
+      <name>inc</name>
+      <workspace type="slsa.mm.parametertuning.Workspace" uuid="b6a0691e-081d-49e4-a4e7-ab1774f0aae0"/>
+    </variables>
+    <variables type="slsa.mm.parametertuning.Variable" uuid="30ef8040-3618-43d0-902d-5348a1a0c94f">
+      <expressions type="slsa.mm.parametertuning.Expression" uuid="e242b496-f863-49a3-a332-6156449f5127"/>
+      <expressions type="slsa.mm.parametertuning.Expression" uuid="6fe2c7c0-81a3-4dbc-925e-738df723662f"/>
+      <name>mass</name>
+      <workspace type="slsa.mm.parametertuning.Workspace" uuid="b6a0691e-081d-49e4-a4e7-ab1774f0aae0"/>
+    </variables>
+    <variables type="slsa.mm.parametertuning.Variable" uuid="9d7e61f5-1c6b-44f9-88d7-6e761c060980">
+      <expressions type="slsa.mm.parametertuning.Expression" uuid="e1c995be-47e0-45dc-8e25-38e641db1c69"/>
+      <name>aop</name>
+      <workspace type="slsa.mm.parametertuning.Workspace" uuid="b6a0691e-081d-49e4-a4e7-ab1774f0aae0"/>
+    </variables>
+    <variables type="slsa.mm.parametertuning.Variable" uuid="253195b3-47d3-45d7-b402-655f79b755a7">
+      <expressions type="slsa.mm.parametertuning.Expression" uuid="3034ccfc-3631-4722-b818-166b397e60f1"/>
+      <name>ecc</name>
+      <workspace type="slsa.mm.parametertuning.Workspace" uuid="b6a0691e-081d-49e4-a4e7-ab1774f0aae0"/>
+    </variables>
+    <variables type="slsa.mm.parametertuning.Variable" uuid="af6eb766-f74a-4eb7-95b2-e1f2fdeb9fd1">
+      <expressions type="slsa.mm.parametertuning.Expression" uuid="24a6d24f-d21f-4906-943d-55da5cb3093c"/>
+      <name>true_an</name>
+      <workspace type="slsa.mm.parametertuning.Workspace" uuid="b6a0691e-081d-49e4-a4e7-ab1774f0aae0"/>
+    </variables>
+    <workspaces type="slsa.mm.parametertuning.Workspace" uuid="b6a0691e-081d-49e4-a4e7-ab1774f0aae0">
+      <name>global-workspace</name>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="232776df-5c01-4dbb-a6ed-dc1d04ea5a37"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="5b71c33e-4213-49e7-9c2c-b6cba9a5bd03"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="19b9b2cc-d814-4c1a-a1b6-c4ac1ab8d5dc"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="49ec0606-2006-4795-a6b0-88a56e29bc23"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="d022605b-44e1-41dc-ac13-13c8d5703d13"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="30ef8040-3618-43d0-902d-5348a1a0c94f"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="9d7e61f5-1c6b-44f9-88d7-6e761c060980"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="253195b3-47d3-45d7-b402-655f79b755a7"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="af6eb766-f74a-4eb7-95b2-e1f2fdeb9fd1"/>
+    </workspaces>
+  </slsa.mm.parametertuning.VariableRegistry>
+</MF0>
