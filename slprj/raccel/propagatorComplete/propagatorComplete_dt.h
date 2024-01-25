@@ -21,7 +21,7 @@ char_T * rtDataTypeNames [ ] = { "real_T" , "real32_T" , "int8_T" , "uint8_T"
 "physical_connection" , "int64_T" , "uint64_T" , "uint64_T" , "int64_T" ,
 "uint_T" , "char_T" , "uchar_T" , "time_T" } ; static DataTypeTransition
 rtBTransitions [ ] = { { ( char_T * ) ( & rtB . i1gdupwxmv [ 0 ] ) , 0 , 0 ,
-358 } , { ( char_T * ) ( & rtB . ohiivs4pv5 ) , 8 , 0 , 4 } , { ( char_T * )
+356 } , { ( char_T * ) ( & rtB . ohiivs4pv5 ) , 8 , 0 , 4 } , { ( char_T * )
 ( & rtDW . mz3ujdnhdi [ 0 ] ) , 0 , 0 , 6 } , { ( char_T * ) ( & rtDW .
 ptfgkkfyx2 . AQHandles ) , 11 , 0 , 3 } , { ( char_T * ) ( & rtDW .
 aiet4ledb1 ) , 10 , 0 , 1 } , { ( char_T * ) ( & rtDW . iiz2sepanf ) , 2 , 0

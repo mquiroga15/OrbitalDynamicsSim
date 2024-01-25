@@ -2,7 +2,7 @@
 ## Makefile generated for component 'propagatorComplete'. 
 ## 
 ## Makefile     : propagatorComplete.mk
-## Generated on : Tue Dec 12 10:22:56 2023
+## Generated on : Thu Jan 25 13:26:32 2024
 ## Final product: ./propagatorComplete.exe
 ## Product type : executable
 ## 
@@ -23,7 +23,7 @@ MAKEFILE                  = propagatorComplete.mk
 MATLAB_ROOT               = C:/PROGRA~1/MATLAB/R2023b
 MATLAB_BIN                = C:/PROGRA~1/MATLAB/R2023b/bin
 MATLAB_ARCH_BIN           = $(MATLAB_BIN)/win64
-START_DIR                 = C:/Users/miqui/OneDrive/UNIVER~1/423-24~1/TFG/SATCON~1
+START_DIR                 = C:/Users/miqui/OneDrive/UNIVER~1/423-24~1/TFG/ORBITA~1
 SOLVER                    = 
 SOLVER_OBJ                = 
 CLASSIC_INTERFACE         = 1
@@ -175,7 +175,7 @@ INCLUDES = $(INCLUDES_BUILDINFO)
 DEFINES_BUILD_ARGS = -DCLASSIC_INTERFACE=1 -DALLOCATIONFCN=0 -DONESTEPFCN=0 -DTERMFCN=1 -DMULTI_INSTANCE_CODE=0 -DINTEGER_CODE=0
 DEFINES_CUSTOM = -DEXT_MODE -DIS_RAPID_ACCEL
 DEFINES_OPTS = -DTGTCONN -DIS_SIM_TARGET -DNRT -DRSIM_PARAMETER_LOADING -DRSIM_WITH_SL_SOLVER -DENABLE_SLEXEC_SSBRIDGE=1 -DMODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -DON_TARGET_WAIT_FOR_START=0 -DTID01EQ=0
-DEFINES_STANDARD = -DMODEL=propagatorComplete -DNUMST=2 -DNCSTATES=13 -DHAVESTDIO
+DEFINES_STANDARD = -DMODEL=propagatorComplete -DNUMST=2 -DNCSTATES=14 -DHAVESTDIO
 
 DEFINES = $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM) $(DEFINES_OPTS) $(DEFINES_STANDARD)
 

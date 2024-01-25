@@ -32,8 +32,8 @@
 #define NBLOCKIO (303) 
 #define NUM_ZC_EVENTS (0) 
 #ifndef NCSTATES
-#define NCSTATES (13)   
-#elif NCSTATES != 13
+#define NCSTATES (14)   
+#elif NCSTATES != 14
 #error Invalid specification of NCSTATES defined in compiler command
 #endif
 #ifndef rtmGetDataMapInfo
@@ -50,28 +50,28 @@ dga5uve4em [ 3 ] ; real_T oroad0ht0q [ 4 ] ; real_T hmmusp0g1o [ 3 ] ; real_T
 h5ch5oexhd ; real_T dve3qulja2 [ 3 ] ; real_T fqb0csb24q [ 3 ] ; real_T
 jvs22ygnlb ; real_T bf0fs5uttf ; real_T jp4wysmwga ; real_T p0dt0zhwqq ;
 real_T bg4fufsmy1 [ 4 ] ; real_T ixoaxw0z3z [ 3 ] ; real_T fj3nbz2brp ;
-real_T jbhis4zpvx [ 3 ] ; real_T acj4h4hesu ; real_T mvf1ryalzv ; real_T
-jis02iihtm ; real_T eezuitvkf2 ; real_T al1oahzn31 ; real_T laettbhgce ;
-real_T dxg13zvbtq ; real_T gdquahf0f2 ; real_T brmutb1g1u ; real_T fymi0gmyip
-; real_T d5xucg4nfl ; real_T nieicv1rhk ; real_T fisaz5rh1d ; real_T
-cbatohx55z ; real_T igelp4q2vf ; real_T g2a20n1njt ; real_T fnimcmg5s3 ;
-real_T j0rfilwsfi ; real_T gawqjwnyv5 ; real_T h2pfhvsedk ; real_T fu5mr4vpex
-; real_T lkjfpajzl3 ; real_T m5up2n1nbo ; real_T jmgq2pwzfq ; real_T
-g4niedc4jf ; real_T icur5un0um ; real_T pjczvjoh14 ; real_T fhdzfrquqm ;
-real_T eft0lj40ww ; real_T a1k1ptiumf ; real_T meo1lsqulq ; real_T dzwjok5d2k
-; real_T lfzqhovs4q ; real_T byibualgjm ; real_T mesawx2zut ; real_T
-hjewv5w14n ; real_T pvaph1jxlp ; real_T nl1z4fd3ri ; real_T lasrw5ukka ;
-real_T iip1hriuva ; real_T mpkbaajjfa ; real_T mgnz2gf0nd ; real_T chxdayrvyc
-; real_T j5rgjgk55e ; real_T j3m24zp1b2 ; real_T fotwyiilg0 ; real_T
-dgbrfjrsnf ; real_T ntuzztetrw ; real_T hxnnbjicyn ; real_T blzjelfrwf ;
-real_T nhs31lz5yi ; real_T mlh0r04pcn ; real_T m0smnb2oey ; real_T dmaqam0v0h
-; real_T jopolvtd1q ; real_T mqkkf3g1ci ; real_T n2b3wgfs0b ; real_T
-dfev1qf3y5 ; real_T l3kopglscf ; real_T bw4dogjhdp ; real_T bhi3oqiriq ;
-real_T bmv5sjbgiy ; real_T pxr5jc1icn ; real_T pwxw3btyt3 ; real_T kwxnygmwo4
-; real_T g5vqg0l4d3 ; real_T algyw44cxb ; real_T dw5fo1tslt ; real_T
-geezzyxovx ; real_T iavnjulq1p ; real_T g152ybx4et ; real_T m2biuhqq4b ;
-real_T ecfsbxh50q ; real_T hw3bubstlq ; real_T aocyydnhyx ; real_T btadruhgyg
-; real_T oyrhhuf4qk [ 3 ] ; real_T gmkpt4ng2s ; real_T lguqhr3eed ; real_T
+real_T lf04lkbhu2 ; real_T acj4h4hesu ; real_T mvf1ryalzv ; real_T jis02iihtm
+; real_T eezuitvkf2 ; real_T al1oahzn31 ; real_T laettbhgce ; real_T
+dxg13zvbtq ; real_T gdquahf0f2 ; real_T brmutb1g1u ; real_T fymi0gmyip ;
+real_T d5xucg4nfl ; real_T nieicv1rhk ; real_T fisaz5rh1d ; real_T cbatohx55z
+; real_T igelp4q2vf ; real_T g2a20n1njt ; real_T fnimcmg5s3 ; real_T
+j0rfilwsfi ; real_T gawqjwnyv5 ; real_T h2pfhvsedk ; real_T fu5mr4vpex ;
+real_T lkjfpajzl3 ; real_T m5up2n1nbo ; real_T jmgq2pwzfq ; real_T g4niedc4jf
+; real_T icur5un0um ; real_T pjczvjoh14 ; real_T fhdzfrquqm ; real_T
+eft0lj40ww ; real_T a1k1ptiumf ; real_T meo1lsqulq ; real_T dzwjok5d2k ;
+real_T lfzqhovs4q ; real_T byibualgjm ; real_T mesawx2zut ; real_T hjewv5w14n
+; real_T pvaph1jxlp ; real_T nl1z4fd3ri ; real_T lasrw5ukka ; real_T
+iip1hriuva ; real_T mpkbaajjfa ; real_T mgnz2gf0nd ; real_T chxdayrvyc ;
+real_T j5rgjgk55e ; real_T j3m24zp1b2 ; real_T fotwyiilg0 ; real_T dgbrfjrsnf
+; real_T ntuzztetrw ; real_T hxnnbjicyn ; real_T blzjelfrwf ; real_T
+nhs31lz5yi ; real_T mlh0r04pcn ; real_T m0smnb2oey ; real_T dmaqam0v0h ;
+real_T jopolvtd1q ; real_T mqkkf3g1ci ; real_T n2b3wgfs0b ; real_T dfev1qf3y5
+; real_T l3kopglscf ; real_T bw4dogjhdp ; real_T bhi3oqiriq ; real_T
+bmv5sjbgiy ; real_T pxr5jc1icn ; real_T pwxw3btyt3 ; real_T kwxnygmwo4 ;
+real_T g5vqg0l4d3 ; real_T algyw44cxb ; real_T dw5fo1tslt ; real_T geezzyxovx
+; real_T iavnjulq1p ; real_T g152ybx4et ; real_T m2biuhqq4b ; real_T
+ecfsbxh50q ; real_T hw3bubstlq ; real_T aocyydnhyx ; real_T btadruhgyg ;
+real_T oyrhhuf4qk [ 3 ] ; real_T gmkpt4ng2s ; real_T lguqhr3eed ; real_T
 omhh14un54 ; real_T iw3dewpgzo ; real_T ctzop00roh ; real_T gbfdgx02zs ;
 real_T paao34dbge ; real_T jaody4hpx1 ; real_T nbej345zml ; real_T nslfaccjkc
 ; real_T hlmoxwhlpo ; real_T jwb0ahpfau ; real_T kl1dujwoxs ; real_T
@@ -132,7 +132,7 @@ pqp513dsef ; real_T nx0f4e5b5g ; real_T jv1m44ghwg ; real_T pdtl1hmtz4 [ 3 ]
 ; boolean_T ohiivs4pv5 ; boolean_T dzsozrxxtr ; boolean_T bmnjmdzbfg ;
 boolean_T ii1deoyvuv ; } B ; typedef struct { real_T mz3ujdnhdi [ 3 ] ;
 real_T brtwu1qgh5 [ 3 ] ; struct { void * AQHandles ; } ptfgkkfyx2 ; struct {
-void * AQHandles ; } l2yct0nspg ; struct { void * AQHandles ; } ffm5asd12k ;
+void * AQHandles ; } jcuxltf0li ; struct { void * AQHandles ; } kou2zo1etl ;
 int_T aiet4ledb1 ; int8_T iiz2sepanf ; int8_T m1msoix5n5 ; int8_T g2lng1ny0m
 ; int8_T ftxygppz3q ; int8_T lugp1oo5al ; int8_T oywob1ksb4 ; int8_T
 omqzxc4eeh ; int8_T hm23vis0tn ; int8_T cumdqvtfo3 ; int8_T owjad4jwxk ;
@@ -146,17 +146,17 @@ iim0uzjq2f ; bguustwtdt azhxucr5v2 ; bguustwtdt lhwjkdp01r ; bguustwtdt
 p2jn3lrd2r ; bguustwtdt khi00wnpar ; bguustwtdt pazq3m0j3m ; bguustwtdt
 k4vsitdlsd ; bguustwtdt l3x3mdhan1r ; jvsztzhphf bngxmawtie ; jvsztzhphf
 bgq2api2xe ; jvsztzhphf lfxaatuckyk ; } DW ; typedef struct { real_T
-jdxlhbtvil [ 13 ] ; } X ; typedef struct { real_T jdxlhbtvil [ 13 ] ; } XDot
-; typedef struct { boolean_T jdxlhbtvil [ 13 ] ; } XDis ; typedef struct {
-real_T jdxlhbtvil [ 13 ] ; } CStateAbsTol ; typedef struct { real_T
-jdxlhbtvil [ 13 ] ; } CXPtMin ; typedef struct { real_T jdxlhbtvil [ 13 ] ; }
+jdxlhbtvil [ 14 ] ; } X ; typedef struct { real_T jdxlhbtvil [ 14 ] ; } XDot
+; typedef struct { boolean_T jdxlhbtvil [ 14 ] ; } XDis ; typedef struct {
+real_T jdxlhbtvil [ 14 ] ; } CStateAbsTol ; typedef struct { real_T
+jdxlhbtvil [ 14 ] ; } CXPtMin ; typedef struct { real_T jdxlhbtvil [ 14 ] ; }
 CXPtMax ; typedef struct { real_T gxsumyivnf ; real_T jex5fhkbzg ; real_T
 acba335ss4 ; real_T n25gaquknn ; real_T mvrt1hd3dn ; real_T gjfpdtbcix ; }
 ZCV ; typedef struct { real_T bruvjfgo5t [ 3 ] ; real_T kgnzuhgazc [ 4 ] ;
 real_T jjprc2gsjk [ 3 ] ; } ExtY ; typedef struct { rtwCAPI_ModelMappingInfo
 mmi ; } DataMapInfo ; struct gniy2mtxqh_ { real_T Constant_Value ; } ; struct
 owihucf3di_ { real_T Constant_Value ; } ; struct P_ { real_T area ; real_T
-ref ; real_T thrust ; real_T thrustingThreshold ; real_T
+mDot ; real_T ref ; real_T thrustingThreshold ; real_T
 CompareToConstant_const ; real_T CompareToConstant_const_nyz535bbbu ; real_T
 NormalizeVector_maxzero ; real_T NormalizeVector_maxzero_pntl1pmm30 ; real_T
 NormalizeVector_maxzero_hb0qhx1yar ; real_T
@@ -215,13 +215,13 @@ SpacecraftDynamics_fluxFlags [ 23 ] ; real_T SpacecraftDynamics_dragCoeff ;
 real_T SpacecraftDynamics_dragArea ; real_T
 SpacecraftDynamics_customThirdBodyMu ; real_T SpacecraftDynamics_fluxPressure
 ; real_T Constant_Value_lw5gurrfpk ; real_T Constant_Value_ln0uq0icxn ;
-real_T Constant_Value_l03ciegqnh ; real_T v_eb_Value [ 3 ] ; owihucf3di
-jq4zzibyuf ; owihucf3di iim0uzjq2f ; owihucf3di azhxucr5v2 ; owihucf3di
-lhwjkdp01r ; owihucf3di p2jn3lrd2r ; owihucf3di khi00wnpar ; owihucf3di
-pazq3m0j3m ; owihucf3di k4vsitdlsd ; owihucf3di l3x3mdhan1r ; gniy2mtxqh
-bngxmawtie ; gniy2mtxqh bgq2api2xe ; gniy2mtxqh lfxaatuckyk ; } ; extern
-const char_T * RT_MEMORY_ALLOCATION_ERROR ; extern B rtB ; extern X rtX ;
-extern DW rtDW ; extern ExtY rtY ; extern P rtP ; extern mxArray *
+real_T Constant_Value_l03ciegqnh ; real_T Constant_Value_mmyzvxcwyh [ 3 ] ;
+owihucf3di jq4zzibyuf ; owihucf3di iim0uzjq2f ; owihucf3di azhxucr5v2 ;
+owihucf3di lhwjkdp01r ; owihucf3di p2jn3lrd2r ; owihucf3di khi00wnpar ;
+owihucf3di pazq3m0j3m ; owihucf3di k4vsitdlsd ; owihucf3di l3x3mdhan1r ;
+gniy2mtxqh bngxmawtie ; gniy2mtxqh bgq2api2xe ; gniy2mtxqh lfxaatuckyk ; } ;
+extern const char_T * RT_MEMORY_ALLOCATION_ERROR ; extern B rtB ; extern X
+rtX ; extern DW rtDW ; extern ExtY rtY ; extern P rtP ; extern mxArray *
 mr_propagatorComplete_GetDWork ( ) ; extern void
 mr_propagatorComplete_SetDWork ( const mxArray * ssDW ) ; extern mxArray *
 mr_propagatorComplete_GetSimStateDisallowedBlocks ( ) ; extern const
