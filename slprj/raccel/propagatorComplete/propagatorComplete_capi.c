@@ -883,13 +883,16 @@ rtwCAPI_Signals rtRootInputs [ ] = { { 0 , 0 , ( NULL ) , ( NULL ) , 0 , 0 ,
 0 , 0 , 0 } } ; static const rtwCAPI_Signals rtRootOutputs [ ] = { { 424 , 0
 , TARGET_STRING ( "propagatorComplete/x_icrf (m)" ) , TARGET_STRING ( "" ) ,
 1 , 0 , 0 , 0 , 0 } , { 425 , 0 , TARGET_STRING (
-"propagatorComplete/q_icrf2b" ) , TARGET_STRING ( "" ) , 2 , 0 , 2 , 0 , 0 }
-, { 426 , 0 , TARGET_STRING ( "propagatorComplete/Moon position" ) ,
-TARGET_STRING ( "" ) , 3 , 0 , 0 , 0 , 0 } , { 0 , 0 , ( NULL ) , ( NULL ) ,
+"propagatorComplete/v_icrf (m//s)" ) , TARGET_STRING ( "" ) , 2 , 0 , 0 , 0 ,
+0 } , { 426 , 0 , TARGET_STRING ( "propagatorComplete/q_icrf2b" ) ,
+TARGET_STRING ( "" ) , 3 , 0 , 2 , 0 , 0 } , { 427 , 0 , TARGET_STRING (
+"propagatorComplete/t_UTC (JD)" ) , TARGET_STRING ( "" ) , 4 , 0 , 1 , 0 , 0
+} , { 428 , 0 , TARGET_STRING ( "propagatorComplete/Moon position" ) ,
+TARGET_STRING ( "" ) , 5 , 0 , 0 , 0 , 0 } , { 0 , 0 , ( NULL ) , ( NULL ) ,
 0 , 0 , 0 , 0 , 0 } } ; static const rtwCAPI_ModelParameters
-rtModelParameters [ ] = { { 427 , TARGET_STRING ( "area" ) , 0 , 1 , 0 } , {
-428 , TARGET_STRING ( "mDot" ) , 0 , 1 , 0 } , { 429 , TARGET_STRING ( "ref"
-) , 0 , 1 , 0 } , { 430 , TARGET_STRING ( "thrustingThreshold" ) , 0 , 1 , 0
+rtModelParameters [ ] = { { 429 , TARGET_STRING ( "area" ) , 0 , 1 , 0 } , {
+430 , TARGET_STRING ( "mDot" ) , 0 , 1 , 0 } , { 431 , TARGET_STRING ( "ref"
+) , 0 , 1 , 0 } , { 432 , TARGET_STRING ( "thrustingThreshold" ) , 0 , 1 , 0
 } , { 0 , ( NULL ) , 0 , 0 , 0 } } ;
 #ifndef HOST_CAPI_BUILD
 static void * rtDataAddrMap [ ] = { & rtB . fqb0csb24q [ 0 ] , & rtB .
@@ -1046,10 +1049,11 @@ Constant_Value_lh1chvuth3 , & rtP . Constant1_Value_eyzq52s3pd , & rtP .
 Gain_Gain_dfsvhso0x2 , & rtP . Gain2_Gain_jkoscwfz0l , & rtP . khi00wnpar .
 Constant_Value , & rtP . p2jn3lrd2r . Constant_Value , & rtP . lhwjkdp01r .
 Constant_Value , & rtP . azhxucr5v2 . Constant_Value , & rtP . iim0uzjq2f .
-Constant_Value , & rtP . jq4zzibyuf . Constant_Value , & rtY . bruvjfgo5t [ 0
-] , & rtY . kgnzuhgazc [ 0 ] , & rtY . jjprc2gsjk [ 0 ] , & rtP . area , &
-rtP . mDot , & rtP . ref , & rtP . thrustingThreshold , } ; static int32_T *
-rtVarDimsAddrMap [ ] = { ( NULL ) } ;
+Constant_Value , & rtP . jq4zzibyuf . Constant_Value , & rtY . hilrjecpxs [ 0
+] , & rtY . nabv3wpsjd [ 0 ] , & rtY . ctagub4txn [ 0 ] , & rtY . f4divmjlk5
+, & rtY . jjprc2gsjk [ 0 ] , & rtP . area , & rtP . mDot , & rtP . ref , &
+rtP . thrustingThreshold , } ; static int32_T * rtVarDimsAddrMap [ ] = { (
+NULL ) } ;
 #endif
 static TARGET_CONST rtwCAPI_DataTypeMap rtDataTypeMap [ ] = { { "double" ,
 "real_T" , 0 , 0 , sizeof ( real_T ) , ( uint8_T ) SS_DOUBLE , 0 , 0 , 0 } ,
@@ -1073,10 +1077,10 @@ rtcapiStoredFloats [ 0 ] , ( int8_T ) 0 , ( uint8_T ) 0 } , { ( const void *
 ) & rtcapiStoredFloats [ 0 ] , ( const void * ) & rtcapiStoredFloats [ 1 ] ,
 ( int8_T ) 1 , ( uint8_T ) 0 } , { ( NULL ) , ( NULL ) , 2 , 0 } } ; static
 rtwCAPI_ModelMappingStaticInfo mmiStatic = { { rtBlockSignals , 302 ,
-rtRootInputs , 0 , rtRootOutputs , 3 } , { rtBlockParameters , 122 ,
+rtRootInputs , 0 , rtRootOutputs , 5 } , { rtBlockParameters , 122 ,
 rtModelParameters , 4 } , { ( NULL ) , 0 } , { rtDataTypeMap , rtDimensionMap
 , rtFixPtMap , rtElementMap , rtSampleTimeMap , rtDimensionArray } , "float"
-, { 801017077U , 2912609470U , 2425025980U , 479647457U } , ( NULL ) , 0 , (
+, { 3710505430U , 1094580221U , 87538664U , 1021182332U } , ( NULL ) , 0 , (
 boolean_T ) 0 , rt_LoggedStateIdxList } ; const
 rtwCAPI_ModelMappingStaticInfo * propagatorComplete_GetCAPIStaticMap ( void )
 { return & mmiStatic ; }

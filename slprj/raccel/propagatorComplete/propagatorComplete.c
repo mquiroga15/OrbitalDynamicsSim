@@ -156,7 +156,7 @@ srcInfo . numBlockPathElems = 1 ; srcInfo . fullBlockPath = ( sdiFullBlkPathU
 subPath = subPath ; srcInfo . portIndex = 0 + 1 ; srcInfo . signalName =
 sigName ; srcInfo . sigSourceUUID = 0 ; rtDW . ptfgkkfyx2 . AQHandles =
 sdiStartAsyncioQueueCreation ( hDT , & srcInfo , rt_dataMapInfo . mmi .
-InstanceMap . fullPath , "4f1040ff-f581-4f8a-90a0-bf0f29d6f8f4" ,
+InstanceMap . fullPath , "c7124708-7938-48f0-b84f-655a591924d5" ,
 sigComplexity , & sigDims , DIMENSIONS_MODE_FIXED , stCont , "m" ) ;
 sdiCompleteAsyncioQueueCreation ( rtDW . ptfgkkfyx2 . AQHandles , hDT , &
 srcInfo ) ; if ( rtDW . ptfgkkfyx2 . AQHandles ) {
@@ -167,7 +167,7 @@ ssGetTaskTime ( rtS , 1 ) ) ; sdiAsyncRepoSetSignalExportSettings ( rtDW .
 ptfgkkfyx2 . AQHandles , 1 , 0 ) ; sdiAsyncRepoSetSignalExportName ( rtDW .
 ptfgkkfyx2 . AQHandles , loggedName , origSigName , propName ) ;
 sdiAsyncRepoSetSignalDomainType ( rtDW . ptfgkkfyx2 . AQHandles , "outport" )
-; sdiAsyncRepoSetSignalExportOrder ( rtDW . ptfgkkfyx2 . AQHandles , 3 ) ; }
+; sdiAsyncRepoSetSignalExportOrder ( rtDW . ptfgkkfyx2 . AQHandles , 5 ) ; }
 sdiFreeLabel ( sigName ) ; sdiFreeLabel ( loggedName ) ; sdiFreeLabel (
 origSigName ) ; sdiFreeLabel ( propName ) ; sdiFreeLabel ( blockPath ) ;
 sdiFreeLabel ( blockSID ) ; sdiFreeLabel ( subPath ) ; } } if ( !
@@ -188,7 +188,7 @@ sdiSignalIDU ) & blockSID ; srcInfo . subPath = subPath ; srcInfo . portIndex
 = 0 + 1 ; srcInfo . signalName = sigName ; srcInfo . sigSourceUUID = 0 ; rtDW
 . jcuxltf0li . AQHandles = sdiStartAsyncioQueueCreation ( hDT , & srcInfo ,
 rt_dataMapInfo . mmi . InstanceMap . fullPath ,
-"e21f8093-5c56-4aba-90f7-b2455101fb09" , sigComplexity , & sigDims ,
+"2cae7665-9c93-425f-8f68-0679869d696e" , sigComplexity , & sigDims ,
 DIMENSIONS_MODE_FIXED , stCont , "m" ) ; sdiCompleteAsyncioQueueCreation (
 rtDW . jcuxltf0li . AQHandles , hDT , & srcInfo ) ; if ( rtDW . jcuxltf0li .
 AQHandles ) { sdiSetSignalSampleTimeString ( rtDW . jcuxltf0li . AQHandles ,
@@ -199,6 +199,38 @@ AQHandles , ssGetTaskTime ( rtS , 1 ) ) ; sdiAsyncRepoSetSignalExportSettings
 rtDW . jcuxltf0li . AQHandles , loggedName , origSigName , propName ) ;
 sdiAsyncRepoSetSignalDomainType ( rtDW . jcuxltf0li . AQHandles , "outport" )
 ; sdiAsyncRepoSetSignalExportOrder ( rtDW . jcuxltf0li . AQHandles , 1 ) ; }
+sdiFreeLabel ( sigName ) ; sdiFreeLabel ( loggedName ) ; sdiFreeLabel (
+origSigName ) ; sdiFreeLabel ( propName ) ; sdiFreeLabel ( blockPath ) ;
+sdiFreeLabel ( blockSID ) ; sdiFreeLabel ( subPath ) ; } } if ( !
+isStreamoutAlreadyRegistered ) { } } } } { { { bool
+isStreamoutAlreadyRegistered = false ; { sdiSignalSourceInfoU srcInfo ;
+sdiLabelU loggedName = sdiGetLabelFromChars ( "" ) ; sdiLabelU origSigName =
+sdiGetLabelFromChars ( "" ) ; sdiLabelU propName = sdiGetLabelFromChars ( ""
+) ; sdiLabelU blockPath = sdiGetLabelFromChars (
+"propagatorComplete/v_icrf (m//s)" ) ; sdiLabelU blockSID =
+sdiGetLabelFromChars ( "" ) ; sdiLabelU subPath = sdiGetLabelFromChars ( "" )
+; sdiDims sigDims ; sdiLabelU sigName = sdiGetLabelFromChars ( "" ) ;
+sdiAsyncRepoDataTypeHandle hDT = sdiAsyncRepoGetBuiltInDataTypeHandle (
+DATA_TYPE_DOUBLE ) ; { sdiComplexity sigComplexity = REAL ;
+sdiSampleTimeContinuity stCont = SAMPLE_TIME_CONTINUOUS ; int_T sigDimsArray
+[ 1 ] = { 3 } ; sigDims . nDims = 1 ; sigDims . dimensions = sigDimsArray ;
+srcInfo . numBlockPathElems = 1 ; srcInfo . fullBlockPath = ( sdiFullBlkPathU
+) & blockPath ; srcInfo . SID = ( sdiSignalIDU ) & blockSID ; srcInfo .
+subPath = subPath ; srcInfo . portIndex = 0 + 1 ; srcInfo . signalName =
+sigName ; srcInfo . sigSourceUUID = 0 ; rtDW . pugsqfjy4m . AQHandles =
+sdiStartAsyncioQueueCreation ( hDT , & srcInfo , rt_dataMapInfo . mmi .
+InstanceMap . fullPath , "79aa58e3-3b8a-4a50-aed6-5bdd79916ac9" ,
+sigComplexity , & sigDims , DIMENSIONS_MODE_FIXED , stCont , "m/s" ) ;
+sdiCompleteAsyncioQueueCreation ( rtDW . pugsqfjy4m . AQHandles , hDT , &
+srcInfo ) ; if ( rtDW . pugsqfjy4m . AQHandles ) {
+sdiSetSignalSampleTimeString ( rtDW . pugsqfjy4m . AQHandles , "Continuous" ,
+0.0 , ssGetTFinal ( rtS ) ) ; sdiSetSignalRefRate ( rtDW . pugsqfjy4m .
+AQHandles , 0.0 ) ; sdiSetRunStartTime ( rtDW . pugsqfjy4m . AQHandles ,
+ssGetTaskTime ( rtS , 1 ) ) ; sdiAsyncRepoSetSignalExportSettings ( rtDW .
+pugsqfjy4m . AQHandles , 1 , 0 ) ; sdiAsyncRepoSetSignalExportName ( rtDW .
+pugsqfjy4m . AQHandles , loggedName , origSigName , propName ) ;
+sdiAsyncRepoSetSignalDomainType ( rtDW . pugsqfjy4m . AQHandles , "outport" )
+; sdiAsyncRepoSetSignalExportOrder ( rtDW . pugsqfjy4m . AQHandles , 2 ) ; }
 sdiFreeLabel ( sigName ) ; sdiFreeLabel ( loggedName ) ; sdiFreeLabel (
 origSigName ) ; sdiFreeLabel ( propName ) ; sdiFreeLabel ( blockPath ) ;
 sdiFreeLabel ( blockSID ) ; sdiFreeLabel ( subPath ) ; } } if ( !
@@ -219,7 +251,7 @@ sdiSignalIDU ) & blockSID ; srcInfo . subPath = subPath ; srcInfo . portIndex
 = 0 + 1 ; srcInfo . signalName = sigName ; srcInfo . sigSourceUUID = 0 ; rtDW
 . kou2zo1etl . AQHandles = sdiStartAsyncioQueueCreation ( hDT , & srcInfo ,
 rt_dataMapInfo . mmi . InstanceMap . fullPath ,
-"6623bfc5-7520-4f35-a59b-41b53438a0f6" , sigComplexity , & sigDims ,
+"3e80530d-c8a0-42b4-a186-bc6298e273e8" , sigComplexity , & sigDims ,
 DIMENSIONS_MODE_FIXED , stCont , "1" ) ; sdiCompleteAsyncioQueueCreation (
 rtDW . kou2zo1etl . AQHandles , hDT , & srcInfo ) ; if ( rtDW . kou2zo1etl .
 AQHandles ) { sdiSetSignalSampleTimeString ( rtDW . kou2zo1etl . AQHandles ,
@@ -229,7 +261,38 @@ AQHandles , ssGetTaskTime ( rtS , 1 ) ) ; sdiAsyncRepoSetSignalExportSettings
 ( rtDW . kou2zo1etl . AQHandles , 1 , 0 ) ; sdiAsyncRepoSetSignalExportName (
 rtDW . kou2zo1etl . AQHandles , loggedName , origSigName , propName ) ;
 sdiAsyncRepoSetSignalDomainType ( rtDW . kou2zo1etl . AQHandles , "outport" )
-; sdiAsyncRepoSetSignalExportOrder ( rtDW . kou2zo1etl . AQHandles , 2 ) ; }
+; sdiAsyncRepoSetSignalExportOrder ( rtDW . kou2zo1etl . AQHandles , 3 ) ; }
+sdiFreeLabel ( sigName ) ; sdiFreeLabel ( loggedName ) ; sdiFreeLabel (
+origSigName ) ; sdiFreeLabel ( propName ) ; sdiFreeLabel ( blockPath ) ;
+sdiFreeLabel ( blockSID ) ; sdiFreeLabel ( subPath ) ; } } if ( !
+isStreamoutAlreadyRegistered ) { } } } } { { { bool
+isStreamoutAlreadyRegistered = false ; { sdiSignalSourceInfoU srcInfo ;
+sdiLabelU loggedName = sdiGetLabelFromChars ( "" ) ; sdiLabelU origSigName =
+sdiGetLabelFromChars ( "" ) ; sdiLabelU propName = sdiGetLabelFromChars ( ""
+) ; sdiLabelU blockPath = sdiGetLabelFromChars (
+"propagatorComplete/t_UTC (JD)" ) ; sdiLabelU blockSID = sdiGetLabelFromChars
+( "" ) ; sdiLabelU subPath = sdiGetLabelFromChars ( "" ) ; sdiDims sigDims ;
+sdiLabelU sigName = sdiGetLabelFromChars ( "" ) ; sdiAsyncRepoDataTypeHandle
+hDT = sdiAsyncRepoGetBuiltInDataTypeHandle ( DATA_TYPE_DOUBLE ) ; {
+sdiComplexity sigComplexity = REAL ; sdiSampleTimeContinuity stCont =
+SAMPLE_TIME_CONTINUOUS ; int_T sigDimsArray [ 1 ] = { 1 } ; sigDims . nDims =
+1 ; sigDims . dimensions = sigDimsArray ; srcInfo . numBlockPathElems = 1 ;
+srcInfo . fullBlockPath = ( sdiFullBlkPathU ) & blockPath ; srcInfo . SID = (
+sdiSignalIDU ) & blockSID ; srcInfo . subPath = subPath ; srcInfo . portIndex
+= 0 + 1 ; srcInfo . signalName = sigName ; srcInfo . sigSourceUUID = 0 ; rtDW
+. otsyhaisj4 . AQHandles = sdiStartAsyncioQueueCreation ( hDT , & srcInfo ,
+rt_dataMapInfo . mmi . InstanceMap . fullPath ,
+"8cd8bcb6-1fd9-43c7-917d-5a8bc4886ba0" , sigComplexity , & sigDims ,
+DIMENSIONS_MODE_FIXED , stCont , "day" ) ; sdiCompleteAsyncioQueueCreation (
+rtDW . otsyhaisj4 . AQHandles , hDT , & srcInfo ) ; if ( rtDW . otsyhaisj4 .
+AQHandles ) { sdiSetSignalSampleTimeString ( rtDW . otsyhaisj4 . AQHandles ,
+"Continuous" , 0.0 , ssGetTFinal ( rtS ) ) ; sdiSetSignalRefRate ( rtDW .
+otsyhaisj4 . AQHandles , 0.0 ) ; sdiSetRunStartTime ( rtDW . otsyhaisj4 .
+AQHandles , ssGetTaskTime ( rtS , 1 ) ) ; sdiAsyncRepoSetSignalExportSettings
+( rtDW . otsyhaisj4 . AQHandles , 1 , 0 ) ; sdiAsyncRepoSetSignalExportName (
+rtDW . otsyhaisj4 . AQHandles , loggedName , origSigName , propName ) ;
+sdiAsyncRepoSetSignalDomainType ( rtDW . otsyhaisj4 . AQHandles , "outport" )
+; sdiAsyncRepoSetSignalExportOrder ( rtDW . otsyhaisj4 . AQHandles , 4 ) ; }
 sdiFreeLabel ( sigName ) ; sdiFreeLabel ( loggedName ) ; sdiFreeLabel (
 origSigName ) ; sdiFreeLabel ( propName ) ; sdiFreeLabel ( blockPath ) ;
 sdiFreeLabel ( blockSID ) ; sdiFreeLabel ( subPath ) ; } } if ( !
@@ -53064,38 +53127,41 @@ h5ch5oexhd = ( ( ( ( muDoubleScalarFloor ( ( A + 4716.0 ) * 365.25 ) +
 muDoubleScalarFloor ( ( pData_idx_8 + 1.0 ) * 30.6001 ) ) + lzrt4da1ps_idx_1
 ) + ( ( 2.0 - muDoubleScalarFloor ( A / 100.0 ) ) + muDoubleScalarFloor (
 muDoubleScalarFloor ( A / 100.0 ) / 4.0 ) ) ) - 1524.5 ) + ( ( sec / 60.0 +
-min ) / 60.0 + iwlgiez2vh ) / 24.0 ; rtY . bruvjfgo5t [ 0 ] = rtB .
-i1gdupwxmv [ 0 ] ; rtY . bruvjfgo5t [ 1 ] = rtB . i1gdupwxmv [ 1 ] ; rtY .
-bruvjfgo5t [ 2 ] = rtB . i1gdupwxmv [ 2 ] ; rtY . kgnzuhgazc [ 0 ] = rtB .
-oroad0ht0q [ 0 ] ; rtY . kgnzuhgazc [ 1 ] = rtB . oroad0ht0q [ 1 ] ; rtY .
-kgnzuhgazc [ 2 ] = rtB . oroad0ht0q [ 2 ] ; rtY . kgnzuhgazc [ 3 ] = rtB .
-oroad0ht0q [ 3 ] ; if ( rtB . h5ch5oexhd < 2.4588325E+6 ) { pData_idx_8 = 1.0
-; pData_idx_5 = 0.0 ; } else if ( rtB . h5ch5oexhd > 2.4698085E+6 ) {
-pData_idx_8 = 343.0 ; pData_idx_5 = 1.0 ; } else { pData_idx_8 =
-muDoubleScalarFloor ( ( ( muDoubleScalarFloor ( rtB . h5ch5oexhd - 0.5 ) +
-0.5 ) - 2.4588325E+6 ) / 32.0 ) + 1.0 ; if ( muDoubleScalarFloor ( rtB .
-h5ch5oexhd - 0.5 ) + 0.5 == 2.4698085E+6 ) { pData_idx_8 -- ; } pData_idx_5 =
-( ( ( muDoubleScalarFloor ( rtB . h5ch5oexhd - 0.5 ) + 0.5 ) - ( (
-pData_idx_8 - 1.0 ) * 32.0 + 2.4588325E+6 ) ) + ( ( rtB . h5ch5oexhd - 0.5 )
-- muDoubleScalarFloor ( rtB . h5ch5oexhd - 0.5 ) ) ) / 32.0 ; } if (
-muDoubleScalarIsNaN ( pData_idx_8 ) || muDoubleScalarIsInf ( pData_idx_8 ) )
-{ pData_idx_8 = 0.0 ; } else { pData_idx_8 = muDoubleScalarRem ( pData_idx_8
-, 4.294967296E+9 ) ; } if ( pData_idx_8 < 0.0 ) { i_p = - ( int32_T ) (
-uint32_T ) - pData_idx_8 ; } else { i_p = ( int32_T ) ( uint32_T )
-pData_idx_8 ; } cbuff2 = & tmp [ i_p * 312 + - 312 ] ; posCoeff_m [ 0 ] = 1.0
-; posCoeff_m [ 1 ] = ( muDoubleScalarMod ( 8.0 * pData_idx_5 , 1.0 ) +
-muDoubleScalarFloor ( pData_idx_5 ) ) * 2.0 - 1.0 ; for ( i_p = 0 ; i_p < 11
-; i_p ++ ) { posCoeff_m [ i_p + 2 ] = ( ( muDoubleScalarMod ( 8.0 *
-pData_idx_5 , 1.0 ) + muDoubleScalarFloor ( pData_idx_5 ) ) * 2.0 - 1.0 ) *
-2.0 * posCoeff_m [ i_p + 1 ] - posCoeff_m [ i_p ] ; } kzjexw3fq5 = 0.0 ;
-f3lc1xmbhe = 0.0 ; lzrt4da1ps_idx_1 = 0.0 ; pData_idx_8 = muDoubleScalarFloor
-( 8.0 * pData_idx_5 - muDoubleScalarFloor ( pData_idx_5 ) ) ; if (
-muDoubleScalarIsNaN ( pData_idx_8 ) || muDoubleScalarIsInf ( pData_idx_8 ) )
-{ pData_idx_8 = 0.0 ; } else { pData_idx_8 = muDoubleScalarRem ( pData_idx_8
-, 4.294967296E+9 ) ; } iwlgiez2vh = muDoubleScalarFloor ( 8.0 * pData_idx_5 -
-muDoubleScalarFloor ( pData_idx_5 ) ) ; if ( muDoubleScalarIsNaN ( iwlgiez2vh
-) || muDoubleScalarIsInf ( iwlgiez2vh ) ) { iwlgiez2vh = 0.0 ; } else {
-iwlgiez2vh = muDoubleScalarRem ( iwlgiez2vh , 4.294967296E+9 ) ; } min =
+min ) / 60.0 + iwlgiez2vh ) / 24.0 ; rtY . hilrjecpxs [ 0 ] = rtB .
+i1gdupwxmv [ 0 ] ; rtY . nabv3wpsjd [ 0 ] = rtB . dga5uve4em [ 0 ] ; rtY .
+hilrjecpxs [ 1 ] = rtB . i1gdupwxmv [ 1 ] ; rtY . nabv3wpsjd [ 1 ] = rtB .
+dga5uve4em [ 1 ] ; rtY . hilrjecpxs [ 2 ] = rtB . i1gdupwxmv [ 2 ] ; rtY .
+nabv3wpsjd [ 2 ] = rtB . dga5uve4em [ 2 ] ; rtY . ctagub4txn [ 0 ] = rtB .
+oroad0ht0q [ 0 ] ; rtY . ctagub4txn [ 1 ] = rtB . oroad0ht0q [ 1 ] ; rtY .
+ctagub4txn [ 2 ] = rtB . oroad0ht0q [ 2 ] ; rtY . ctagub4txn [ 3 ] = rtB .
+oroad0ht0q [ 3 ] ; rtY . f4divmjlk5 = rtB . h5ch5oexhd ; if ( rtB .
+h5ch5oexhd < 2.4588325E+6 ) { pData_idx_8 = 1.0 ; pData_idx_5 = 0.0 ; } else
+if ( rtB . h5ch5oexhd > 2.4698085E+6 ) { pData_idx_8 = 343.0 ; pData_idx_5 =
+1.0 ; } else { pData_idx_8 = muDoubleScalarFloor ( ( ( muDoubleScalarFloor (
+rtB . h5ch5oexhd - 0.5 ) + 0.5 ) - 2.4588325E+6 ) / 32.0 ) + 1.0 ; if (
+muDoubleScalarFloor ( rtB . h5ch5oexhd - 0.5 ) + 0.5 == 2.4698085E+6 ) {
+pData_idx_8 -- ; } pData_idx_5 = ( ( ( muDoubleScalarFloor ( rtB . h5ch5oexhd
+- 0.5 ) + 0.5 ) - ( ( pData_idx_8 - 1.0 ) * 32.0 + 2.4588325E+6 ) ) + ( ( rtB
+. h5ch5oexhd - 0.5 ) - muDoubleScalarFloor ( rtB . h5ch5oexhd - 0.5 ) ) ) /
+32.0 ; } if ( muDoubleScalarIsNaN ( pData_idx_8 ) || muDoubleScalarIsInf (
+pData_idx_8 ) ) { pData_idx_8 = 0.0 ; } else { pData_idx_8 =
+muDoubleScalarRem ( pData_idx_8 , 4.294967296E+9 ) ; } if ( pData_idx_8 < 0.0
+) { i_p = - ( int32_T ) ( uint32_T ) - pData_idx_8 ; } else { i_p = ( int32_T
+) ( uint32_T ) pData_idx_8 ; } cbuff2 = & tmp [ i_p * 312 + - 312 ] ;
+posCoeff_m [ 0 ] = 1.0 ; posCoeff_m [ 1 ] = ( muDoubleScalarMod ( 8.0 *
+pData_idx_5 , 1.0 ) + muDoubleScalarFloor ( pData_idx_5 ) ) * 2.0 - 1.0 ; for
+( i_p = 0 ; i_p < 11 ; i_p ++ ) { posCoeff_m [ i_p + 2 ] = ( (
+muDoubleScalarMod ( 8.0 * pData_idx_5 , 1.0 ) + muDoubleScalarFloor (
+pData_idx_5 ) ) * 2.0 - 1.0 ) * 2.0 * posCoeff_m [ i_p + 1 ] - posCoeff_m [
+i_p ] ; } kzjexw3fq5 = 0.0 ; f3lc1xmbhe = 0.0 ; lzrt4da1ps_idx_1 = 0.0 ;
+pData_idx_8 = muDoubleScalarFloor ( 8.0 * pData_idx_5 - muDoubleScalarFloor (
+pData_idx_5 ) ) ; if ( muDoubleScalarIsNaN ( pData_idx_8 ) ||
+muDoubleScalarIsInf ( pData_idx_8 ) ) { pData_idx_8 = 0.0 ; } else {
+pData_idx_8 = muDoubleScalarRem ( pData_idx_8 , 4.294967296E+9 ) ; }
+iwlgiez2vh = muDoubleScalarFloor ( 8.0 * pData_idx_5 - muDoubleScalarFloor (
+pData_idx_5 ) ) ; if ( muDoubleScalarIsNaN ( iwlgiez2vh ) ||
+muDoubleScalarIsInf ( iwlgiez2vh ) ) { iwlgiez2vh = 0.0 ; } else { iwlgiez2vh
+= muDoubleScalarRem ( iwlgiez2vh , 4.294967296E+9 ) ; } min =
 muDoubleScalarFloor ( 8.0 * pData_idx_5 - muDoubleScalarFloor ( pData_idx_5 )
 ) ; if ( muDoubleScalarIsNaN ( min ) || muDoubleScalarIsInf ( min ) ) { min =
 0.0 ; } else { min = muDoubleScalarRem ( min , 4.294967296E+9 ) ; } for ( i =
@@ -53116,56 +53182,60 @@ sdiWriteSignal ( rtDW . ptfgkkfyx2 . AQHandles , ssGetTaskTime ( rtS , 1 ) ,
 ( char * ) & rtB . dve3qulja2 [ 0 ] + 0 ) ; } } { if ( rtDW . jcuxltf0li .
 AQHandles && ssGetLogOutput ( rtS ) ) { sdiWriteSignal ( rtDW . jcuxltf0li .
 AQHandles , ssGetTaskTime ( rtS , 1 ) , ( char * ) & rtB . i1gdupwxmv [ 0 ] +
-0 ) ; } } { if ( rtDW . kou2zo1etl . AQHandles && ssGetLogOutput ( rtS ) ) {
-sdiWriteSignal ( rtDW . kou2zo1etl . AQHandles , ssGetTaskTime ( rtS , 1 ) ,
-( char * ) & rtB . oroad0ht0q [ 0 ] + 0 ) ; } } } kzjexw3fq5 = rtB .
-i1gdupwxmv [ 0 ] - rtB . dve3qulja2 [ 0 ] ; rtB . fqb0csb24q [ 0 ] =
-kzjexw3fq5 ; f3lc1xmbhe = kzjexw3fq5 * kzjexw3fq5 ; kzjexw3fq5 = rtB .
-i1gdupwxmv [ 1 ] - rtB . dve3qulja2 [ 1 ] ; rtB . fqb0csb24q [ 1 ] =
-kzjexw3fq5 ; lzrt4da1ps_idx_1 = kzjexw3fq5 * kzjexw3fq5 ; kzjexw3fq5 = rtB .
-i1gdupwxmv [ 2 ] - rtB . dve3qulja2 [ 2 ] ; rtB . fqb0csb24q [ 2 ] =
-kzjexw3fq5 ; lzrt4da1ps_idx_1 = ( f3lc1xmbhe + lzrt4da1ps_idx_1 ) +
-kzjexw3fq5 * kzjexw3fq5 ; if ( lzrt4da1ps_idx_1 < 0.0 ) { rtB . jvs22ygnlb =
-- muDoubleScalarSqrt ( muDoubleScalarAbs ( lzrt4da1ps_idx_1 ) ) ; } else {
-rtB . jvs22ygnlb = muDoubleScalarSqrt ( lzrt4da1ps_idx_1 ) ; } if (
-ssIsModeUpdateTimeStep ( rtS ) ) { rtDW . oimusvef0p = ( rtB . jvs22ygnlb >
-rtP . NormalizeVector_maxzero ) ; } if ( ! rtDW . oimusvef0p ) { rtB .
-nid0rlczhv [ 0 ] = rtB . fqb0csb24q [ 0 ] * 0.0 ; rtB . nid0rlczhv [ 1 ] =
-rtB . fqb0csb24q [ 1 ] * 0.0 ; rtB . nid0rlczhv [ 2 ] = rtB . fqb0csb24q [ 2
-] * 0.0 ; } iwlgiez2vh = ( rtB . dve3qulja2 [ 0 ] * rtB . dve3qulja2 [ 0 ] +
-rtB . dve3qulja2 [ 1 ] * rtB . dve3qulja2 [ 1 ] ) + rtB . dve3qulja2 [ 2 ] *
-rtB . dve3qulja2 [ 2 ] ; if ( iwlgiez2vh < 0.0 ) { rtB . bf0fs5uttf = -
-muDoubleScalarSqrt ( muDoubleScalarAbs ( iwlgiez2vh ) ) ; } else { rtB .
-bf0fs5uttf = muDoubleScalarSqrt ( iwlgiez2vh ) ; } if (
-ssIsModeUpdateTimeStep ( rtS ) ) { rtDW . l1cbemf4kw = ( rtB . bf0fs5uttf >
-rtP . NormalizeVector_maxzero_pntl1pmm30 ) ; } if ( ! rtDW . l1cbemf4kw ) {
-rtB . a4nzpbifls [ 0 ] = rtB . dve3qulja2 [ 0 ] * 0.0 ; rtB . a4nzpbifls [ 1
-] = rtB . dve3qulja2 [ 1 ] * 0.0 ; rtB . a4nzpbifls [ 2 ] = rtB . dve3qulja2
-[ 2 ] * 0.0 ; } rtB . jp4wysmwga = ( rtB . dga5uve4em [ 0 ] * rtB .
-dga5uve4em [ 0 ] + rtB . dga5uve4em [ 1 ] * rtB . dga5uve4em [ 1 ] ) + rtB .
-dga5uve4em [ 2 ] * rtB . dga5uve4em [ 2 ] ; if ( rtB . jp4wysmwga < 0.0 ) {
-rtB . p0dt0zhwqq = - muDoubleScalarSqrt ( muDoubleScalarAbs ( rtB .
-jp4wysmwga ) ) ; } else { rtB . p0dt0zhwqq = muDoubleScalarSqrt ( rtB .
-jp4wysmwga ) ; } if ( ssIsModeUpdateTimeStep ( rtS ) ) { rtDW . gagixdjljm =
-( rtB . p0dt0zhwqq > rtP . NormalizeVector_maxzero_hb0qhx1yar ) ; } if ( rtDW
-. gagixdjljm ) { rtB . bg4fufsmy1 [ 0 ] = rtB . dga5uve4em [ 0 ] ; rtB .
-bg4fufsmy1 [ 1 ] = rtB . dga5uve4em [ 1 ] ; rtB . bg4fufsmy1 [ 2 ] = rtB .
-dga5uve4em [ 2 ] ; rtB . bg4fufsmy1 [ 3 ] = rtB . p0dt0zhwqq ; } else {
-kzjexw3fq5 = rtB . dga5uve4em [ 0 ] * 0.0 ; rtB . kodulhrduv [ 0 ] =
-kzjexw3fq5 ; rtB . bg4fufsmy1 [ 0 ] = kzjexw3fq5 ; kzjexw3fq5 = rtB .
-dga5uve4em [ 1 ] * 0.0 ; rtB . kodulhrduv [ 1 ] = kzjexw3fq5 ; rtB .
-bg4fufsmy1 [ 1 ] = kzjexw3fq5 ; kzjexw3fq5 = rtB . dga5uve4em [ 2 ] * 0.0 ;
-rtB . kodulhrduv [ 2 ] = kzjexw3fq5 ; rtB . bg4fufsmy1 [ 2 ] = kzjexw3fq5 ;
-rtB . bg4fufsmy1 [ 3 ] = rtP . Constant_Value_l03ciegqnh ; } rtB . ixoaxw0z3z
-[ 0 ] = rtB . bg4fufsmy1 [ 0 ] / rtB . bg4fufsmy1 [ 3 ] ; rtB . ixoaxw0z3z [
-1 ] = rtB . bg4fufsmy1 [ 1 ] / rtB . bg4fufsmy1 [ 3 ] ; rtB . ixoaxw0z3z [ 2
-] = rtB . bg4fufsmy1 [ 2 ] / rtB . bg4fufsmy1 [ 3 ] ; kzjexw3fq5 = ( rtB .
-i1gdupwxmv [ 0 ] * rtB . i1gdupwxmv [ 0 ] + rtB . i1gdupwxmv [ 1 ] * rtB .
-i1gdupwxmv [ 1 ] ) + rtB . i1gdupwxmv [ 2 ] * rtB . i1gdupwxmv [ 2 ] ; if (
-ssIsMajorTimeStep ( rtS ) ) { if ( rtDW . ftxygppz3q != 0 ) {
-ssSetBlockStateForSolverChangedAtMajorStep ( rtS ) ;
-ssSetContTimeOutputInconsistentWithStateAtMajorStep ( rtS ) ; rtDW .
-ftxygppz3q = 0 ; } rtB . fj3nbz2brp = muDoubleScalarSqrt ( kzjexw3fq5 ) ; }
+0 ) ; } } { if ( rtDW . pugsqfjy4m . AQHandles && ssGetLogOutput ( rtS ) ) {
+sdiWriteSignal ( rtDW . pugsqfjy4m . AQHandles , ssGetTaskTime ( rtS , 1 ) ,
+( char * ) & rtB . dga5uve4em [ 0 ] + 0 ) ; } } { if ( rtDW . kou2zo1etl .
+AQHandles && ssGetLogOutput ( rtS ) ) { sdiWriteSignal ( rtDW . kou2zo1etl .
+AQHandles , ssGetTaskTime ( rtS , 1 ) , ( char * ) & rtB . oroad0ht0q [ 0 ] +
+0 ) ; } } { if ( rtDW . otsyhaisj4 . AQHandles && ssGetLogOutput ( rtS ) ) {
+sdiWriteSignal ( rtDW . otsyhaisj4 . AQHandles , ssGetTaskTime ( rtS , 1 ) ,
+( char * ) & rtB . h5ch5oexhd + 0 ) ; } } } kzjexw3fq5 = rtB . i1gdupwxmv [ 0
+] - rtB . dve3qulja2 [ 0 ] ; rtB . fqb0csb24q [ 0 ] = kzjexw3fq5 ; f3lc1xmbhe
+= kzjexw3fq5 * kzjexw3fq5 ; kzjexw3fq5 = rtB . i1gdupwxmv [ 1 ] - rtB .
+dve3qulja2 [ 1 ] ; rtB . fqb0csb24q [ 1 ] = kzjexw3fq5 ; lzrt4da1ps_idx_1 =
+kzjexw3fq5 * kzjexw3fq5 ; kzjexw3fq5 = rtB . i1gdupwxmv [ 2 ] - rtB .
+dve3qulja2 [ 2 ] ; rtB . fqb0csb24q [ 2 ] = kzjexw3fq5 ; lzrt4da1ps_idx_1 = (
+f3lc1xmbhe + lzrt4da1ps_idx_1 ) + kzjexw3fq5 * kzjexw3fq5 ; if (
+lzrt4da1ps_idx_1 < 0.0 ) { rtB . jvs22ygnlb = - muDoubleScalarSqrt (
+muDoubleScalarAbs ( lzrt4da1ps_idx_1 ) ) ; } else { rtB . jvs22ygnlb =
+muDoubleScalarSqrt ( lzrt4da1ps_idx_1 ) ; } if ( ssIsModeUpdateTimeStep ( rtS
+) ) { rtDW . oimusvef0p = ( rtB . jvs22ygnlb > rtP . NormalizeVector_maxzero
+) ; } if ( ! rtDW . oimusvef0p ) { rtB . nid0rlczhv [ 0 ] = rtB . fqb0csb24q
+[ 0 ] * 0.0 ; rtB . nid0rlczhv [ 1 ] = rtB . fqb0csb24q [ 1 ] * 0.0 ; rtB .
+nid0rlczhv [ 2 ] = rtB . fqb0csb24q [ 2 ] * 0.0 ; } iwlgiez2vh = ( rtB .
+dve3qulja2 [ 0 ] * rtB . dve3qulja2 [ 0 ] + rtB . dve3qulja2 [ 1 ] * rtB .
+dve3qulja2 [ 1 ] ) + rtB . dve3qulja2 [ 2 ] * rtB . dve3qulja2 [ 2 ] ; if (
+iwlgiez2vh < 0.0 ) { rtB . bf0fs5uttf = - muDoubleScalarSqrt (
+muDoubleScalarAbs ( iwlgiez2vh ) ) ; } else { rtB . bf0fs5uttf =
+muDoubleScalarSqrt ( iwlgiez2vh ) ; } if ( ssIsModeUpdateTimeStep ( rtS ) ) {
+rtDW . l1cbemf4kw = ( rtB . bf0fs5uttf > rtP .
+NormalizeVector_maxzero_pntl1pmm30 ) ; } if ( ! rtDW . l1cbemf4kw ) { rtB .
+a4nzpbifls [ 0 ] = rtB . dve3qulja2 [ 0 ] * 0.0 ; rtB . a4nzpbifls [ 1 ] =
+rtB . dve3qulja2 [ 1 ] * 0.0 ; rtB . a4nzpbifls [ 2 ] = rtB . dve3qulja2 [ 2
+] * 0.0 ; } rtB . jp4wysmwga = ( rtB . dga5uve4em [ 0 ] * rtB . dga5uve4em [
+0 ] + rtB . dga5uve4em [ 1 ] * rtB . dga5uve4em [ 1 ] ) + rtB . dga5uve4em [
+2 ] * rtB . dga5uve4em [ 2 ] ; if ( rtB . jp4wysmwga < 0.0 ) { rtB .
+p0dt0zhwqq = - muDoubleScalarSqrt ( muDoubleScalarAbs ( rtB . jp4wysmwga ) )
+; } else { rtB . p0dt0zhwqq = muDoubleScalarSqrt ( rtB . jp4wysmwga ) ; } if
+( ssIsModeUpdateTimeStep ( rtS ) ) { rtDW . gagixdjljm = ( rtB . p0dt0zhwqq >
+rtP . NormalizeVector_maxzero_hb0qhx1yar ) ; } if ( rtDW . gagixdjljm ) { rtB
+. bg4fufsmy1 [ 0 ] = rtB . dga5uve4em [ 0 ] ; rtB . bg4fufsmy1 [ 1 ] = rtB .
+dga5uve4em [ 1 ] ; rtB . bg4fufsmy1 [ 2 ] = rtB . dga5uve4em [ 2 ] ; rtB .
+bg4fufsmy1 [ 3 ] = rtB . p0dt0zhwqq ; } else { kzjexw3fq5 = rtB . dga5uve4em
+[ 0 ] * 0.0 ; rtB . kodulhrduv [ 0 ] = kzjexw3fq5 ; rtB . bg4fufsmy1 [ 0 ] =
+kzjexw3fq5 ; kzjexw3fq5 = rtB . dga5uve4em [ 1 ] * 0.0 ; rtB . kodulhrduv [ 1
+] = kzjexw3fq5 ; rtB . bg4fufsmy1 [ 1 ] = kzjexw3fq5 ; kzjexw3fq5 = rtB .
+dga5uve4em [ 2 ] * 0.0 ; rtB . kodulhrduv [ 2 ] = kzjexw3fq5 ; rtB .
+bg4fufsmy1 [ 2 ] = kzjexw3fq5 ; rtB . bg4fufsmy1 [ 3 ] = rtP .
+Constant_Value_l03ciegqnh ; } rtB . ixoaxw0z3z [ 0 ] = rtB . bg4fufsmy1 [ 0 ]
+/ rtB . bg4fufsmy1 [ 3 ] ; rtB . ixoaxw0z3z [ 1 ] = rtB . bg4fufsmy1 [ 1 ] /
+rtB . bg4fufsmy1 [ 3 ] ; rtB . ixoaxw0z3z [ 2 ] = rtB . bg4fufsmy1 [ 2 ] /
+rtB . bg4fufsmy1 [ 3 ] ; kzjexw3fq5 = ( rtB . i1gdupwxmv [ 0 ] * rtB .
+i1gdupwxmv [ 0 ] + rtB . i1gdupwxmv [ 1 ] * rtB . i1gdupwxmv [ 1 ] ) + rtB .
+i1gdupwxmv [ 2 ] * rtB . i1gdupwxmv [ 2 ] ; if ( ssIsMajorTimeStep ( rtS ) )
+{ if ( rtDW . ftxygppz3q != 0 ) { ssSetBlockStateForSolverChangedAtMajorStep
+( rtS ) ; ssSetContTimeOutputInconsistentWithStateAtMajorStep ( rtS ) ; rtDW
+. ftxygppz3q = 0 ; } rtB . fj3nbz2brp = muDoubleScalarSqrt ( kzjexw3fq5 ) ; }
 else if ( kzjexw3fq5 < 0.0 ) { rtB . fj3nbz2brp = - muDoubleScalarSqrt (
 muDoubleScalarAbs ( kzjexw3fq5 ) ) ; rtDW . ftxygppz3q = 1 ; } else { rtB .
 fj3nbz2brp = muDoubleScalarSqrt ( kzjexw3fq5 ) ; } if ( ssIsSampleHit ( rtS ,
@@ -53820,8 +53890,11 @@ else { { ( ( ZCV * ) ssGetSolverZcSignalVector ( rtS ) ) -> gjfpdtbcix = 0.0
 ; } } } void MdlTerminate ( void ) { { if ( rtDW . ptfgkkfyx2 . AQHandles ) {
 sdiTerminateStreaming ( & rtDW . ptfgkkfyx2 . AQHandles ) ; } } { if ( rtDW .
 jcuxltf0li . AQHandles ) { sdiTerminateStreaming ( & rtDW . jcuxltf0li .
-AQHandles ) ; } } { if ( rtDW . kou2zo1etl . AQHandles ) {
-sdiTerminateStreaming ( & rtDW . kou2zo1etl . AQHandles ) ; } } } static void
+AQHandles ) ; } } { if ( rtDW . pugsqfjy4m . AQHandles ) {
+sdiTerminateStreaming ( & rtDW . pugsqfjy4m . AQHandles ) ; } } { if ( rtDW .
+kou2zo1etl . AQHandles ) { sdiTerminateStreaming ( & rtDW . kou2zo1etl .
+AQHandles ) ; } } { if ( rtDW . otsyhaisj4 . AQHandles ) {
+sdiTerminateStreaming ( & rtDW . otsyhaisj4 . AQHandles ) ; } } } static void
 mr_propagatorComplete_cacheDataAsMxArray ( mxArray * destArray , mwIndex i ,
 int j , const void * srcData , size_t numBytes ) ; static void
 mr_propagatorComplete_cacheDataAsMxArray ( mxArray * destArray , mwIndex i ,
@@ -54085,15 +54158,15 @@ bgq2api2xe . feqk14z4ht ) ) ; mr_propagatorComplete_restoreDataFromMxArray (
 ( rtDW . lfxaatuckyk . feqk14z4ht ) ) ; } } mxArray *
 mr_propagatorComplete_GetSimStateDisallowedBlocks ( ) { return ( NULL ) ; }
 void MdlInitializeSizes ( void ) { ssSetNumContStates ( rtS , 14 ) ;
-ssSetNumPeriodicContStates ( rtS , 0 ) ; ssSetNumY ( rtS , 10 ) ; ssSetNumU (
+ssSetNumPeriodicContStates ( rtS , 0 ) ; ssSetNumY ( rtS , 14 ) ; ssSetNumU (
 rtS , 0 ) ; ssSetDirectFeedThrough ( rtS , 0 ) ; ssSetNumSampleTimes ( rtS ,
-2 ) ; ssSetNumBlocks ( rtS , 465 ) ; ssSetNumBlockIO ( rtS , 303 ) ;
+2 ) ; ssSetNumBlocks ( rtS , 469 ) ; ssSetNumBlockIO ( rtS , 303 ) ;
 ssSetNumBlockParams ( rtS , 193 ) ; } void MdlInitializeSampleTimes ( void )
 { ssSetSampleTime ( rtS , 0 , 0.0 ) ; ssSetSampleTime ( rtS , 1 , 0.0 ) ;
 ssSetOffsetTime ( rtS , 0 , 0.0 ) ; ssSetOffsetTime ( rtS , 1 , 1.0 ) ; }
-void raccel_set_checksum ( ) { ssSetChecksumVal ( rtS , 0 , 801017077U ) ;
-ssSetChecksumVal ( rtS , 1 , 2912609470U ) ; ssSetChecksumVal ( rtS , 2 ,
-2425025980U ) ; ssSetChecksumVal ( rtS , 3 , 479647457U ) ; }
+void raccel_set_checksum ( ) { ssSetChecksumVal ( rtS , 0 , 3710505430U ) ;
+ssSetChecksumVal ( rtS , 1 , 1094580221U ) ; ssSetChecksumVal ( rtS , 2 ,
+87538664U ) ; ssSetChecksumVal ( rtS , 3 , 1021182332U ) ; }
 #if defined(_MSC_VER)
 #pragma optimize( "", off )
 #endif
@@ -54179,30 +54252,38 @@ ssGetRTWLogInfo ( rtS ) , "" ) ; rtliSetLogXFinal ( ssGetRTWLogInfo ( rtS ) ,
 rtliSetLogFormat ( ssGetRTWLogInfo ( rtS ) , 4 ) ; rtliSetLogMaxRows (
 ssGetRTWLogInfo ( rtS ) , 0 ) ; rtliSetLogDecimation ( ssGetRTWLogInfo ( rtS
 ) , 1 ) ; { static void * rt_LoggedOutputSignalPtrs [ ] = { & rtY .
-bruvjfgo5t [ 0 ] , & rtY . kgnzuhgazc [ 0 ] , & rtY . jjprc2gsjk [ 0 ] } ;
-rtliSetLogYSignalPtrs ( ssGetRTWLogInfo ( rtS ) , ( ( LogSignalPtrsType )
-rt_LoggedOutputSignalPtrs ) ) ; } { static int_T rt_LoggedOutputWidths [ ] =
-{ 3 , 4 , 3 } ; static int_T rt_LoggedOutputNumDimensions [ ] = { 1 , 1 , 1 }
-; static int_T rt_LoggedOutputDimensions [ ] = { 3 , 4 , 3 } ; static
-boolean_T rt_LoggedOutputIsVarDims [ ] = { 0 , 0 , 0 } ; static void *
-rt_LoggedCurrentSignalDimensions [ ] = { ( NULL ) , ( NULL ) , ( NULL ) } ;
-static int_T rt_LoggedCurrentSignalDimensionsSize [ ] = { 4 , 4 , 4 } ;
-static BuiltInDTypeId rt_LoggedOutputDataTypeIds [ ] = { SS_DOUBLE ,
-SS_DOUBLE , SS_DOUBLE } ; static int_T rt_LoggedOutputComplexSignals [ ] = {
-0 , 0 , 0 } ; static RTWPreprocessingFcnPtr rt_LoggingPreprocessingFcnPtrs [
-] = { ( NULL ) , ( NULL ) , ( NULL ) } ; static const char_T *
+hilrjecpxs [ 0 ] , & rtY . nabv3wpsjd [ 0 ] , & rtY . ctagub4txn [ 0 ] , &
+rtY . f4divmjlk5 , & rtY . jjprc2gsjk [ 0 ] } ; rtliSetLogYSignalPtrs (
+ssGetRTWLogInfo ( rtS ) , ( ( LogSignalPtrsType ) rt_LoggedOutputSignalPtrs )
+) ; } { static int_T rt_LoggedOutputWidths [ ] = { 3 , 3 , 4 , 1 , 3 } ;
+static int_T rt_LoggedOutputNumDimensions [ ] = { 1 , 1 , 1 , 1 , 1 } ;
+static int_T rt_LoggedOutputDimensions [ ] = { 3 , 3 , 4 , 1 , 3 } ; static
+boolean_T rt_LoggedOutputIsVarDims [ ] = { 0 , 0 , 0 , 0 , 0 } ; static void
+* rt_LoggedCurrentSignalDimensions [ ] = { ( NULL ) , ( NULL ) , ( NULL ) , (
+NULL ) , ( NULL ) } ; static int_T rt_LoggedCurrentSignalDimensionsSize [ ] =
+{ 4 , 4 , 4 , 4 , 4 } ; static BuiltInDTypeId rt_LoggedOutputDataTypeIds [ ]
+= { SS_DOUBLE , SS_DOUBLE , SS_DOUBLE , SS_DOUBLE , SS_DOUBLE } ; static
+int_T rt_LoggedOutputComplexSignals [ ] = { 0 , 0 , 0 , 0 , 0 } ; static
+RTWPreprocessingFcnPtr rt_LoggingPreprocessingFcnPtrs [ ] = { ( NULL ) , (
+NULL ) , ( NULL ) , ( NULL ) , ( NULL ) } ; static const char_T *
 rt_LoggedOutputLabels_0 [ ] = { "" } ; static const char_T *
 rt_LoggedOutputBlockNames_0 [ ] = { "propagatorComplete/x_icrf (m)" } ;
 static const char_T * rt_LoggedOutputLabels_1 [ ] = { "" } ; static const
-char_T * rt_LoggedOutputBlockNames_1 [ ] = { "propagatorComplete/q_icrf2b" }
-; static const char_T * rt_LoggedOutputLabels_2 [ ] = { "" } ; static const
-char_T * rt_LoggedOutputBlockNames_2 [ ] = {
+char_T * rt_LoggedOutputBlockNames_1 [ ] = {
+"propagatorComplete/v_icrf (m//s)" } ; static const char_T *
+rt_LoggedOutputLabels_2 [ ] = { "" } ; static const char_T *
+rt_LoggedOutputBlockNames_2 [ ] = { "propagatorComplete/q_icrf2b" } ; static
+const char_T * rt_LoggedOutputLabels_3 [ ] = { "" } ; static const char_T *
+rt_LoggedOutputBlockNames_3 [ ] = { "propagatorComplete/t_UTC (JD)" } ;
+static const char_T * rt_LoggedOutputLabels_4 [ ] = { "" } ; static const
+char_T * rt_LoggedOutputBlockNames_4 [ ] = {
 "propagatorComplete/Moon position" } ; static RTWLogDataTypeConvert
 rt_RTWLogDataTypeConvert [ ] = { { 0 , SS_DOUBLE , SS_DOUBLE , 0 , 0 , 0 ,
 1.0 , 0 , 0.0 } , { 0 , SS_DOUBLE , SS_DOUBLE , 0 , 0 , 0 , 1.0 , 0 , 0.0 } ,
-{ 0 , SS_DOUBLE , SS_DOUBLE , 0 , 0 , 0 , 1.0 , 0 , 0.0 } } ; static
-RTWLogSignalInfo rt_LoggedOutputSignalInfo [ ] = { { 1 ,
-rt_LoggedOutputWidths , rt_LoggedOutputNumDimensions ,
+{ 0 , SS_DOUBLE , SS_DOUBLE , 0 , 0 , 0 , 1.0 , 0 , 0.0 } , { 0 , SS_DOUBLE ,
+SS_DOUBLE , 0 , 0 , 0 , 1.0 , 0 , 0.0 } , { 0 , SS_DOUBLE , SS_DOUBLE , 0 , 0
+, 0 , 1.0 , 0 , 0.0 } } ; static RTWLogSignalInfo rt_LoggedOutputSignalInfo [
+] = { { 1 , rt_LoggedOutputWidths , rt_LoggedOutputNumDimensions ,
 rt_LoggedOutputDimensions , rt_LoggedOutputIsVarDims ,
 rt_LoggedCurrentSignalDimensions , rt_LoggedCurrentSignalDimensionsSize ,
 rt_LoggedOutputDataTypeIds , rt_LoggedOutputComplexSignals , ( NULL ) ,
@@ -54222,25 +54303,41 @@ rt_LoggedCurrentSignalDimensionsSize + 2 , rt_LoggedOutputDataTypeIds + 2 ,
 rt_LoggedOutputComplexSignals + 2 , ( NULL ) , rt_LoggingPreprocessingFcnPtrs
 + 2 , { rt_LoggedOutputLabels_2 } , ( NULL ) , ( NULL ) , ( NULL ) , {
 rt_LoggedOutputBlockNames_2 } , { ( NULL ) } , ( NULL ) ,
-rt_RTWLogDataTypeConvert + 2 , ( NULL ) } } ; rtliSetLogYSignalInfo (
+rt_RTWLogDataTypeConvert + 2 , ( NULL ) } , { 1 , rt_LoggedOutputWidths + 3 ,
+rt_LoggedOutputNumDimensions + 3 , rt_LoggedOutputDimensions + 3 ,
+rt_LoggedOutputIsVarDims + 3 , rt_LoggedCurrentSignalDimensions + 3 ,
+rt_LoggedCurrentSignalDimensionsSize + 3 , rt_LoggedOutputDataTypeIds + 3 ,
+rt_LoggedOutputComplexSignals + 3 , ( NULL ) , rt_LoggingPreprocessingFcnPtrs
++ 3 , { rt_LoggedOutputLabels_3 } , ( NULL ) , ( NULL ) , ( NULL ) , {
+rt_LoggedOutputBlockNames_3 } , { ( NULL ) } , ( NULL ) ,
+rt_RTWLogDataTypeConvert + 3 , ( NULL ) } , { 1 , rt_LoggedOutputWidths + 4 ,
+rt_LoggedOutputNumDimensions + 4 , rt_LoggedOutputDimensions + 4 ,
+rt_LoggedOutputIsVarDims + 4 , rt_LoggedCurrentSignalDimensions + 4 ,
+rt_LoggedCurrentSignalDimensionsSize + 4 , rt_LoggedOutputDataTypeIds + 4 ,
+rt_LoggedOutputComplexSignals + 4 , ( NULL ) , rt_LoggingPreprocessingFcnPtrs
++ 4 , { rt_LoggedOutputLabels_4 } , ( NULL ) , ( NULL ) , ( NULL ) , {
+rt_LoggedOutputBlockNames_4 } , { ( NULL ) } , ( NULL ) ,
+rt_RTWLogDataTypeConvert + 4 , ( NULL ) } } ; rtliSetLogYSignalInfo (
 ssGetRTWLogInfo ( rtS ) , rt_LoggedOutputSignalInfo ) ;
 rt_LoggedCurrentSignalDimensions [ 0 ] = & rt_LoggedOutputWidths [ 0 ] ;
 rt_LoggedCurrentSignalDimensions [ 1 ] = & rt_LoggedOutputWidths [ 1 ] ;
-rt_LoggedCurrentSignalDimensions [ 2 ] = & rt_LoggedOutputWidths [ 2 ] ; }
+rt_LoggedCurrentSignalDimensions [ 2 ] = & rt_LoggedOutputWidths [ 2 ] ;
+rt_LoggedCurrentSignalDimensions [ 3 ] = & rt_LoggedOutputWidths [ 3 ] ;
+rt_LoggedCurrentSignalDimensions [ 4 ] = & rt_LoggedOutputWidths [ 4 ] ; }
 rtliSetLogY ( ssGetRTWLogInfo ( rtS ) ,
-"tmp_raccel_yout1,tmp_raccel_yout2,tmp_raccel_yout3" ) ; } { static struct
-_ssStatesInfo2 statesInfo2 ; ssSetStatesInfo2 ( rtS , & statesInfo2 ) ; } {
-static ssPeriodicStatesInfo periodicStatesInfo ; ssSetPeriodicStatesInfo (
-rtS , & periodicStatesInfo ) ; } { static ssJacobianPerturbationBounds
-jacobianPerturbationBounds ; ssSetJacobianPerturbationBounds ( rtS , &
-jacobianPerturbationBounds ) ; } { static ssSolverInfo slvrInfo ; static
-struct _ssSFcnModelMethods3 mdlMethods3 ; static struct _ssSFcnModelMethods2
-mdlMethods2 ; static boolean_T contStatesDisabled [ 14 ] ; static real_T
-absTol [ 14 ] = { 1.0E-8 , 1.0E-8 , 1.0E-8 , 1.0E-8 , 1.0E-8 , 1.0E-8 ,
-1.0E-8 , 1.0E-8 , 1.0E-8 , 1.0E-8 , 1.0E-8 , 1.0E-8 , 1.0E-8 , 1.0E-8 } ;
-static uint8_T absTolControl [ 14 ] = { 0U , 0U , 0U , 0U , 0U , 0U , 0U , 0U
-, 0U , 0U , 0U , 0U , 0U , 0U } ; static real_T
-contStateJacPerturbBoundMinVec [ 14 ] ; static real_T
+ "tmp_raccel_yout1,tmp_raccel_yout2,tmp_raccel_yout3,tmp_raccel_yout4,tmp_raccel_yout5"
+) ; } { static struct _ssStatesInfo2 statesInfo2 ; ssSetStatesInfo2 ( rtS , &
+statesInfo2 ) ; } { static ssPeriodicStatesInfo periodicStatesInfo ;
+ssSetPeriodicStatesInfo ( rtS , & periodicStatesInfo ) ; } { static
+ssJacobianPerturbationBounds jacobianPerturbationBounds ;
+ssSetJacobianPerturbationBounds ( rtS , & jacobianPerturbationBounds ) ; } {
+static ssSolverInfo slvrInfo ; static struct _ssSFcnModelMethods3 mdlMethods3
+; static struct _ssSFcnModelMethods2 mdlMethods2 ; static boolean_T
+contStatesDisabled [ 14 ] ; static real_T absTol [ 14 ] = { 1.0E-8 , 1.0E-8 ,
+1.0E-8 , 1.0E-8 , 1.0E-8 , 1.0E-8 , 1.0E-8 , 1.0E-8 , 1.0E-8 , 1.0E-8 ,
+1.0E-8 , 1.0E-8 , 1.0E-8 , 1.0E-8 } ; static uint8_T absTolControl [ 14 ] = {
+0U , 0U , 0U , 0U , 0U , 0U , 0U , 0U , 0U , 0U , 0U , 0U , 0U , 0U } ;
+static real_T contStateJacPerturbBoundMinVec [ 14 ] ; static real_T
 contStateJacPerturbBoundMaxVec [ 14 ] ; static uint8_T zcAttributes [ 6 ] = {
 ( ZC_EVENT_ALL ) , ( ZC_EVENT_ALL ) , ( ZC_EVENT_ALL ) , ( ZC_EVENT_ALL ) , (
 ZC_EVENT_ALL ) , ( ZC_EVENT_ALL ) } ; static ssNonContDerivSigInfo
@@ -54286,9 +54383,9 @@ ssSetSolverShapePreserveControl ( rtS , 2 ) ; ssSetTNextTid ( rtS , INT_MIN )
 ; ssSetTNext ( rtS , rtMinusInf ) ; ssSetSolverNeedsReset ( rtS ) ;
 ssSetNumNonsampledZCs ( rtS , 6 ) ; ssSetContStateDisabled ( rtS ,
 contStatesDisabled ) ; ssSetSolverMaxConsecutiveMinStep ( rtS , 1 ) ; }
-ssSetChecksumVal ( rtS , 0 , 801017077U ) ; ssSetChecksumVal ( rtS , 1 ,
-2912609470U ) ; ssSetChecksumVal ( rtS , 2 , 2425025980U ) ; ssSetChecksumVal
-( rtS , 3 , 479647457U ) ; { static const sysRanDType rtAlwaysEnabled =
+ssSetChecksumVal ( rtS , 0 , 3710505430U ) ; ssSetChecksumVal ( rtS , 1 ,
+1094580221U ) ; ssSetChecksumVal ( rtS , 2 , 87538664U ) ; ssSetChecksumVal (
+rtS , 3 , 1021182332U ) ; { static const sysRanDType rtAlwaysEnabled =
 SUBSYS_RAN_BC_ENABLE ; static RTWExtModeInfo rt_ExtModeInfo ; static const
 sysRanDType * systemRan [ 20 ] ; gblRTWExtModeInfo = & rt_ExtModeInfo ;
 ssSetRTWExtModeInfo ( rtS , & rt_ExtModeInfo ) ;

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/slsa_mm_rtp_registry/R2023a">
+  <slsa.mm.rtpregistry.VariableId type="slsa.mm.rtpregistry.VariableId" uuid="b46bae93-c13b-407d-aa36-c997944e0b3b">
+    <workspaceName>global-workspace</workspaceName>
+    <name>ref</name>
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="8cd39943-46cb-41a9-8ff8-7f511eee59ef"/>
+  </slsa.mm.rtpregistry.VariableId>
+  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="8cd39943-46cb-41a9-8ff8-7f511eee59ef">
+    <id type="slsa.mm.rtpregistry.VariableId" uuid="b46bae93-c13b-407d-aa36-c997944e0b3b"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="aa76d74e-2e63-4b49-aed1-3ae67630bc85"/>
+  </slsa.mm.rtpregistry.Parameter>
+  <slsa.mm.rtpregistry.ModelMetadata type="slsa.mm.rtpregistry.ModelMetadata" uuid="fc9e8da0-4d8f-4bd3-8f7e-1664bbc956be">
+    <modelName>propagatorSimple</modelName>
+  </slsa.mm.rtpregistry.ModelMetadata>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="9ee05a0d-8652-4737-b7ab-94ca78654d3d">
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="1efa0752-7ae0-4c4a-8dfd-5c9a1199c4fd"/>
+    <valueIndices>0</valueIndices>
+    <valueIndices>0</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="1efa0752-7ae0-4c4a-8dfd-5c9a1199c4fd">
+    <id type="slsa.mm.rtpregistry.VariableId" uuid="a05480b8-3336-481e-87b6-2477edc9c631"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="9ee05a0d-8652-4737-b7ab-94ca78654d3d"/>
+  </slsa.mm.rtpregistry.Parameter>
+  <slsa.mm.rtpregistry.VariableId type="slsa.mm.rtpregistry.VariableId" uuid="a05480b8-3336-481e-87b6-2477edc9c631">
+    <workspaceName>global-workspace</workspaceName>
+    <name>area</name>
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="1efa0752-7ae0-4c4a-8dfd-5c9a1199c4fd"/>
+  </slsa.mm.rtpregistry.VariableId>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="aa76d74e-2e63-4b49-aed1-3ae67630bc85">
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="8cd39943-46cb-41a9-8ff8-7f511eee59ef"/>
+    <valueIndices>1</valueIndices>
+    <valueIndices>1</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+</MF0>

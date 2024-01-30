@@ -28,7 +28,7 @@
 #define MODEL_NAME propagatorComplete
 #define NSAMPLE_TIMES (3) 
 #define NINPUTS (0)       
-#define NOUTPUTS (10)     
+#define NOUTPUTS (14)     
 #define NBLOCKIO (303) 
 #define NUM_ZC_EVENTS (0) 
 #ifndef NCSTATES
@@ -132,33 +132,35 @@ pqp513dsef ; real_T nx0f4e5b5g ; real_T jv1m44ghwg ; real_T pdtl1hmtz4 [ 3 ]
 ; boolean_T ohiivs4pv5 ; boolean_T dzsozrxxtr ; boolean_T bmnjmdzbfg ;
 boolean_T ii1deoyvuv ; } B ; typedef struct { real_T mz3ujdnhdi [ 3 ] ;
 real_T brtwu1qgh5 [ 3 ] ; struct { void * AQHandles ; } ptfgkkfyx2 ; struct {
-void * AQHandles ; } jcuxltf0li ; struct { void * AQHandles ; } kou2zo1etl ;
-int_T aiet4ledb1 ; int8_T iiz2sepanf ; int8_T m1msoix5n5 ; int8_T g2lng1ny0m
-; int8_T ftxygppz3q ; int8_T lugp1oo5al ; int8_T oywob1ksb4 ; int8_T
-omqzxc4eeh ; int8_T hm23vis0tn ; int8_T cumdqvtfo3 ; int8_T owjad4jwxk ;
-int8_T hfy1j41vzc ; int8_T ajuavqjsaw ; int8_T hscrj0jxia ; int8_T hoopfaisgo
-; int8_T av02raukfc ; int8_T bbzbpxlysv ; int8_T hifcsg5mrr ; int8_T
-aptstkvao3 ; int8_T mv2xcc3rk3 ; int8_T nobxmq1veb ; int8_T heyw0zfkr1 ;
-int8_T oyajkldlnf ; boolean_T hfidg3r4zu ; boolean_T oimusvef0p ; boolean_T
-l1cbemf4kw ; boolean_T gagixdjljm ; boolean_T oc1pyb3rxo ; boolean_T
-kd3jx5f4sh ; boolean_T g4my2sec0s ; bguustwtdt jq4zzibyuf ; bguustwtdt
-iim0uzjq2f ; bguustwtdt azhxucr5v2 ; bguustwtdt lhwjkdp01r ; bguustwtdt
-p2jn3lrd2r ; bguustwtdt khi00wnpar ; bguustwtdt pazq3m0j3m ; bguustwtdt
-k4vsitdlsd ; bguustwtdt l3x3mdhan1r ; jvsztzhphf bngxmawtie ; jvsztzhphf
-bgq2api2xe ; jvsztzhphf lfxaatuckyk ; } DW ; typedef struct { real_T
-jdxlhbtvil [ 14 ] ; } X ; typedef struct { real_T jdxlhbtvil [ 14 ] ; } XDot
-; typedef struct { boolean_T jdxlhbtvil [ 14 ] ; } XDis ; typedef struct {
-real_T jdxlhbtvil [ 14 ] ; } CStateAbsTol ; typedef struct { real_T
+void * AQHandles ; } jcuxltf0li ; struct { void * AQHandles ; } pugsqfjy4m ;
+struct { void * AQHandles ; } kou2zo1etl ; struct { void * AQHandles ; }
+otsyhaisj4 ; int_T aiet4ledb1 ; int8_T iiz2sepanf ; int8_T m1msoix5n5 ;
+int8_T g2lng1ny0m ; int8_T ftxygppz3q ; int8_T lugp1oo5al ; int8_T oywob1ksb4
+; int8_T omqzxc4eeh ; int8_T hm23vis0tn ; int8_T cumdqvtfo3 ; int8_T
+owjad4jwxk ; int8_T hfy1j41vzc ; int8_T ajuavqjsaw ; int8_T hscrj0jxia ;
+int8_T hoopfaisgo ; int8_T av02raukfc ; int8_T bbzbpxlysv ; int8_T hifcsg5mrr
+; int8_T aptstkvao3 ; int8_T mv2xcc3rk3 ; int8_T nobxmq1veb ; int8_T
+heyw0zfkr1 ; int8_T oyajkldlnf ; boolean_T hfidg3r4zu ; boolean_T oimusvef0p
+; boolean_T l1cbemf4kw ; boolean_T gagixdjljm ; boolean_T oc1pyb3rxo ;
+boolean_T kd3jx5f4sh ; boolean_T g4my2sec0s ; bguustwtdt jq4zzibyuf ;
+bguustwtdt iim0uzjq2f ; bguustwtdt azhxucr5v2 ; bguustwtdt lhwjkdp01r ;
+bguustwtdt p2jn3lrd2r ; bguustwtdt khi00wnpar ; bguustwtdt pazq3m0j3m ;
+bguustwtdt k4vsitdlsd ; bguustwtdt l3x3mdhan1r ; jvsztzhphf bngxmawtie ;
+jvsztzhphf bgq2api2xe ; jvsztzhphf lfxaatuckyk ; } DW ; typedef struct {
+real_T jdxlhbtvil [ 14 ] ; } X ; typedef struct { real_T jdxlhbtvil [ 14 ] ;
+} XDot ; typedef struct { boolean_T jdxlhbtvil [ 14 ] ; } XDis ; typedef
+struct { real_T jdxlhbtvil [ 14 ] ; } CStateAbsTol ; typedef struct { real_T
 jdxlhbtvil [ 14 ] ; } CXPtMin ; typedef struct { real_T jdxlhbtvil [ 14 ] ; }
 CXPtMax ; typedef struct { real_T gxsumyivnf ; real_T jex5fhkbzg ; real_T
 acba335ss4 ; real_T n25gaquknn ; real_T mvrt1hd3dn ; real_T gjfpdtbcix ; }
-ZCV ; typedef struct { real_T bruvjfgo5t [ 3 ] ; real_T kgnzuhgazc [ 4 ] ;
-real_T jjprc2gsjk [ 3 ] ; } ExtY ; typedef struct { rtwCAPI_ModelMappingInfo
-mmi ; } DataMapInfo ; struct gniy2mtxqh_ { real_T Constant_Value ; } ; struct
-owihucf3di_ { real_T Constant_Value ; } ; struct P_ { real_T area ; real_T
-mDot ; real_T ref ; real_T thrustingThreshold ; real_T
-CompareToConstant_const ; real_T CompareToConstant_const_nyz535bbbu ; real_T
-NormalizeVector_maxzero ; real_T NormalizeVector_maxzero_pntl1pmm30 ; real_T
+ZCV ; typedef struct { real_T hilrjecpxs [ 3 ] ; real_T nabv3wpsjd [ 3 ] ;
+real_T ctagub4txn [ 4 ] ; real_T f4divmjlk5 ; real_T jjprc2gsjk [ 3 ] ; }
+ExtY ; typedef struct { rtwCAPI_ModelMappingInfo mmi ; } DataMapInfo ; struct
+gniy2mtxqh_ { real_T Constant_Value ; } ; struct owihucf3di_ { real_T
+Constant_Value ; } ; struct P_ { real_T area ; real_T mDot ; real_T ref ;
+real_T thrustingThreshold ; real_T CompareToConstant_const ; real_T
+CompareToConstant_const_nyz535bbbu ; real_T NormalizeVector_maxzero ; real_T
+NormalizeVector_maxzero_pntl1pmm30 ; real_T
 NormalizeVector_maxzero_hb0qhx1yar ; real_T
 AttitudeProfileCustomTracking_primaryAlignment [ 3 ] ; real_T
 AttitudeProfileCustomTracking_secondaryAlignment [ 3 ] ; real_T
