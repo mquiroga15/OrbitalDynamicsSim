@@ -140,7 +140,7 @@ srcInfo . numBlockPathElems = 1 ; srcInfo . fullBlockPath = ( sdiFullBlkPathU
 subPath = subPath ; srcInfo . portIndex = 0 + 1 ; srcInfo . signalName =
 sigName ; srcInfo . sigSourceUUID = 0 ; rtDW . chu05kbpxu . AQHandles =
 sdiStartAsyncioQueueCreation ( hDT , & srcInfo , rt_dataMapInfo . mmi .
-InstanceMap . fullPath , "d12480bd-4d48-4e7f-849b-b094d7d14515" ,
+InstanceMap . fullPath , "858a04df-ee2c-4176-bd42-245a2129d1b1" ,
 sigComplexity , & sigDims , DIMENSIONS_MODE_FIXED , stCont , "m" ) ;
 sdiCompleteAsyncioQueueCreation ( rtDW . chu05kbpxu . AQHandles , hDT , &
 srcInfo ) ; if ( rtDW . chu05kbpxu . AQHandles ) {
@@ -172,7 +172,7 @@ sdiSignalIDU ) & blockSID ; srcInfo . subPath = subPath ; srcInfo . portIndex
 = 0 + 1 ; srcInfo . signalName = sigName ; srcInfo . sigSourceUUID = 0 ; rtDW
 . czhwoklxpu . AQHandles = sdiStartAsyncioQueueCreation ( hDT , & srcInfo ,
 rt_dataMapInfo . mmi . InstanceMap . fullPath ,
-"cc4cd09e-3e57-4f22-bf0f-3ef7dfcf4ab4" , sigComplexity , & sigDims ,
+"25771e00-326e-485f-9444-ad8f5c01a10f" , sigComplexity , & sigDims ,
 DIMENSIONS_MODE_FIXED , stCont , "m" ) ; sdiCompleteAsyncioQueueCreation (
 rtDW . czhwoklxpu . AQHandles , hDT , & srcInfo ) ; if ( rtDW . czhwoklxpu .
 AQHandles ) { sdiSetSignalSampleTimeString ( rtDW . czhwoklxpu . AQHandles ,
@@ -203,7 +203,7 @@ srcInfo . numBlockPathElems = 1 ; srcInfo . fullBlockPath = ( sdiFullBlkPathU
 subPath = subPath ; srcInfo . portIndex = 0 + 1 ; srcInfo . signalName =
 sigName ; srcInfo . sigSourceUUID = 0 ; rtDW . j4pv5v0dny . AQHandles =
 sdiStartAsyncioQueueCreation ( hDT , & srcInfo , rt_dataMapInfo . mmi .
-InstanceMap . fullPath , "456634ec-76f6-42eb-b6b3-5fba40bb1d03" ,
+InstanceMap . fullPath , "18c2bf83-023f-49f7-a2f7-870fd0371595" ,
 sigComplexity , & sigDims , DIMENSIONS_MODE_FIXED , stCont , "m/s" ) ;
 sdiCompleteAsyncioQueueCreation ( rtDW . j4pv5v0dny . AQHandles , hDT , &
 srcInfo ) ; if ( rtDW . j4pv5v0dny . AQHandles ) {
@@ -235,7 +235,7 @@ sdiSignalIDU ) & blockSID ; srcInfo . subPath = subPath ; srcInfo . portIndex
 = 0 + 1 ; srcInfo . signalName = sigName ; srcInfo . sigSourceUUID = 0 ; rtDW
 . ovdng33q0b . AQHandles = sdiStartAsyncioQueueCreation ( hDT , & srcInfo ,
 rt_dataMapInfo . mmi . InstanceMap . fullPath ,
-"8a1ba828-9d0c-4715-a5c9-99bd1b705200" , sigComplexity , & sigDims ,
+"4e939dc9-85dc-45ed-b20c-99659b1089bc" , sigComplexity , & sigDims ,
 DIMENSIONS_MODE_FIXED , stCont , "" ) ; sdiCompleteAsyncioQueueCreation (
 rtDW . ovdng33q0b . AQHandles , hDT , & srcInfo ) ; if ( rtDW . ovdng33q0b .
 AQHandles ) { sdiSetSignalSampleTimeString ( rtDW . ovdng33q0b . AQHandles ,
@@ -266,7 +266,7 @@ sdiSignalIDU ) & blockSID ; srcInfo . subPath = subPath ; srcInfo . portIndex
 = 0 + 1 ; srcInfo . signalName = sigName ; srcInfo . sigSourceUUID = 0 ; rtDW
 . iwpwwackcm . AQHandles = sdiStartAsyncioQueueCreation ( hDT , & srcInfo ,
 rt_dataMapInfo . mmi . InstanceMap . fullPath ,
-"69956906-323e-4d97-a3dd-f8ffd2332b1e" , sigComplexity , & sigDims ,
+"73a3cfb6-d036-4b34-9ed8-e893fe0f4cfa" , sigComplexity , & sigDims ,
 DIMENSIONS_MODE_FIXED , stCont , "day" ) ; sdiCompleteAsyncioQueueCreation (
 rtDW . iwpwwackcm . AQHandles , hDT , & srcInfo ) ; if ( rtDW . iwpwwackcm .
 AQHandles ) { sdiSetSignalSampleTimeString ( rtDW . iwpwwackcm . AQHandles ,
@@ -283,9 +283,9 @@ sdiFreeLabel ( blockSID ) ; sdiFreeLabel ( subPath ) ; } } if ( !
 isStreamoutAlreadyRegistered ) { } } } } MdlInitialize ( ) ; } void
 MdlOutputs ( int_T tid ) { real_T posCoeff_e [ 13 ] ; real_T posCoeff_i [ 13
 ] ; real_T posCoeff_m [ 13 ] ; real_T posCoeff_p [ 13 ] ; real_T posCoeff [
-11 ] ; real_T A ; real_T I ; real_T dblRecordNum ; real_T hour ; real_T
-hour_p ; real_T jd ; real_T min ; real_T o1ci34lyko ; real_T sec ; int32_T i
-; static const real_T tmp [ 107016 ] = { - 287107.88839928794 , -
+11 ] ; real_T A ; real_T I ; real_T dUT1 ; real_T dblRecordNum ; real_T hour
+; real_T jd ; real_T min ; real_T o1ci34lyko ; real_T sec ; int32_T i ;
+static const real_T tmp [ 107016 ] = { - 287107.88839928794 , -
 98149.723773313686 , 17717.762809093281 , 1021.8869528049898 , -
 90.570455968380429 , - 3.9544360134198082 , 0.26006590435508503 ,
 0.0064248209778285858 , - 0.00081969405412783334 , 3.8617428128186352E-5 ,
@@ -52429,55 +52429,19 @@ const real_T * cbuff2 ; const real_T * tbuff1 ; A = ( muDoubleScalarFloor ( (
 ( muDoubleScalarFloor ( rtP . SpacecraftDynamics_startDate + 0.5 ) + 1.0 ) )
 - muDoubleScalarFloor ( muDoubleScalarFloor ( ( ( rtP .
 SpacecraftDynamics_startDate + 0.5 ) - 1.86721625E+6 ) / 36524.25 ) / 4.0 ) ;
-o1ci34lyko = ( ( muDoubleScalarFloor ( ( ( rtP . SpacecraftDynamics_startDate
-+ 0.5 ) - 1.86721625E+6 ) / 36524.25 ) + ( muDoubleScalarFloor ( rtP .
-SpacecraftDynamics_startDate + 0.5 ) + 1.0 ) ) - muDoubleScalarFloor (
-muDoubleScalarFloor ( ( ( rtP . SpacecraftDynamics_startDate + 0.5 ) -
-1.86721625E+6 ) / 36524.25 ) / 4.0 ) ) + 1524.0 ; fdgkygsjdf_idx_0 =
-muDoubleScalarFloor ( ( ( A + 1524.0 ) - muDoubleScalarFloor (
-muDoubleScalarFloor ( ( ( A + 1524.0 ) - 122.1 ) / 365.25 ) * 365.25 ) ) /
-30.6001 ) - 1.0 ; if ( fdgkygsjdf_idx_0 > 12.0 ) { fdgkygsjdf_idx_0 =
-muDoubleScalarFloor ( ( ( A + 1524.0 ) - muDoubleScalarFloor (
+fdgkygsjdf_idx_0 = ( ( muDoubleScalarFloor ( ( ( rtP .
+SpacecraftDynamics_startDate + 0.5 ) - 1.86721625E+6 ) / 36524.25 ) + (
+muDoubleScalarFloor ( rtP . SpacecraftDynamics_startDate + 0.5 ) + 1.0 ) ) -
+muDoubleScalarFloor ( muDoubleScalarFloor ( ( ( rtP .
+SpacecraftDynamics_startDate + 0.5 ) - 1.86721625E+6 ) / 36524.25 ) / 4.0 ) )
++ 1524.0 ; o1ci34lyko = muDoubleScalarFloor ( ( ( A + 1524.0 ) -
+muDoubleScalarFloor ( muDoubleScalarFloor ( ( ( A + 1524.0 ) - 122.1 ) /
+365.25 ) * 365.25 ) ) / 30.6001 ) - 1.0 ; if ( o1ci34lyko > 12.0 ) {
+o1ci34lyko = muDoubleScalarFloor ( ( ( A + 1524.0 ) - muDoubleScalarFloor (
 muDoubleScalarFloor ( ( ( A + 1524.0 ) - 122.1 ) / 365.25 ) * 365.25 ) ) /
 30.6001 ) - 13.0 ; } fdgkygsjdf_idx_1 = muDoubleScalarFloor ( ( ( A + 1524.0
-) - 122.1 ) / 365.25 ) - 4716.0 ; if ( fdgkygsjdf_idx_0 < 3.0 ) {
-fdgkygsjdf_idx_1 ++ ; fdgkygsjdf_idx_1 -- ; fdgkygsjdf_idx_0 += 12.0 ; } jd =
-( ( ( ( ( muDoubleScalarAbs ( muDoubleScalarFloor ( rtP .
-SpacecraftDynamics_startDate + 0.5 ) - ( rtP . SpacecraftDynamics_startDate +
-0.5 ) ) * 86400.0 - muDoubleScalarFloor ( muDoubleScalarAbs (
-muDoubleScalarFloor ( rtP . SpacecraftDynamics_startDate + 0.5 ) - ( rtP .
-SpacecraftDynamics_startDate + 0.5 ) ) * 86400.0 ) ) + muDoubleScalarRem (
-muDoubleScalarRem ( muDoubleScalarFloor ( muDoubleScalarAbs (
-muDoubleScalarFloor ( rtP . SpacecraftDynamics_startDate + 0.5 ) - ( rtP .
-SpacecraftDynamics_startDate + 0.5 ) ) * 86400.0 ) , 3600.0 ) , 60.0 ) ) +
-ssGetT ( rtS ) ) / 60.0 + muDoubleScalarFloor ( muDoubleScalarRem (
-muDoubleScalarFloor ( muDoubleScalarAbs ( muDoubleScalarFloor ( rtP .
-SpacecraftDynamics_startDate + 0.5 ) - ( rtP . SpacecraftDynamics_startDate +
-0.5 ) ) * 86400.0 ) , 3600.0 ) / 60.0 ) ) / 60.0 + muDoubleScalarFloor (
-muDoubleScalarFloor ( muDoubleScalarAbs ( muDoubleScalarFloor ( rtP .
-SpacecraftDynamics_startDate + 0.5 ) - ( rtP . SpacecraftDynamics_startDate +
-0.5 ) ) * 86400.0 ) / 3600.0 ) ) / 24.0 + ( ( ( muDoubleScalarFloor ( ( (
-o1ci34lyko - muDoubleScalarFloor ( muDoubleScalarFloor ( ( o1ci34lyko - 122.1
-) / 365.25 ) * 365.25 ) ) + muDoubleScalarAbs ( muDoubleScalarFloor ( rtP .
-SpacecraftDynamics_startDate + 0.5 ) - ( rtP . SpacecraftDynamics_startDate +
-0.5 ) ) ) - muDoubleScalarFloor ( muDoubleScalarFloor ( ( o1ci34lyko -
-muDoubleScalarFloor ( muDoubleScalarFloor ( ( o1ci34lyko - 122.1 ) / 365.25 )
-* 365.25 ) ) / 30.6001 ) * 30.6001 ) ) + ( muDoubleScalarFloor ( (
-fdgkygsjdf_idx_1 + 4716.0 ) * 365.25 ) + muDoubleScalarFloor ( (
-fdgkygsjdf_idx_0 + 1.0 ) * 30.6001 ) ) ) + ( ( 2.0 - muDoubleScalarFloor (
-fdgkygsjdf_idx_1 / 100.0 ) ) + muDoubleScalarFloor ( muDoubleScalarFloor (
-fdgkygsjdf_idx_1 / 100.0 ) / 4.0 ) ) ) - 1524.5 ) ; I = ( ( ( (
-muDoubleScalarFloor ( ( ( ( A + 1524.0 ) - muDoubleScalarFloor (
-muDoubleScalarFloor ( ( ( A + 1524.0 ) - 122.1 ) / 365.25 ) * 365.25 ) ) +
-muDoubleScalarAbs ( muDoubleScalarFloor ( rtP . SpacecraftDynamics_startDate
-+ 0.5 ) - ( rtP . SpacecraftDynamics_startDate + 0.5 ) ) ) -
-muDoubleScalarFloor ( muDoubleScalarFloor ( ( ( A + 1524.0 ) -
-muDoubleScalarFloor ( muDoubleScalarFloor ( ( ( A + 1524.0 ) - 122.1 ) /
-365.25 ) * 365.25 ) ) / 30.6001 ) * 30.6001 ) ) + ( muDoubleScalarFloor ( (
-fdgkygsjdf_idx_1 + 4716.0 ) * 365.25 ) + muDoubleScalarFloor ( (
-fdgkygsjdf_idx_0 + 1.0 ) * 30.6001 ) ) ) + ( ( 2.0 - muDoubleScalarFloor (
-fdgkygsjdf_idx_1 / 100.0 ) ) + muDoubleScalarFloor ( muDoubleScalarFloor (
-fdgkygsjdf_idx_1 / 100.0 ) / 4.0 ) ) ) - 1524.5 ) + ( ( ( ( (
+) - 122.1 ) / 365.25 ) - 4716.0 ; if ( o1ci34lyko < 3.0 ) { fdgkygsjdf_idx_1
+++ ; fdgkygsjdf_idx_1 -- ; o1ci34lyko += 12.0 ; } jd = ( ( ( ( (
 muDoubleScalarAbs ( muDoubleScalarFloor ( rtP . SpacecraftDynamics_startDate
 + 0.5 ) - ( rtP . SpacecraftDynamics_startDate + 0.5 ) ) * 86400.0 -
 muDoubleScalarFloor ( muDoubleScalarAbs ( muDoubleScalarFloor ( rtP .
@@ -52492,125 +52456,161 @@ muDoubleScalarAbs ( muDoubleScalarFloor ( rtP . SpacecraftDynamics_startDate
 ) / 60.0 ) ) / 60.0 + muDoubleScalarFloor ( muDoubleScalarFloor (
 muDoubleScalarAbs ( muDoubleScalarFloor ( rtP . SpacecraftDynamics_startDate
 + 0.5 ) - ( rtP . SpacecraftDynamics_startDate + 0.5 ) ) * 86400.0 ) / 3600.0
-) ) / 24.0 ) + 0.5 ; A = ( muDoubleScalarFloor ( ( ( jd + 0.5 ) -
-1.86721625E+6 ) / 36524.25 ) + ( muDoubleScalarFloor ( jd + 0.5 ) + 1.0 ) ) -
-muDoubleScalarFloor ( muDoubleScalarFloor ( ( ( jd + 0.5 ) - 1.86721625E+6 )
-/ 36524.25 ) / 4.0 ) ; o1ci34lyko = muDoubleScalarFloor ( ( ( ( A + 1524.0 )
-- muDoubleScalarFloor ( muDoubleScalarFloor ( ( ( A + 1524.0 ) - 122.1 ) /
-365.25 ) * 365.25 ) ) + muDoubleScalarAbs ( muDoubleScalarFloor ( jd + 0.5 )
-- ( jd + 0.5 ) ) ) - muDoubleScalarFloor ( muDoubleScalarFloor ( ( ( A +
+) ) / 24.0 + ( ( ( muDoubleScalarFloor ( ( ( fdgkygsjdf_idx_0 -
+muDoubleScalarFloor ( muDoubleScalarFloor ( ( fdgkygsjdf_idx_0 - 122.1 ) /
+365.25 ) * 365.25 ) ) + muDoubleScalarAbs ( muDoubleScalarFloor ( rtP .
+SpacecraftDynamics_startDate + 0.5 ) - ( rtP . SpacecraftDynamics_startDate +
+0.5 ) ) ) - muDoubleScalarFloor ( muDoubleScalarFloor ( ( fdgkygsjdf_idx_0 -
+muDoubleScalarFloor ( muDoubleScalarFloor ( ( fdgkygsjdf_idx_0 - 122.1 ) /
+365.25 ) * 365.25 ) ) / 30.6001 ) * 30.6001 ) ) + ( muDoubleScalarFloor ( (
+fdgkygsjdf_idx_1 + 4716.0 ) * 365.25 ) + muDoubleScalarFloor ( ( o1ci34lyko +
+1.0 ) * 30.6001 ) ) ) + ( ( 2.0 - muDoubleScalarFloor ( fdgkygsjdf_idx_1 /
+100.0 ) ) + muDoubleScalarFloor ( muDoubleScalarFloor ( fdgkygsjdf_idx_1 /
+100.0 ) / 4.0 ) ) ) - 1524.5 ) ; I = ( ( ( ( muDoubleScalarFloor ( ( ( ( A +
 1524.0 ) - muDoubleScalarFloor ( muDoubleScalarFloor ( ( ( A + 1524.0 ) -
-122.1 ) / 365.25 ) * 365.25 ) ) / 30.6001 ) * 30.6001 ) ) ; fdgkygsjdf_idx_0
-= muDoubleScalarFloor ( ( ( A + 1524.0 ) - muDoubleScalarFloor (
-muDoubleScalarFloor ( ( ( A + 1524.0 ) - 122.1 ) / 365.25 ) * 365.25 ) ) /
-30.6001 ) - 1.0 ; if ( fdgkygsjdf_idx_0 > 12.0 ) { fdgkygsjdf_idx_0 =
+122.1 ) / 365.25 ) * 365.25 ) ) + muDoubleScalarAbs ( muDoubleScalarFloor (
+rtP . SpacecraftDynamics_startDate + 0.5 ) - ( rtP .
+SpacecraftDynamics_startDate + 0.5 ) ) ) - muDoubleScalarFloor (
 muDoubleScalarFloor ( ( ( A + 1524.0 ) - muDoubleScalarFloor (
 muDoubleScalarFloor ( ( ( A + 1524.0 ) - 122.1 ) / 365.25 ) * 365.25 ) ) /
-30.6001 ) - 13.0 ; } fdgkygsjdf_idx_1 = muDoubleScalarFloor ( ( ( A + 1524.0
-) - 122.1 ) / 365.25 ) - 4716.0 ; if ( fdgkygsjdf_idx_0 < 3.0 ) {
-fdgkygsjdf_idx_1 ++ ; } hour = muDoubleScalarFloor ( muDoubleScalarFloor (
-muDoubleScalarAbs ( muDoubleScalarFloor ( jd + 0.5 ) - ( jd + 0.5 ) ) *
-86400.0 ) / 3600.0 ) ; min = muDoubleScalarFloor ( muDoubleScalarRem (
-muDoubleScalarFloor ( muDoubleScalarAbs ( muDoubleScalarFloor ( jd + 0.5 ) -
-( jd + 0.5 ) ) * 86400.0 ) , 3600.0 ) / 60.0 ) ; sec = muDoubleScalarRem (
+30.6001 ) * 30.6001 ) ) + ( muDoubleScalarFloor ( ( fdgkygsjdf_idx_1 + 4716.0
+) * 365.25 ) + muDoubleScalarFloor ( ( o1ci34lyko + 1.0 ) * 30.6001 ) ) ) + (
+( 2.0 - muDoubleScalarFloor ( fdgkygsjdf_idx_1 / 100.0 ) ) +
+muDoubleScalarFloor ( muDoubleScalarFloor ( fdgkygsjdf_idx_1 / 100.0 ) / 4.0
+) ) ) - 1524.5 ) + ( ( ( ( ( muDoubleScalarAbs ( muDoubleScalarFloor ( rtP .
+SpacecraftDynamics_startDate + 0.5 ) - ( rtP . SpacecraftDynamics_startDate +
+0.5 ) ) * 86400.0 - muDoubleScalarFloor ( muDoubleScalarAbs (
+muDoubleScalarFloor ( rtP . SpacecraftDynamics_startDate + 0.5 ) - ( rtP .
+SpacecraftDynamics_startDate + 0.5 ) ) * 86400.0 ) ) + muDoubleScalarRem (
 muDoubleScalarRem ( muDoubleScalarFloor ( muDoubleScalarAbs (
-muDoubleScalarFloor ( jd + 0.5 ) - ( jd + 0.5 ) ) * 86400.0 ) , 3600.0 ) ,
-60.0 ) + ( muDoubleScalarAbs ( muDoubleScalarFloor ( I ) - I ) * 86400.0 -
-muDoubleScalarFloor ( muDoubleScalarAbs ( muDoubleScalarFloor ( I ) - I ) *
-86400.0 ) ) ; if ( rtDW . jdbvpmwjyw ) { rtDW . jdbvpmwjyw = false ;
-pData_idx_0 = rtX . fay2cpmqpg [ 6 ] ; pData_idx_1 = rtX . fay2cpmqpg [ 8 ] ;
-pData_idx_1_p = rtX . fay2cpmqpg [ 8 ] ; pData_idx_0_p = rtX . fay2cpmqpg [ 7
-] ; A = rtX . fay2cpmqpg [ 7 ] ; rtX . fay2cpmqpg [ 6 ] *= 1.0 /
+muDoubleScalarFloor ( rtP . SpacecraftDynamics_startDate + 0.5 ) - ( rtP .
+SpacecraftDynamics_startDate + 0.5 ) ) * 86400.0 ) , 3600.0 ) , 60.0 ) ) +
+ssGetT ( rtS ) ) / 60.0 + muDoubleScalarFloor ( muDoubleScalarRem (
+muDoubleScalarFloor ( muDoubleScalarAbs ( muDoubleScalarFloor ( rtP .
+SpacecraftDynamics_startDate + 0.5 ) - ( rtP . SpacecraftDynamics_startDate +
+0.5 ) ) * 86400.0 ) , 3600.0 ) / 60.0 ) ) / 60.0 + muDoubleScalarFloor (
+muDoubleScalarFloor ( muDoubleScalarAbs ( muDoubleScalarFloor ( rtP .
+SpacecraftDynamics_startDate + 0.5 ) - ( rtP . SpacecraftDynamics_startDate +
+0.5 ) ) * 86400.0 ) / 3600.0 ) ) / 24.0 ) + 0.5 ; A = ( muDoubleScalarFloor (
+( ( jd + 0.5 ) - 1.86721625E+6 ) / 36524.25 ) + ( muDoubleScalarFloor ( jd +
+0.5 ) + 1.0 ) ) - muDoubleScalarFloor ( muDoubleScalarFloor ( ( ( jd + 0.5 )
+- 1.86721625E+6 ) / 36524.25 ) / 4.0 ) ; fdgkygsjdf_idx_0 =
+muDoubleScalarFloor ( ( ( ( A + 1524.0 ) - muDoubleScalarFloor (
+muDoubleScalarFloor ( ( ( A + 1524.0 ) - 122.1 ) / 365.25 ) * 365.25 ) ) +
+muDoubleScalarAbs ( muDoubleScalarFloor ( jd + 0.5 ) - ( jd + 0.5 ) ) ) -
+muDoubleScalarFloor ( muDoubleScalarFloor ( ( ( A + 1524.0 ) -
+muDoubleScalarFloor ( muDoubleScalarFloor ( ( ( A + 1524.0 ) - 122.1 ) /
+365.25 ) * 365.25 ) ) / 30.6001 ) * 30.6001 ) ) ; o1ci34lyko =
+muDoubleScalarFloor ( ( ( A + 1524.0 ) - muDoubleScalarFloor (
+muDoubleScalarFloor ( ( ( A + 1524.0 ) - 122.1 ) / 365.25 ) * 365.25 ) ) /
+30.6001 ) - 1.0 ; if ( o1ci34lyko > 12.0 ) { o1ci34lyko = muDoubleScalarFloor
+( ( ( A + 1524.0 ) - muDoubleScalarFloor ( muDoubleScalarFloor ( ( ( A +
+1524.0 ) - 122.1 ) / 365.25 ) * 365.25 ) ) / 30.6001 ) - 13.0 ; }
+fdgkygsjdf_idx_1 = muDoubleScalarFloor ( ( ( A + 1524.0 ) - 122.1 ) / 365.25
+) - 4716.0 ; if ( o1ci34lyko < 3.0 ) { fdgkygsjdf_idx_1 ++ ; } hour =
+muDoubleScalarFloor ( muDoubleScalarFloor ( muDoubleScalarAbs (
+muDoubleScalarFloor ( jd + 0.5 ) - ( jd + 0.5 ) ) * 86400.0 ) / 3600.0 ) ;
+min = muDoubleScalarFloor ( muDoubleScalarRem ( muDoubleScalarFloor (
+muDoubleScalarAbs ( muDoubleScalarFloor ( jd + 0.5 ) - ( jd + 0.5 ) ) *
+86400.0 ) , 3600.0 ) / 60.0 ) ; sec = muDoubleScalarRem ( muDoubleScalarRem (
+muDoubleScalarFloor ( muDoubleScalarAbs ( muDoubleScalarFloor ( jd + 0.5 ) -
+( jd + 0.5 ) ) * 86400.0 ) , 3600.0 ) , 60.0 ) + ( muDoubleScalarAbs (
+muDoubleScalarFloor ( I ) - I ) * 86400.0 - muDoubleScalarFloor (
+muDoubleScalarAbs ( muDoubleScalarFloor ( I ) - I ) * 86400.0 ) ) ; if ( rtDW
+. jdbvpmwjyw ) { rtDW . jdbvpmwjyw = false ; pData_idx_0 = rtX . fay2cpmqpg [
+6 ] ; pData_idx_1 = rtX . fay2cpmqpg [ 8 ] ; pData_idx_1_p = rtX . fay2cpmqpg
+[ 8 ] ; pData_idx_0_p = rtX . fay2cpmqpg [ 7 ] ; A = rtX . fay2cpmqpg [ 7 ] ;
+rtX . fay2cpmqpg [ 6 ] *= 1.0 / muDoubleScalarSqrt ( ( ( rtX . fay2cpmqpg [ 6
+] * rtX . fay2cpmqpg [ 6 ] + rtX . fay2cpmqpg [ 7 ] * rtX . fay2cpmqpg [ 7 ]
+) + rtX . fay2cpmqpg [ 8 ] * rtX . fay2cpmqpg [ 8 ] ) + rtX . fay2cpmqpg [ 9
+] * rtX . fay2cpmqpg [ 9 ] ) ; rtX . fay2cpmqpg [ 7 ] *= 1.0 /
+muDoubleScalarSqrt ( ( ( pData_idx_0 * pData_idx_0 + rtX . fay2cpmqpg [ 7 ] *
+rtX . fay2cpmqpg [ 7 ] ) + rtX . fay2cpmqpg [ 8 ] * rtX . fay2cpmqpg [ 8 ] )
++ rtX . fay2cpmqpg [ 9 ] * rtX . fay2cpmqpg [ 9 ] ) ; rtX . fay2cpmqpg [ 8 ]
+*= 1.0 / muDoubleScalarSqrt ( ( ( pData_idx_0 * pData_idx_0 + A *
+pData_idx_0_p ) + rtX . fay2cpmqpg [ 8 ] * rtX . fay2cpmqpg [ 8 ] ) + rtX .
+fay2cpmqpg [ 9 ] * rtX . fay2cpmqpg [ 9 ] ) ; rtX . fay2cpmqpg [ 9 ] *= 1.0 /
+muDoubleScalarSqrt ( ( ( pData_idx_0 * pData_idx_0 + A * pData_idx_0_p ) +
+pData_idx_1_p * pData_idx_1 ) + rtX . fay2cpmqpg [ 9 ] * rtX . fay2cpmqpg [ 9
+] ) ; } pData_idx_0 = 1.0 / muDoubleScalarSqrt ( ( ( rtX . fay2cpmqpg [ 6 ] *
+rtX . fay2cpmqpg [ 6 ] + rtX . fay2cpmqpg [ 7 ] * rtX . fay2cpmqpg [ 7 ] ) +
+rtX . fay2cpmqpg [ 8 ] * rtX . fay2cpmqpg [ 8 ] ) + rtX . fay2cpmqpg [ 9 ] *
+rtX . fay2cpmqpg [ 9 ] ) * rtX . fay2cpmqpg [ 6 ] ; pData_idx_1 = 1.0 /
 muDoubleScalarSqrt ( ( ( rtX . fay2cpmqpg [ 6 ] * rtX . fay2cpmqpg [ 6 ] +
 rtX . fay2cpmqpg [ 7 ] * rtX . fay2cpmqpg [ 7 ] ) + rtX . fay2cpmqpg [ 8 ] *
 rtX . fay2cpmqpg [ 8 ] ) + rtX . fay2cpmqpg [ 9 ] * rtX . fay2cpmqpg [ 9 ] )
-; rtX . fay2cpmqpg [ 7 ] *= 1.0 / muDoubleScalarSqrt ( ( ( pData_idx_0 *
-pData_idx_0 + rtX . fay2cpmqpg [ 7 ] * rtX . fay2cpmqpg [ 7 ] ) + rtX .
-fay2cpmqpg [ 8 ] * rtX . fay2cpmqpg [ 8 ] ) + rtX . fay2cpmqpg [ 9 ] * rtX .
-fay2cpmqpg [ 9 ] ) ; rtX . fay2cpmqpg [ 8 ] *= 1.0 / muDoubleScalarSqrt ( ( (
-pData_idx_0 * pData_idx_0 + A * pData_idx_0_p ) + rtX . fay2cpmqpg [ 8 ] *
-rtX . fay2cpmqpg [ 8 ] ) + rtX . fay2cpmqpg [ 9 ] * rtX . fay2cpmqpg [ 9 ] )
-; rtX . fay2cpmqpg [ 9 ] *= 1.0 / muDoubleScalarSqrt ( ( ( pData_idx_0 *
-pData_idx_0 + A * pData_idx_0_p ) + pData_idx_1_p * pData_idx_1 ) + rtX .
-fay2cpmqpg [ 9 ] * rtX . fay2cpmqpg [ 9 ] ) ; } pData_idx_0 = 1.0 /
-muDoubleScalarSqrt ( ( ( rtX . fay2cpmqpg [ 6 ] * rtX . fay2cpmqpg [ 6 ] +
-rtX . fay2cpmqpg [ 7 ] * rtX . fay2cpmqpg [ 7 ] ) + rtX . fay2cpmqpg [ 8 ] *
-rtX . fay2cpmqpg [ 8 ] ) + rtX . fay2cpmqpg [ 9 ] * rtX . fay2cpmqpg [ 9 ] )
-* rtX . fay2cpmqpg [ 6 ] ; pData_idx_1 = 1.0 / muDoubleScalarSqrt ( ( ( rtX .
+* rtX . fay2cpmqpg [ 7 ] ; pData_idx_2 = 1.0 / muDoubleScalarSqrt ( ( ( rtX .
 fay2cpmqpg [ 6 ] * rtX . fay2cpmqpg [ 6 ] + rtX . fay2cpmqpg [ 7 ] * rtX .
 fay2cpmqpg [ 7 ] ) + rtX . fay2cpmqpg [ 8 ] * rtX . fay2cpmqpg [ 8 ] ) + rtX
+. fay2cpmqpg [ 9 ] * rtX . fay2cpmqpg [ 9 ] ) * rtX . fay2cpmqpg [ 8 ] ;
+pData_idx_3 = 1.0 / muDoubleScalarSqrt ( ( ( rtX . fay2cpmqpg [ 6 ] * rtX .
+fay2cpmqpg [ 6 ] + rtX . fay2cpmqpg [ 7 ] * rtX . fay2cpmqpg [ 7 ] ) + rtX .
+fay2cpmqpg [ 8 ] * rtX . fay2cpmqpg [ 8 ] ) + rtX . fay2cpmqpg [ 9 ] * rtX .
+fay2cpmqpg [ 9 ] ) * rtX . fay2cpmqpg [ 9 ] ; pData_idx_0_p = 1.0 /
+muDoubleScalarSqrt ( ( ( rtX . fay2cpmqpg [ 6 ] * rtX . fay2cpmqpg [ 6 ] +
+rtX . fay2cpmqpg [ 7 ] * rtX . fay2cpmqpg [ 7 ] ) + rtX . fay2cpmqpg [ 8 ] *
+rtX . fay2cpmqpg [ 8 ] ) + rtX . fay2cpmqpg [ 9 ] * rtX . fay2cpmqpg [ 9 ] )
+* rtX . fay2cpmqpg [ 6 ] ; pData_idx_1_p = 1.0 / muDoubleScalarSqrt ( ( ( rtX
+. fay2cpmqpg [ 6 ] * rtX . fay2cpmqpg [ 6 ] + rtX . fay2cpmqpg [ 7 ] * rtX .
+fay2cpmqpg [ 7 ] ) + rtX . fay2cpmqpg [ 8 ] * rtX . fay2cpmqpg [ 8 ] ) + rtX
 . fay2cpmqpg [ 9 ] * rtX . fay2cpmqpg [ 9 ] ) * rtX . fay2cpmqpg [ 7 ] ;
-pData_idx_2 = 1.0 / muDoubleScalarSqrt ( ( ( rtX . fay2cpmqpg [ 6 ] * rtX .
+pData_idx_2_p = 1.0 / muDoubleScalarSqrt ( ( ( rtX . fay2cpmqpg [ 6 ] * rtX .
 fay2cpmqpg [ 6 ] + rtX . fay2cpmqpg [ 7 ] * rtX . fay2cpmqpg [ 7 ] ) + rtX .
 fay2cpmqpg [ 8 ] * rtX . fay2cpmqpg [ 8 ] ) + rtX . fay2cpmqpg [ 9 ] * rtX .
-fay2cpmqpg [ 9 ] ) * rtX . fay2cpmqpg [ 8 ] ; pData_idx_3 = 1.0 /
+fay2cpmqpg [ 9 ] ) * rtX . fay2cpmqpg [ 8 ] ; pData_idx_3_p = 1.0 /
 muDoubleScalarSqrt ( ( ( rtX . fay2cpmqpg [ 6 ] * rtX . fay2cpmqpg [ 6 ] +
 rtX . fay2cpmqpg [ 7 ] * rtX . fay2cpmqpg [ 7 ] ) + rtX . fay2cpmqpg [ 8 ] *
 rtX . fay2cpmqpg [ 8 ] ) + rtX . fay2cpmqpg [ 9 ] * rtX . fay2cpmqpg [ 9 ] )
-* rtX . fay2cpmqpg [ 9 ] ; pData_idx_0_p = 1.0 / muDoubleScalarSqrt ( ( ( rtX
-. fay2cpmqpg [ 6 ] * rtX . fay2cpmqpg [ 6 ] + rtX . fay2cpmqpg [ 7 ] * rtX .
-fay2cpmqpg [ 7 ] ) + rtX . fay2cpmqpg [ 8 ] * rtX . fay2cpmqpg [ 8 ] ) + rtX
-. fay2cpmqpg [ 9 ] * rtX . fay2cpmqpg [ 9 ] ) * rtX . fay2cpmqpg [ 6 ] ;
-pData_idx_1_p = 1.0 / muDoubleScalarSqrt ( ( ( rtX . fay2cpmqpg [ 6 ] * rtX .
-fay2cpmqpg [ 6 ] + rtX . fay2cpmqpg [ 7 ] * rtX . fay2cpmqpg [ 7 ] ) + rtX .
-fay2cpmqpg [ 8 ] * rtX . fay2cpmqpg [ 8 ] ) + rtX . fay2cpmqpg [ 9 ] * rtX .
-fay2cpmqpg [ 9 ] ) * rtX . fay2cpmqpg [ 7 ] ; pData_idx_2_p = 1.0 /
-muDoubleScalarSqrt ( ( ( rtX . fay2cpmqpg [ 6 ] * rtX . fay2cpmqpg [ 6 ] +
-rtX . fay2cpmqpg [ 7 ] * rtX . fay2cpmqpg [ 7 ] ) + rtX . fay2cpmqpg [ 8 ] *
-rtX . fay2cpmqpg [ 8 ] ) + rtX . fay2cpmqpg [ 9 ] * rtX . fay2cpmqpg [ 9 ] )
-* rtX . fay2cpmqpg [ 8 ] ; pData_idx_3_p = 1.0 / muDoubleScalarSqrt ( ( ( rtX
-. fay2cpmqpg [ 6 ] * rtX . fay2cpmqpg [ 6 ] + rtX . fay2cpmqpg [ 7 ] * rtX .
-fay2cpmqpg [ 7 ] ) + rtX . fay2cpmqpg [ 8 ] * rtX . fay2cpmqpg [ 8 ] ) + rtX
-. fay2cpmqpg [ 9 ] * rtX . fay2cpmqpg [ 9 ] ) * rtX . fay2cpmqpg [ 9 ] ; A =
-1.0 / muDoubleScalarSqrt ( ( ( pData_idx_0 * pData_idx_0 + pData_idx_1_p *
-pData_idx_1_p ) + pData_idx_2_p * pData_idx_2_p ) + pData_idx_3_p *
-pData_idx_3_p ) * pData_idx_0_p ; I = 1.0 / muDoubleScalarSqrt ( ( (
-pData_idx_0 * pData_idx_0 + pData_idx_1_p * pData_idx_1_p ) + pData_idx_2_p *
-pData_idx_2_p ) + pData_idx_3_p * pData_idx_3_p ) * - pData_idx_1 ;
-pData_idx_2_e = 1.0 / muDoubleScalarSqrt ( ( ( pData_idx_0 * pData_idx_0 +
-pData_idx_1_p * pData_idx_1_p ) + pData_idx_2_p * pData_idx_2_p ) +
-pData_idx_3_p * pData_idx_3_p ) * - pData_idx_2 ; pData_idx_3_e = 1.0 /
+* rtX . fay2cpmqpg [ 9 ] ; A = 1.0 / muDoubleScalarSqrt ( ( ( pData_idx_0 *
+pData_idx_0 + pData_idx_1_p * pData_idx_1_p ) + pData_idx_2_p * pData_idx_2_p
+) + pData_idx_3_p * pData_idx_3_p ) * pData_idx_0_p ; I = 1.0 /
 muDoubleScalarSqrt ( ( ( pData_idx_0 * pData_idx_0 + pData_idx_1_p *
 pData_idx_1_p ) + pData_idx_2_p * pData_idx_2_p ) + pData_idx_3_p *
-pData_idx_3_p ) * - pData_idx_3 ; pData_idx_0_e = 1.0 / muDoubleScalarSqrt (
-( ( pData_idx_0_p * pData_idx_0_p + pData_idx_1 * pData_idx_1 ) + pData_idx_2
-* pData_idx_2 ) + pData_idx_3 * pData_idx_3 ) * pData_idx_0 ; pData_idx_1_e =
-1.0 / muDoubleScalarSqrt ( ( ( pData_idx_0_p * pData_idx_0_p + pData_idx_1 *
-pData_idx_1 ) + pData_idx_2 * pData_idx_2 ) + pData_idx_3 * pData_idx_3 ) * -
-pData_idx_1_p ; pData_idx_2_i = 1.0 / muDoubleScalarSqrt ( ( ( pData_idx_0_p
-* pData_idx_0_p + pData_idx_1 * pData_idx_1 ) + pData_idx_2 * pData_idx_2 ) +
-pData_idx_3 * pData_idx_3 ) * - pData_idx_2_p ; pData_idx_3_i = 1.0 /
+pData_idx_3_p ) * - pData_idx_1 ; pData_idx_2_e = 1.0 / muDoubleScalarSqrt (
+( ( pData_idx_0 * pData_idx_0 + pData_idx_1_p * pData_idx_1_p ) +
+pData_idx_2_p * pData_idx_2_p ) + pData_idx_3_p * pData_idx_3_p ) * -
+pData_idx_2 ; pData_idx_3_e = 1.0 / muDoubleScalarSqrt ( ( ( pData_idx_0 *
+pData_idx_0 + pData_idx_1_p * pData_idx_1_p ) + pData_idx_2_p * pData_idx_2_p
+) + pData_idx_3_p * pData_idx_3_p ) * - pData_idx_3 ; pData_idx_0_e = 1.0 /
+muDoubleScalarSqrt ( ( ( pData_idx_0_p * pData_idx_0_p + pData_idx_1 *
+pData_idx_1 ) + pData_idx_2 * pData_idx_2 ) + pData_idx_3 * pData_idx_3 ) *
+pData_idx_0 ; pData_idx_1_e = 1.0 / muDoubleScalarSqrt ( ( ( pData_idx_0_p *
+pData_idx_0_p + pData_idx_1 * pData_idx_1 ) + pData_idx_2 * pData_idx_2 ) +
+pData_idx_3 * pData_idx_3 ) * - pData_idx_1_p ; pData_idx_2_i = 1.0 /
 muDoubleScalarSqrt ( ( ( pData_idx_0_p * pData_idx_0_p + pData_idx_1 *
 pData_idx_1 ) + pData_idx_2 * pData_idx_2 ) + pData_idx_3 * pData_idx_3 ) * -
-pData_idx_3_p ; pData_idx_0_i = A * 0.0 - ( ( rtX . fay2cpmqpg [ 0 ] *
-pData_idx_1_e + pData_idx_2_i * rtX . fay2cpmqpg [ 1 ] ) + pData_idx_3_i *
-rtX . fay2cpmqpg [ 2 ] ) ; jd = ( rtX . fay2cpmqpg [ 0 ] * pData_idx_0_e + I
-* 0.0 ) + ( pData_idx_2_i * rtX . fay2cpmqpg [ 2 ] - pData_idx_3_i * rtX .
-fay2cpmqpg [ 1 ] ) ; pData_idx_2_m = ( pData_idx_0_e * rtX . fay2cpmqpg [ 1 ]
-+ pData_idx_2_e * 0.0 ) + ( rtX . fay2cpmqpg [ 0 ] * pData_idx_3_i -
-pData_idx_1_e * rtX . fay2cpmqpg [ 2 ] ) ; pData_idx_3_m = ( pData_idx_0_e *
-rtX . fay2cpmqpg [ 2 ] + pData_idx_3_e * 0.0 ) + ( pData_idx_1_e * rtX .
-fay2cpmqpg [ 1 ] - rtX . fay2cpmqpg [ 0 ] * pData_idx_2_i ) ; pData_idx_1_e =
-( ( ( rtX . fay2cpmqpg [ 0 ] * A + pData_idx_1_e * 0.0 ) + ( pData_idx_2_e *
-rtX . fay2cpmqpg [ 2 ] - pData_idx_3_e * rtX . fay2cpmqpg [ 1 ] ) ) *
-pData_idx_0_p + pData_idx_0_i * pData_idx_1 ) + ( pData_idx_2_m *
-pData_idx_3_p - pData_idx_2_p * pData_idx_3_m ) ; pData_idx_2_i = ( ( ( A *
-rtX . fay2cpmqpg [ 1 ] + pData_idx_2_i * 0.0 ) + ( rtX . fay2cpmqpg [ 0 ] *
-pData_idx_3_e - I * rtX . fay2cpmqpg [ 2 ] ) ) * pData_idx_0_p +
-pData_idx_0_i * pData_idx_2 ) + ( pData_idx_1_p * pData_idx_3_m - jd *
-pData_idx_3_p ) ; pData_idx_3_e = ( ( ( A * rtX . fay2cpmqpg [ 2 ] +
-pData_idx_3_i * 0.0 ) + ( I * rtX . fay2cpmqpg [ 1 ] - rtX . fay2cpmqpg [ 0 ]
-* pData_idx_2_e ) ) * pData_idx_0_p + pData_idx_0_i * pData_idx_3 ) + ( jd *
-pData_idx_2_p - pData_idx_1_p * pData_idx_2_m ) ; A = 1.1958013254E+15 /
-muDoubleScalarPower ( muDoubleScalarSqrt ( ( pData_idx_1_e * pData_idx_1_e +
-pData_idx_2_i * pData_idx_2_i ) + pData_idx_3_e * pData_idx_3_e ) , 5.0 ) *
-pData_idx_1_e ; I = 1.1958013254E+15 / muDoubleScalarPower (
+pData_idx_2_p ; pData_idx_3_i = 1.0 / muDoubleScalarSqrt ( ( ( pData_idx_0_p
+* pData_idx_0_p + pData_idx_1 * pData_idx_1 ) + pData_idx_2 * pData_idx_2 ) +
+pData_idx_3 * pData_idx_3 ) * - pData_idx_3_p ; pData_idx_0_i = A * 0.0 - ( (
+rtX . fay2cpmqpg [ 0 ] * pData_idx_1_e + pData_idx_2_i * rtX . fay2cpmqpg [ 1
+] ) + pData_idx_3_i * rtX . fay2cpmqpg [ 2 ] ) ; jd = ( rtX . fay2cpmqpg [ 0
+] * pData_idx_0_e + I * 0.0 ) + ( pData_idx_2_i * rtX . fay2cpmqpg [ 2 ] -
+pData_idx_3_i * rtX . fay2cpmqpg [ 1 ] ) ; pData_idx_2_m = ( pData_idx_0_e *
+rtX . fay2cpmqpg [ 1 ] + pData_idx_2_e * 0.0 ) + ( rtX . fay2cpmqpg [ 0 ] *
+pData_idx_3_i - pData_idx_1_e * rtX . fay2cpmqpg [ 2 ] ) ; pData_idx_3_m = (
+pData_idx_0_e * rtX . fay2cpmqpg [ 2 ] + pData_idx_3_e * 0.0 ) + (
+pData_idx_1_e * rtX . fay2cpmqpg [ 1 ] - rtX . fay2cpmqpg [ 0 ] *
+pData_idx_2_i ) ; pData_idx_1_e = ( ( ( rtX . fay2cpmqpg [ 0 ] * A +
+pData_idx_1_e * 0.0 ) + ( pData_idx_2_e * rtX . fay2cpmqpg [ 2 ] -
+pData_idx_3_e * rtX . fay2cpmqpg [ 1 ] ) ) * pData_idx_0_p + pData_idx_0_i *
+pData_idx_1 ) + ( pData_idx_2_m * pData_idx_3_p - pData_idx_2_p *
+pData_idx_3_m ) ; pData_idx_2_i = ( ( ( A * rtX . fay2cpmqpg [ 1 ] +
+pData_idx_2_i * 0.0 ) + ( rtX . fay2cpmqpg [ 0 ] * pData_idx_3_e - I * rtX .
+fay2cpmqpg [ 2 ] ) ) * pData_idx_0_p + pData_idx_0_i * pData_idx_2 ) + (
+pData_idx_1_p * pData_idx_3_m - jd * pData_idx_3_p ) ; pData_idx_3_e = ( ( (
+A * rtX . fay2cpmqpg [ 2 ] + pData_idx_3_i * 0.0 ) + ( I * rtX . fay2cpmqpg [
+1 ] - rtX . fay2cpmqpg [ 0 ] * pData_idx_2_e ) ) * pData_idx_0_p +
+pData_idx_0_i * pData_idx_3 ) + ( jd * pData_idx_2_p - pData_idx_1_p *
+pData_idx_2_m ) ; A = 1.1958013254E+15 / muDoubleScalarPower (
 muDoubleScalarSqrt ( ( pData_idx_1_e * pData_idx_1_e + pData_idx_2_i *
-pData_idx_2_i ) + pData_idx_3_e * pData_idx_3_e ) , 5.0 ) * pData_idx_2_i ;
-pData_idx_2_e = 1.1958013254E+15 / muDoubleScalarPower ( muDoubleScalarSqrt (
-( pData_idx_1_e * pData_idx_1_e + pData_idx_2_i * pData_idx_2_i ) +
-pData_idx_3_e * pData_idx_3_e ) , 5.0 ) * pData_idx_3_e ; pData_idx_0_e = (
-rtP . SpacecraftDynamics_inertia [ 0 ] * pData_idx_1_e + rtP .
+pData_idx_2_i ) + pData_idx_3_e * pData_idx_3_e ) , 5.0 ) * pData_idx_1_e ; I
+= 1.1958013254E+15 / muDoubleScalarPower ( muDoubleScalarSqrt ( (
+pData_idx_1_e * pData_idx_1_e + pData_idx_2_i * pData_idx_2_i ) +
+pData_idx_3_e * pData_idx_3_e ) , 5.0 ) * pData_idx_2_i ; pData_idx_2_e =
+1.1958013254E+15 / muDoubleScalarPower ( muDoubleScalarSqrt ( ( pData_idx_1_e
+* pData_idx_1_e + pData_idx_2_i * pData_idx_2_i ) + pData_idx_3_e *
+pData_idx_3_e ) , 5.0 ) * pData_idx_3_e ; pData_idx_0_e = ( rtP .
+SpacecraftDynamics_inertia [ 0 ] * pData_idx_1_e + rtP .
 SpacecraftDynamics_inertia [ 3 ] * pData_idx_2_i ) + rtP .
 SpacecraftDynamics_inertia [ 6 ] * pData_idx_3_e ; jd = ( pData_idx_1_e * rtP
 . SpacecraftDynamics_inertia [ 1 ] + pData_idx_2_i * rtP .
@@ -52647,191 +52647,189 @@ fay2cpmqpg [ 12 ] - rtX . fay2cpmqpg [ 10 ] * pData_idx_2_m ) ; pData_idx_2_e
 = ( ( A * jd - pData_idx_0_e * I ) - ( ( 0.0 * rtX . fay2cpmqpg [ 10 ] + 0.0
 * rtX . fay2cpmqpg [ 11 ] ) + 0.0 * rtX . fay2cpmqpg [ 12 ] ) ) - ( rtX .
 fay2cpmqpg [ 10 ] * pData_idx_1_e - pData_idx_0_i * rtX . fay2cpmqpg [ 11 ] )
-; A = fdgkygsjdf_idx_1 ; dblRecordNum = fdgkygsjdf_idx_0 ; if (
-fdgkygsjdf_idx_0 <= 2.0 ) { A = fdgkygsjdf_idx_1 - 1.0 ; dblRecordNum =
-fdgkygsjdf_idx_0 + 12.0 ; } jd = ( ( ( ( muDoubleScalarFloor ( ( A + 4716.0 )
-* 365.25 ) + muDoubleScalarFloor ( ( dblRecordNum + 1.0 ) * 30.6001 ) ) +
-o1ci34lyko ) + ( ( 2.0 - muDoubleScalarFloor ( A / 100.0 ) ) +
-muDoubleScalarFloor ( muDoubleScalarFloor ( A / 100.0 ) / 4.0 ) ) ) - 1524.5
-) + ( ( sec / 60.0 + min ) / 60.0 + hour ) / 24.0 ; I = ( ( ( ( (
-muDoubleScalarFloor ( ( A + 4716.0 ) * 365.25 ) + muDoubleScalarFloor ( (
-dblRecordNum + 1.0 ) * 30.6001 ) ) + o1ci34lyko ) + ( ( 2.0 -
+; A = fdgkygsjdf_idx_1 ; dblRecordNum = o1ci34lyko ; if ( o1ci34lyko <= 2.0 )
+{ A = fdgkygsjdf_idx_1 - 1.0 ; dblRecordNum = o1ci34lyko + 12.0 ; } jd = ( (
+( ( muDoubleScalarFloor ( ( A + 4716.0 ) * 365.25 ) + muDoubleScalarFloor ( (
+dblRecordNum + 1.0 ) * 30.6001 ) ) + fdgkygsjdf_idx_0 ) + ( ( 2.0 -
 muDoubleScalarFloor ( A / 100.0 ) ) + muDoubleScalarFloor (
 muDoubleScalarFloor ( A / 100.0 ) / 4.0 ) ) ) - 1524.5 ) + ( ( sec / 60.0 +
-min ) / 60.0 + hour ) / 24.0 ) + 0.5 ; A = ( muDoubleScalarFloor ( ( ( jd +
-0.5 ) - 1.86721625E+6 ) / 36524.25 ) + ( muDoubleScalarFloor ( jd + 0.5 ) +
-1.0 ) ) - muDoubleScalarFloor ( muDoubleScalarFloor ( ( ( jd + 0.5 ) -
-1.86721625E+6 ) / 36524.25 ) / 4.0 ) ; pData_idx_0_i = muDoubleScalarFloor (
-( ( ( A + 1524.0 ) - muDoubleScalarFloor ( muDoubleScalarFloor ( ( ( A +
-1524.0 ) - 122.1 ) / 365.25 ) * 365.25 ) ) + muDoubleScalarAbs (
-muDoubleScalarFloor ( jd + 0.5 ) - ( jd + 0.5 ) ) ) - muDoubleScalarFloor (
+min ) / 60.0 + hour ) / 24.0 ; I = ( ( ( ( ( muDoubleScalarFloor ( ( A +
+4716.0 ) * 365.25 ) + muDoubleScalarFloor ( ( dblRecordNum + 1.0 ) * 30.6001
+) ) + fdgkygsjdf_idx_0 ) + ( ( 2.0 - muDoubleScalarFloor ( A / 100.0 ) ) +
+muDoubleScalarFloor ( muDoubleScalarFloor ( A / 100.0 ) / 4.0 ) ) ) - 1524.5
+) + ( ( sec / 60.0 + min ) / 60.0 + hour ) / 24.0 ) + 0.5 ; A = (
+muDoubleScalarFloor ( ( ( jd + 0.5 ) - 1.86721625E+6 ) / 36524.25 ) + (
+muDoubleScalarFloor ( jd + 0.5 ) + 1.0 ) ) - muDoubleScalarFloor (
+muDoubleScalarFloor ( ( ( jd + 0.5 ) - 1.86721625E+6 ) / 36524.25 ) / 4.0 ) ;
+pData_idx_0_i = muDoubleScalarFloor ( ( ( ( A + 1524.0 ) -
+muDoubleScalarFloor ( muDoubleScalarFloor ( ( ( A + 1524.0 ) - 122.1 ) /
+365.25 ) * 365.25 ) ) + muDoubleScalarAbs ( muDoubleScalarFloor ( jd + 0.5 )
+- ( jd + 0.5 ) ) ) - muDoubleScalarFloor ( muDoubleScalarFloor ( ( ( A +
+1524.0 ) - muDoubleScalarFloor ( muDoubleScalarFloor ( ( ( A + 1524.0 ) -
+122.1 ) / 365.25 ) * 365.25 ) ) / 30.6001 ) * 30.6001 ) ) ; dblRecordNum =
 muDoubleScalarFloor ( ( ( A + 1524.0 ) - muDoubleScalarFloor (
 muDoubleScalarFloor ( ( ( A + 1524.0 ) - 122.1 ) / 365.25 ) * 365.25 ) ) /
-30.6001 ) * 30.6001 ) ) ; dblRecordNum = muDoubleScalarFloor ( ( ( A + 1524.0
-) - muDoubleScalarFloor ( muDoubleScalarFloor ( ( ( A + 1524.0 ) - 122.1 ) /
-365.25 ) * 365.25 ) ) / 30.6001 ) - 1.0 ; if ( dblRecordNum > 12.0 ) {
-dblRecordNum = muDoubleScalarFloor ( ( ( A + 1524.0 ) - muDoubleScalarFloor (
+30.6001 ) - 1.0 ; if ( dblRecordNum > 12.0 ) { dblRecordNum =
+muDoubleScalarFloor ( ( ( A + 1524.0 ) - muDoubleScalarFloor (
 muDoubleScalarFloor ( ( ( A + 1524.0 ) - 122.1 ) / 365.25 ) * 365.25 ) ) /
 30.6001 ) - 13.0 ; } A = muDoubleScalarFloor ( ( ( A + 1524.0 ) - 122.1 ) /
-365.25 ) - 4716.0 ; if ( dblRecordNum < 3.0 ) { A ++ ; } hour_p =
+365.25 ) - 4716.0 ; if ( dblRecordNum < 3.0 ) { A ++ ; } pData_idx_1_e =
 muDoubleScalarFloor ( muDoubleScalarFloor ( muDoubleScalarAbs (
 muDoubleScalarFloor ( jd + 0.5 ) - ( jd + 0.5 ) ) * 86400.0 ) / 3600.0 ) ;
-pData_idx_1_e = muDoubleScalarFloor ( muDoubleScalarRem ( muDoubleScalarFloor
+pData_idx_2_i = muDoubleScalarFloor ( muDoubleScalarRem ( muDoubleScalarFloor
 ( muDoubleScalarAbs ( muDoubleScalarFloor ( jd + 0.5 ) - ( jd + 0.5 ) ) *
 86400.0 ) , 3600.0 ) / 60.0 ) ; I = muDoubleScalarRem ( muDoubleScalarRem (
 muDoubleScalarFloor ( muDoubleScalarAbs ( muDoubleScalarFloor ( jd + 0.5 ) -
 ( jd + 0.5 ) ) * 86400.0 ) , 3600.0 ) , 60.0 ) + ( muDoubleScalarAbs (
 muDoubleScalarFloor ( I ) - I ) * 86400.0 - muDoubleScalarFloor (
 muDoubleScalarAbs ( muDoubleScalarFloor ( I ) - I ) * 86400.0 ) ) ; jd = A ;
-pData_idx_2_i = dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ;
-pData_idx_2_i = dblRecordNum + 12.0 ; } jd = ( ( ( ( muDoubleScalarFloor ( (
-jd + 4716.0 ) * 365.25 ) + muDoubleScalarFloor ( ( pData_idx_2_i + 1.0 ) *
+pData_idx_2_m = dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ;
+pData_idx_2_m = dblRecordNum + 12.0 ; } jd = ( ( ( ( muDoubleScalarFloor ( (
+jd + 4716.0 ) * 365.25 ) + muDoubleScalarFloor ( ( pData_idx_2_m + 1.0 ) *
 30.6001 ) ) + pData_idx_0_i ) + ( ( 2.0 - muDoubleScalarFloor ( jd / 100.0 )
 ) + muDoubleScalarFloor ( muDoubleScalarFloor ( jd / 100.0 ) / 4.0 ) ) ) -
-1524.5 ) + ( ( I / 60.0 + pData_idx_1_e ) / 60.0 + hour_p ) / 24.0 ; if ( jd
->= 2.4577545E+6 ) { pData_idx_2_m = 37.0 ; } else if ( jd >= 2.4572045E+6 ) {
-pData_idx_2_m = 36.0 ; } else if ( jd >= 2.4561095E+6 ) { pData_idx_2_m =
-35.0 ; } else if ( jd >= 2.4548325E+6 ) { pData_idx_2_m = 34.0 ; } else if (
-jd >= 2.4537365E+6 ) { pData_idx_2_m = 33.0 ; } else if ( jd >= 2.4511795E+6
-) { pData_idx_2_m = 32.0 ; } else if ( jd >= 2.4506305E+6 ) { pData_idx_2_m =
-31.0 ; } else if ( jd >= 2.4500835E+6 ) { pData_idx_2_m = 30.0 ; } else if (
-jd >= 2.4495345E+6 ) { pData_idx_2_m = 29.0 ; } else if ( jd >= 2.4491695E+6
-) { pData_idx_2_m = 28.0 ; } else if ( jd >= 2.4488045E+6 ) { pData_idx_2_m =
-27.0 ; } else if ( jd >= 2.4482575E+6 ) { pData_idx_2_m = 26.0 ; } else if (
-jd >= 2.4478925E+6 ) { pData_idx_2_m = 25.0 ; } else if ( jd >= 2.4471615E+6
-) { pData_idx_2_m = 24.0 ; } else if ( jd >= 2.4462475E+6 ) { pData_idx_2_m =
-23.0 ; } else if ( jd >= 2.4455165E+6 ) { pData_idx_2_m = 22.0 ; } else if (
-jd >= 2.4451515E+6 ) { pData_idx_2_m = 21.0 ; } else if ( jd >= 2.4447865E+6
-) { pData_idx_2_m = 20.0 ; } else if ( jd >= 2.4442395E+6 ) { pData_idx_2_m =
-19.0 ; } else if ( jd >= 2.4438745E+6 ) { pData_idx_2_m = 18.0 ; } else if (
-jd >= 2.4435095E+6 ) { pData_idx_2_m = 17.0 ; } else if ( jd >= 2.4431445E+6
-) { pData_idx_2_m = 16.0 ; } else if ( jd >= 2.4427785E+6 ) { pData_idx_2_m =
-15.0 ; } else if ( jd >= 2.4424135E+6 ) { pData_idx_2_m = 14.0 ; } else if (
-jd >= 2.4420485E+6 ) { pData_idx_2_m = 13.0 ; } else if ( jd >= 2.4416835E+6
-) { pData_idx_2_m = 12.0 ; } else if ( jd >= 2.4414995E+6 ) { pData_idx_2_m =
-11.0 ; } else if ( jd >= 2.4413175E+6 ) { pData_idx_2_m = 10.0 ; } else if (
-jd >= 2.4398875E+6 ) { jd = A ; pData_idx_2_i = dblRecordNum ; if (
-dblRecordNum <= 2.0 ) { jd = A - 1.0 ; pData_idx_2_i = dblRecordNum + 12.0 ;
-} pData_idx_2_m = ( ( ( ( ( ( ( muDoubleScalarFloor ( ( jd + 4716.0 ) *
-365.25 ) + muDoubleScalarFloor ( ( pData_idx_2_i + 1.0 ) * 30.6001 ) ) +
-pData_idx_0_i ) + ( ( 2.0 - muDoubleScalarFloor ( jd / 100.0 ) ) +
-muDoubleScalarFloor ( muDoubleScalarFloor ( jd / 100.0 ) / 4.0 ) ) ) - 1524.5
-) + ( ( I / 60.0 + pData_idx_1_e ) / 60.0 + hour_p ) / 24.0 ) - 2.4000005E+6
-) - 39126.0 ) * 0.002592 + 4.21317 ; } else if ( jd >= 2.4391265E+6 ) { jd =
-A ; pData_idx_2_i = dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0
-; pData_idx_2_i = dblRecordNum + 12.0 ; } pData_idx_2_m = ( ( ( ( ( ( (
+1524.5 ) + ( ( I / 60.0 + pData_idx_2_i ) / 60.0 + pData_idx_1_e ) / 24.0 ;
+if ( jd >= 2.4577545E+6 ) { dUT1 = 37.0 ; } else if ( jd >= 2.4572045E+6 ) {
+dUT1 = 36.0 ; } else if ( jd >= 2.4561095E+6 ) { dUT1 = 35.0 ; } else if ( jd
+>= 2.4548325E+6 ) { dUT1 = 34.0 ; } else if ( jd >= 2.4537365E+6 ) { dUT1 =
+33.0 ; } else if ( jd >= 2.4511795E+6 ) { dUT1 = 32.0 ; } else if ( jd >=
+2.4506305E+6 ) { dUT1 = 31.0 ; } else if ( jd >= 2.4500835E+6 ) { dUT1 = 30.0
+; } else if ( jd >= 2.4495345E+6 ) { dUT1 = 29.0 ; } else if ( jd >=
+2.4491695E+6 ) { dUT1 = 28.0 ; } else if ( jd >= 2.4488045E+6 ) { dUT1 = 27.0
+; } else if ( jd >= 2.4482575E+6 ) { dUT1 = 26.0 ; } else if ( jd >=
+2.4478925E+6 ) { dUT1 = 25.0 ; } else if ( jd >= 2.4471615E+6 ) { dUT1 = 24.0
+; } else if ( jd >= 2.4462475E+6 ) { dUT1 = 23.0 ; } else if ( jd >=
+2.4455165E+6 ) { dUT1 = 22.0 ; } else if ( jd >= 2.4451515E+6 ) { dUT1 = 21.0
+; } else if ( jd >= 2.4447865E+6 ) { dUT1 = 20.0 ; } else if ( jd >=
+2.4442395E+6 ) { dUT1 = 19.0 ; } else if ( jd >= 2.4438745E+6 ) { dUT1 = 18.0
+; } else if ( jd >= 2.4435095E+6 ) { dUT1 = 17.0 ; } else if ( jd >=
+2.4431445E+6 ) { dUT1 = 16.0 ; } else if ( jd >= 2.4427785E+6 ) { dUT1 = 15.0
+; } else if ( jd >= 2.4424135E+6 ) { dUT1 = 14.0 ; } else if ( jd >=
+2.4420485E+6 ) { dUT1 = 13.0 ; } else if ( jd >= 2.4416835E+6 ) { dUT1 = 12.0
+; } else if ( jd >= 2.4414995E+6 ) { dUT1 = 11.0 ; } else if ( jd >=
+2.4413175E+6 ) { dUT1 = 10.0 ; } else if ( jd >= 2.4398875E+6 ) { jd = A ;
+pData_idx_2_m = dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ;
+pData_idx_2_m = dblRecordNum + 12.0 ; } dUT1 = ( ( ( ( ( ( (
 muDoubleScalarFloor ( ( jd + 4716.0 ) * 365.25 ) + muDoubleScalarFloor ( (
-pData_idx_2_i + 1.0 ) * 30.6001 ) ) + pData_idx_0_i ) + ( ( 2.0 -
+pData_idx_2_m + 1.0 ) * 30.6001 ) ) + pData_idx_0_i ) + ( ( 2.0 -
 muDoubleScalarFloor ( jd / 100.0 ) ) + muDoubleScalarFloor (
 muDoubleScalarFloor ( jd / 100.0 ) / 4.0 ) ) ) - 1524.5 ) + ( ( I / 60.0 +
-pData_idx_1_e ) / 60.0 + hour_p ) / 24.0 ) - 2.4000005E+6 ) - 39126.0 ) *
-0.002592 + 4.31317 ; } else if ( jd >= 2.4390045E+6 ) { jd = A ;
-pData_idx_2_i = dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ;
-pData_idx_2_i = dblRecordNum + 12.0 ; } pData_idx_2_m = ( ( ( ( ( ( (
+pData_idx_2_i ) / 60.0 + pData_idx_1_e ) / 24.0 ) - 2.4000005E+6 ) - 39126.0
+) * 0.002592 + 4.21317 ; } else if ( jd >= 2.4391265E+6 ) { jd = A ;
+pData_idx_2_m = dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ;
+pData_idx_2_m = dblRecordNum + 12.0 ; } dUT1 = ( ( ( ( ( ( (
 muDoubleScalarFloor ( ( jd + 4716.0 ) * 365.25 ) + muDoubleScalarFloor ( (
-pData_idx_2_i + 1.0 ) * 30.6001 ) ) + pData_idx_0_i ) + ( ( 2.0 -
+pData_idx_2_m + 1.0 ) * 30.6001 ) ) + pData_idx_0_i ) + ( ( 2.0 -
 muDoubleScalarFloor ( jd / 100.0 ) ) + muDoubleScalarFloor (
 muDoubleScalarFloor ( jd / 100.0 ) / 4.0 ) ) ) - 1524.5 ) + ( ( I / 60.0 +
-pData_idx_1_e ) / 60.0 + hour_p ) / 24.0 ) - 2.4000005E+6 ) - 38761.0 ) *
-0.001296 + 3.84013 ; } else if ( jd >= 2.4389425E+6 ) { jd = A ;
-pData_idx_2_i = dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ;
-pData_idx_2_i = dblRecordNum + 12.0 ; } pData_idx_2_m = ( ( ( ( ( ( (
+pData_idx_2_i ) / 60.0 + pData_idx_1_e ) / 24.0 ) - 2.4000005E+6 ) - 39126.0
+) * 0.002592 + 4.31317 ; } else if ( jd >= 2.4390045E+6 ) { jd = A ;
+pData_idx_2_m = dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ;
+pData_idx_2_m = dblRecordNum + 12.0 ; } dUT1 = ( ( ( ( ( ( (
 muDoubleScalarFloor ( ( jd + 4716.0 ) * 365.25 ) + muDoubleScalarFloor ( (
-pData_idx_2_i + 1.0 ) * 30.6001 ) ) + pData_idx_0_i ) + ( ( 2.0 -
+pData_idx_2_m + 1.0 ) * 30.6001 ) ) + pData_idx_0_i ) + ( ( 2.0 -
 muDoubleScalarFloor ( jd / 100.0 ) ) + muDoubleScalarFloor (
 muDoubleScalarFloor ( jd / 100.0 ) / 4.0 ) ) ) - 1524.5 ) + ( ( I / 60.0 +
-pData_idx_1_e ) / 60.0 + hour_p ) / 24.0 ) - 2.4000005E+6 ) - 38761.0 ) *
-0.001296 + 3.74013 ; } else if ( jd >= 2.4388205E+6 ) { jd = A ;
-pData_idx_2_i = dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ;
-pData_idx_2_i = dblRecordNum + 12.0 ; } pData_idx_2_m = ( ( ( ( ( ( (
+pData_idx_2_i ) / 60.0 + pData_idx_1_e ) / 24.0 ) - 2.4000005E+6 ) - 38761.0
+) * 0.001296 + 3.84013 ; } else if ( jd >= 2.4389425E+6 ) { jd = A ;
+pData_idx_2_m = dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ;
+pData_idx_2_m = dblRecordNum + 12.0 ; } dUT1 = ( ( ( ( ( ( (
 muDoubleScalarFloor ( ( jd + 4716.0 ) * 365.25 ) + muDoubleScalarFloor ( (
-pData_idx_2_i + 1.0 ) * 30.6001 ) ) + pData_idx_0_i ) + ( ( 2.0 -
+pData_idx_2_m + 1.0 ) * 30.6001 ) ) + pData_idx_0_i ) + ( ( 2.0 -
 muDoubleScalarFloor ( jd / 100.0 ) ) + muDoubleScalarFloor (
 muDoubleScalarFloor ( jd / 100.0 ) / 4.0 ) ) ) - 1524.5 ) + ( ( I / 60.0 +
-pData_idx_1_e ) / 60.0 + hour_p ) / 24.0 ) - 2.4000005E+6 ) - 38761.0 ) *
-0.001296 + 3.64013 ; } else if ( jd >= 2.4387615E+6 ) { jd = A ;
-pData_idx_2_i = dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ;
-pData_idx_2_i = dblRecordNum + 12.0 ; } pData_idx_2_m = ( ( ( ( ( ( (
+pData_idx_2_i ) / 60.0 + pData_idx_1_e ) / 24.0 ) - 2.4000005E+6 ) - 38761.0
+) * 0.001296 + 3.74013 ; } else if ( jd >= 2.4388205E+6 ) { jd = A ;
+pData_idx_2_m = dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ;
+pData_idx_2_m = dblRecordNum + 12.0 ; } dUT1 = ( ( ( ( ( ( (
 muDoubleScalarFloor ( ( jd + 4716.0 ) * 365.25 ) + muDoubleScalarFloor ( (
-pData_idx_2_i + 1.0 ) * 30.6001 ) ) + pData_idx_0_i ) + ( ( 2.0 -
+pData_idx_2_m + 1.0 ) * 30.6001 ) ) + pData_idx_0_i ) + ( ( 2.0 -
 muDoubleScalarFloor ( jd / 100.0 ) ) + muDoubleScalarFloor (
 muDoubleScalarFloor ( jd / 100.0 ) / 4.0 ) ) ) - 1524.5 ) + ( ( I / 60.0 +
-pData_idx_1_e ) / 60.0 + hour_p ) / 24.0 ) - 2.4000005E+6 ) - 38761.0 ) *
-0.001296 + 3.54013 ; } else if ( jd >= 2.4386395E+6 ) { jd = A ;
-pData_idx_2_i = dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ;
-pData_idx_2_i = dblRecordNum + 12.0 ; } pData_idx_2_m = ( ( ( ( ( ( (
+pData_idx_2_i ) / 60.0 + pData_idx_1_e ) / 24.0 ) - 2.4000005E+6 ) - 38761.0
+) * 0.001296 + 3.64013 ; } else if ( jd >= 2.4387615E+6 ) { jd = A ;
+pData_idx_2_m = dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ;
+pData_idx_2_m = dblRecordNum + 12.0 ; } dUT1 = ( ( ( ( ( ( (
 muDoubleScalarFloor ( ( jd + 4716.0 ) * 365.25 ) + muDoubleScalarFloor ( (
-pData_idx_2_i + 1.0 ) * 30.6001 ) ) + pData_idx_0_i ) + ( ( 2.0 -
+pData_idx_2_m + 1.0 ) * 30.6001 ) ) + pData_idx_0_i ) + ( ( 2.0 -
 muDoubleScalarFloor ( jd / 100.0 ) ) + muDoubleScalarFloor (
 muDoubleScalarFloor ( jd / 100.0 ) / 4.0 ) ) ) - 1524.5 ) + ( ( I / 60.0 +
-pData_idx_1_e ) / 60.0 + hour_p ) / 24.0 ) - 2.4000005E+6 ) - 38761.0 ) *
-0.001296 + 3.44013 ; } else if ( jd >= 2.4384865E+6 ) { jd = A ;
-pData_idx_2_i = dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ;
-pData_idx_2_i = dblRecordNum + 12.0 ; } pData_idx_2_m = ( ( ( ( ( ( (
+pData_idx_2_i ) / 60.0 + pData_idx_1_e ) / 24.0 ) - 2.4000005E+6 ) - 38761.0
+) * 0.001296 + 3.54013 ; } else if ( jd >= 2.4386395E+6 ) { jd = A ;
+pData_idx_2_m = dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ;
+pData_idx_2_m = dblRecordNum + 12.0 ; } dUT1 = ( ( ( ( ( ( (
 muDoubleScalarFloor ( ( jd + 4716.0 ) * 365.25 ) + muDoubleScalarFloor ( (
-pData_idx_2_i + 1.0 ) * 30.6001 ) ) + pData_idx_0_i ) + ( ( 2.0 -
+pData_idx_2_m + 1.0 ) * 30.6001 ) ) + pData_idx_0_i ) + ( ( 2.0 -
 muDoubleScalarFloor ( jd / 100.0 ) ) + muDoubleScalarFloor (
 muDoubleScalarFloor ( jd / 100.0 ) / 4.0 ) ) ) - 1524.5 ) + ( ( I / 60.0 +
-pData_idx_1_e ) / 60.0 + hour_p ) / 24.0 ) - 2.4000005E+6 ) - 38761.0 ) *
-0.001296 + 3.34013 ; } else if ( jd >= 2.4383955E+6 ) { jd = A ;
-pData_idx_2_i = dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ;
-pData_idx_2_i = dblRecordNum + 12.0 ; } pData_idx_2_m = ( ( ( ( ( ( (
+pData_idx_2_i ) / 60.0 + pData_idx_1_e ) / 24.0 ) - 2.4000005E+6 ) - 38761.0
+) * 0.001296 + 3.44013 ; } else if ( jd >= 2.4384865E+6 ) { jd = A ;
+pData_idx_2_m = dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ;
+pData_idx_2_m = dblRecordNum + 12.0 ; } dUT1 = ( ( ( ( ( ( (
 muDoubleScalarFloor ( ( jd + 4716.0 ) * 365.25 ) + muDoubleScalarFloor ( (
-pData_idx_2_i + 1.0 ) * 30.6001 ) ) + pData_idx_0_i ) + ( ( 2.0 -
+pData_idx_2_m + 1.0 ) * 30.6001 ) ) + pData_idx_0_i ) + ( ( 2.0 -
 muDoubleScalarFloor ( jd / 100.0 ) ) + muDoubleScalarFloor (
 muDoubleScalarFloor ( jd / 100.0 ) / 4.0 ) ) ) - 1524.5 ) + ( ( I / 60.0 +
-pData_idx_1_e ) / 60.0 + hour_p ) / 24.0 ) - 2.4000005E+6 ) - 38761.0 ) *
-0.001296 + 3.24013 ; } else if ( jd >= 2.4383345E+6 ) { jd = A ;
-pData_idx_2_i = dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ;
-pData_idx_2_i = dblRecordNum + 12.0 ; } pData_idx_2_m = ( ( ( ( ( ( (
+pData_idx_2_i ) / 60.0 + pData_idx_1_e ) / 24.0 ) - 2.4000005E+6 ) - 38761.0
+) * 0.001296 + 3.34013 ; } else if ( jd >= 2.4383955E+6 ) { jd = A ;
+pData_idx_2_m = dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ;
+pData_idx_2_m = dblRecordNum + 12.0 ; } dUT1 = ( ( ( ( ( ( (
 muDoubleScalarFloor ( ( jd + 4716.0 ) * 365.25 ) + muDoubleScalarFloor ( (
-pData_idx_2_i + 1.0 ) * 30.6001 ) ) + pData_idx_0_i ) + ( ( 2.0 -
+pData_idx_2_m + 1.0 ) * 30.6001 ) ) + pData_idx_0_i ) + ( ( 2.0 -
 muDoubleScalarFloor ( jd / 100.0 ) ) + muDoubleScalarFloor (
 muDoubleScalarFloor ( jd / 100.0 ) / 4.0 ) ) ) - 1524.5 ) + ( ( I / 60.0 +
-pData_idx_1_e ) / 60.0 + hour_p ) / 24.0 ) - 2.4000005E+6 ) - 37665.0 ) *
-0.0011232 + 1.945858 ; } else if ( jd >= 2.4376655E+6 ) { jd = A ;
-pData_idx_2_i = dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ;
-pData_idx_2_i = dblRecordNum + 12.0 ; } pData_idx_2_m = ( ( ( ( ( ( (
+pData_idx_2_i ) / 60.0 + pData_idx_1_e ) / 24.0 ) - 2.4000005E+6 ) - 38761.0
+) * 0.001296 + 3.24013 ; } else if ( jd >= 2.4383345E+6 ) { jd = A ;
+pData_idx_2_m = dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ;
+pData_idx_2_m = dblRecordNum + 12.0 ; } dUT1 = ( ( ( ( ( ( (
 muDoubleScalarFloor ( ( jd + 4716.0 ) * 365.25 ) + muDoubleScalarFloor ( (
-pData_idx_2_i + 1.0 ) * 30.6001 ) ) + pData_idx_0_i ) + ( ( 2.0 -
+pData_idx_2_m + 1.0 ) * 30.6001 ) ) + pData_idx_0_i ) + ( ( 2.0 -
 muDoubleScalarFloor ( jd / 100.0 ) ) + muDoubleScalarFloor (
 muDoubleScalarFloor ( jd / 100.0 ) / 4.0 ) ) ) - 1524.5 ) + ( ( I / 60.0 +
-pData_idx_1_e ) / 60.0 + hour_p ) / 24.0 ) - 2.4000005E+6 ) - 37665.0 ) *
-0.0011232 + 1.845858 ; } else if ( jd >= 2.4375125E+6 ) { jd = A ;
-pData_idx_2_i = dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ;
-pData_idx_2_i = dblRecordNum + 12.0 ; } pData_idx_2_m = ( ( ( ( ( ( (
+pData_idx_2_i ) / 60.0 + pData_idx_1_e ) / 24.0 ) - 2.4000005E+6 ) - 37665.0
+) * 0.0011232 + 1.945858 ; } else if ( jd >= 2.4376655E+6 ) { jd = A ;
+pData_idx_2_m = dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ;
+pData_idx_2_m = dblRecordNum + 12.0 ; } dUT1 = ( ( ( ( ( ( (
 muDoubleScalarFloor ( ( jd + 4716.0 ) * 365.25 ) + muDoubleScalarFloor ( (
-pData_idx_2_i + 1.0 ) * 30.6001 ) ) + pData_idx_0_i ) + ( ( 2.0 -
+pData_idx_2_m + 1.0 ) * 30.6001 ) ) + pData_idx_0_i ) + ( ( 2.0 -
 muDoubleScalarFloor ( jd / 100.0 ) ) + muDoubleScalarFloor (
 muDoubleScalarFloor ( jd / 100.0 ) / 4.0 ) ) ) - 1524.5 ) + ( ( I / 60.0 +
-pData_idx_1_e ) / 60.0 + hour_p ) / 24.0 ) - 2.4000005E+6 ) - 37300.0 ) *
-0.001296 + 1.372818 ; } else if ( jd >= 2.4373005E+6 ) { jd = A ;
-pData_idx_2_i = dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ;
-pData_idx_2_i = dblRecordNum + 12.0 ; } pData_idx_2_m = ( ( ( ( ( ( (
+pData_idx_2_i ) / 60.0 + pData_idx_1_e ) / 24.0 ) - 2.4000005E+6 ) - 37665.0
+) * 0.0011232 + 1.845858 ; } else if ( jd >= 2.4375125E+6 ) { jd = A ;
+pData_idx_2_m = dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ;
+pData_idx_2_m = dblRecordNum + 12.0 ; } dUT1 = ( ( ( ( ( ( (
 muDoubleScalarFloor ( ( jd + 4716.0 ) * 365.25 ) + muDoubleScalarFloor ( (
-pData_idx_2_i + 1.0 ) * 30.6001 ) ) + pData_idx_0_i ) + ( ( 2.0 -
+pData_idx_2_m + 1.0 ) * 30.6001 ) ) + pData_idx_0_i ) + ( ( 2.0 -
 muDoubleScalarFloor ( jd / 100.0 ) ) + muDoubleScalarFloor (
 muDoubleScalarFloor ( jd / 100.0 ) / 4.0 ) ) ) - 1524.5 ) + ( ( I / 60.0 +
-pData_idx_1_e ) / 60.0 + hour_p ) / 24.0 ) - 2.4000005E+6 ) - 37300.0 ) *
-0.001296 + 1.422818 ; } else { pData_idx_2_m = 0.0 ; } jd = A ; pData_idx_2_i
-= dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ; pData_idx_2_i =
+pData_idx_2_i ) / 60.0 + pData_idx_1_e ) / 24.0 ) - 2.4000005E+6 ) - 37300.0
+) * 0.001296 + 1.372818 ; } else if ( jd >= 2.4373005E+6 ) { jd = A ;
+pData_idx_2_m = dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ;
+pData_idx_2_m = dblRecordNum + 12.0 ; } dUT1 = ( ( ( ( ( ( (
+muDoubleScalarFloor ( ( jd + 4716.0 ) * 365.25 ) + muDoubleScalarFloor ( (
+pData_idx_2_m + 1.0 ) * 30.6001 ) ) + pData_idx_0_i ) + ( ( 2.0 -
+muDoubleScalarFloor ( jd / 100.0 ) ) + muDoubleScalarFloor (
+muDoubleScalarFloor ( jd / 100.0 ) / 4.0 ) ) ) - 1524.5 ) + ( ( I / 60.0 +
+pData_idx_2_i ) / 60.0 + pData_idx_1_e ) / 24.0 ) - 2.4000005E+6 ) - 37300.0
+) * 0.001296 + 1.422818 ; } else { dUT1 = 0.0 ; } jd = A ; pData_idx_2_m =
+dblRecordNum ; if ( dblRecordNum <= 2.0 ) { jd = A - 1.0 ; pData_idx_2_m =
 dblRecordNum + 12.0 ; A -- ; dblRecordNum += 12.0 ; } jd = ( ( ( ( 60.0 *
-pData_idx_1_e + I ) + 3600.0 * hour_p ) + 32.184 ) + pData_idx_2_m ) / 60.0 /
+pData_idx_2_i + I ) + 3600.0 * pData_idx_1_e ) + 32.184 ) + dUT1 ) / 60.0 /
 60.0 / 24.0 + ( ( ( ( muDoubleScalarFloor ( ( jd + 4716.0 ) * 365.25 ) +
-muDoubleScalarFloor ( ( pData_idx_2_i + 1.0 ) * 30.6001 ) ) + pData_idx_0_i )
+muDoubleScalarFloor ( ( pData_idx_2_m + 1.0 ) * 30.6001 ) ) + pData_idx_0_i )
 + ( ( 2.0 - muDoubleScalarFloor ( jd / 100.0 ) ) + muDoubleScalarFloor (
 muDoubleScalarFloor ( jd / 100.0 ) / 4.0 ) ) ) - 1524.5 ) ; jd = ( ( ( ( ( (
-( ( ( ( ( 60.0 * pData_idx_1_e + I ) + 3600.0 * hour_p ) + 32.184 ) +
-pData_idx_2_m ) + muDoubleScalarSin ( ( jd - 2.451545E+6 ) / 36525.0 *
-628.3076 + 6.2401 ) * 0.001657 ) + muDoubleScalarSin ( ( jd - 2.451545E+6 ) /
-36525.0 * 575.3385 + 4.297 ) * 2.2E-5 ) + muDoubleScalarSin ( ( jd -
-2.451545E+6 ) / 36525.0 * 1256.6152 + 6.1969 ) * 1.4E-5 ) + muDoubleScalarSin
-( ( jd - 2.451545E+6 ) / 36525.0 * 606.9777 + 4.0212 ) * 5.0E-6 ) +
-muDoubleScalarSin ( ( jd - 2.451545E+6 ) / 36525.0 * 52.9691 + 0.4444 ) *
-5.0E-6 ) + muDoubleScalarSin ( ( jd - 2.451545E+6 ) / 36525.0 * 21.3299 +
-5.5431 ) * 2.0E-6 ) + muDoubleScalarSin ( ( jd - 2.451545E+6 ) / 36525.0 *
-628.3076 + 4.249 ) * ( ( jd - 2.451545E+6 ) / 36525.0 * 1.0E-5 ) ) / 60.0 /
-60.0 / 24.0 + ( ( ( ( muDoubleScalarFloor ( ( A + 4716.0 ) * 365.25 ) +
+( ( ( ( ( 60.0 * pData_idx_2_i + I ) + 3600.0 * pData_idx_1_e ) + 32.184 ) +
+dUT1 ) + muDoubleScalarSin ( ( jd - 2.451545E+6 ) / 36525.0 * 628.3076 +
+6.2401 ) * 0.001657 ) + muDoubleScalarSin ( ( jd - 2.451545E+6 ) / 36525.0 *
+575.3385 + 4.297 ) * 2.2E-5 ) + muDoubleScalarSin ( ( jd - 2.451545E+6 ) /
+36525.0 * 1256.6152 + 6.1969 ) * 1.4E-5 ) + muDoubleScalarSin ( ( jd -
+2.451545E+6 ) / 36525.0 * 606.9777 + 4.0212 ) * 5.0E-6 ) + muDoubleScalarSin
+( ( jd - 2.451545E+6 ) / 36525.0 * 52.9691 + 0.4444 ) * 5.0E-6 ) +
+muDoubleScalarSin ( ( jd - 2.451545E+6 ) / 36525.0 * 21.3299 + 5.5431 ) *
+2.0E-6 ) + muDoubleScalarSin ( ( jd - 2.451545E+6 ) / 36525.0 * 628.3076 +
+4.249 ) * ( ( jd - 2.451545E+6 ) / 36525.0 * 1.0E-5 ) ) / 60.0 / 60.0 / 24.0
++ ( ( ( ( muDoubleScalarFloor ( ( A + 4716.0 ) * 365.25 ) +
 muDoubleScalarFloor ( ( dblRecordNum + 1.0 ) * 30.6001 ) ) + pData_idx_0_i )
 + ( ( 2.0 - muDoubleScalarFloor ( A / 100.0 ) ) + muDoubleScalarFloor (
 muDoubleScalarFloor ( A / 100.0 ) / 4.0 ) ) ) - 1524.5 ) ; if ( jd <
@@ -52860,14 +52858,14 @@ dblRecordNum ) ) { tmp_e = 0 ; } else { tmp_e = ( int32_T ) muDoubleScalarRem
 2.0 * pData_idx_0_i - muDoubleScalarFloor ( pData_idx_0_i ) ) ; if (
 muDoubleScalarIsNaN ( dblRecordNum ) ) { tmp_p = 0 ; } else { tmp_p = (
 int32_T ) muDoubleScalarRem ( dblRecordNum , 4.294967296E+9 ) ; } for ( i = 0
-; i < 11 ; i ++ ) { hour_p = posCoeff [ i ] ; if ( tmp_i < 0 ) { tmp_m = - (
+; i < 11 ; i ++ ) { dUT1 = posCoeff [ i ] ; if ( tmp_i < 0 ) { tmp_m = - (
 int32_T ) ( uint32_T ) - ( real_T ) tmp_i ; } else { tmp_m = tmp_i ; } pData
-+= tbuff1 [ tmp_m * 11 * 3 + i ] * hour_p ; if ( tmp_e < 0 ) { tmp_m = - (
++= tbuff1 [ tmp_m * 11 * 3 + i ] * dUT1 ; if ( tmp_e < 0 ) { tmp_m = - (
 int32_T ) ( uint32_T ) - ( real_T ) tmp_e ; } else { tmp_m = tmp_e ; }
-pData_p += tbuff1 [ ( tmp_m * 11 * 3 + i ) + 11 ] * hour_p ; if ( tmp_p < 0 )
-{ tmp_m = - ( int32_T ) ( uint32_T ) - ( real_T ) tmp_p ; } else { tmp_m =
-tmp_p ; } pData_e += tbuff1 [ ( tmp_m * 11 * 3 + i ) + 22 ] * hour_p ; }
-cbuff1 = & tmp_j [ i_p * 78 + - 78 ] ; cbuff2 = & tmp [ i_p * 312 + - 312 ] ;
+pData_p += tbuff1 [ ( tmp_m * 11 * 3 + i ) + 11 ] * dUT1 ; if ( tmp_p < 0 ) {
+tmp_m = - ( int32_T ) ( uint32_T ) - ( real_T ) tmp_p ; } else { tmp_m =
+tmp_p ; } pData_e += tbuff1 [ ( tmp_m * 11 * 3 + i ) + 22 ] * dUT1 ; } cbuff1
+= & tmp_j [ i_p * 78 + - 78 ] ; cbuff2 = & tmp [ i_p * 312 + - 312 ] ;
 posCoeff_p [ 0 ] = 1.0 ; posCoeff_p [ 1 ] = ( muDoubleScalarMod ( 2.0 *
 pData_idx_0_i , 1.0 ) + muDoubleScalarFloor ( pData_idx_0_i ) ) * 2.0 - 1.0 ;
 for ( i = 0 ; i < 11 ; i ++ ) { posCoeff_p [ i + 2 ] = ( ( muDoubleScalarMod
@@ -52883,14 +52881,14 @@ pData_idx_0_i ) ) ; if ( muDoubleScalarIsNaN ( dblRecordNum ) ) { tmp_i = 0 ;
 4.294967296E+9 ) ; } dblRecordNum = muDoubleScalarFloor ( 2.0 * pData_idx_0_i
 - muDoubleScalarFloor ( pData_idx_0_i ) ) ; if ( muDoubleScalarIsNaN (
 dblRecordNum ) ) { tmp_e = 0 ; } else { tmp_e = ( int32_T ) muDoubleScalarRem
-( dblRecordNum , 4.294967296E+9 ) ; } for ( i = 0 ; i < 13 ; i ++ ) { hour_p
-= posCoeff_p [ i ] ; if ( i_p < 0 ) { tmp_p = - ( int32_T ) ( uint32_T ) - (
+( dblRecordNum , 4.294967296E+9 ) ; } for ( i = 0 ; i < 13 ; i ++ ) { dUT1 =
+posCoeff_p [ i ] ; if ( i_p < 0 ) { tmp_p = - ( int32_T ) ( uint32_T ) - (
 real_T ) i_p ; } else { tmp_p = i_p ; } A += cbuff1 [ tmp_p * 13 * 3 + i ] *
-hour_p ; if ( tmp_i < 0 ) { tmp_p = - ( int32_T ) ( uint32_T ) - ( real_T )
+dUT1 ; if ( tmp_i < 0 ) { tmp_p = - ( int32_T ) ( uint32_T ) - ( real_T )
 tmp_i ; } else { tmp_p = tmp_i ; } I += cbuff1 [ ( tmp_p * 13 * 3 + i ) + 13
-] * hour_p ; if ( tmp_e < 0 ) { tmp_p = - ( int32_T ) ( uint32_T ) - ( real_T
-) tmp_e ; } else { tmp_p = tmp_e ; } pData_idx_1_e += cbuff1 [ ( tmp_p * 13 *
-3 + i ) + 26 ] * hour_p ; } posCoeff_e [ 0 ] = 1.0 ; posCoeff_e [ 1 ] = (
+] * dUT1 ; if ( tmp_e < 0 ) { tmp_p = - ( int32_T ) ( uint32_T ) - ( real_T )
+tmp_e ; } else { tmp_p = tmp_e ; } pData_idx_1_e += cbuff1 [ ( tmp_p * 13 * 3
++ i ) + 26 ] * dUT1 ; } posCoeff_e [ 0 ] = 1.0 ; posCoeff_e [ 1 ] = (
 muDoubleScalarMod ( 8.0 * pData_idx_0_i , 1.0 ) + muDoubleScalarFloor (
 pData_idx_0_i ) ) * 2.0 - 1.0 ; for ( i = 0 ; i < 11 ; i ++ ) { posCoeff_e [
 i + 2 ] = ( ( muDoubleScalarMod ( 8.0 * pData_idx_0_i , 1.0 ) +
@@ -52906,14 +52904,14 @@ pData_idx_0_i ) ) ; if ( muDoubleScalarIsNaN ( dblRecordNum ) ) { tmp_i = 0 ;
 4.294967296E+9 ) ; } dblRecordNum = muDoubleScalarFloor ( 8.0 * pData_idx_0_i
 - muDoubleScalarFloor ( pData_idx_0_i ) ) ; if ( muDoubleScalarIsNaN (
 dblRecordNum ) ) { tmp_e = 0 ; } else { tmp_e = ( int32_T ) muDoubleScalarRem
-( dblRecordNum , 4.294967296E+9 ) ; } for ( i = 0 ; i < 13 ; i ++ ) { hour_p
-= posCoeff_e [ i ] ; if ( i_p < 0 ) { tmp_p = - ( int32_T ) ( uint32_T ) - (
+( dblRecordNum , 4.294967296E+9 ) ; } for ( i = 0 ; i < 13 ; i ++ ) { dUT1 =
+posCoeff_e [ i ] ; if ( i_p < 0 ) { tmp_p = - ( int32_T ) ( uint32_T ) - (
 real_T ) i_p ; } else { tmp_p = i_p ; } pData_idx_0_e += cbuff2 [ tmp_p * 13
-* 3 + i ] * hour_p ; if ( tmp_i < 0 ) { tmp_p = - ( int32_T ) ( uint32_T ) -
-( real_T ) tmp_i ; } else { tmp_p = tmp_i ; } pData_idx_2_m += cbuff2 [ (
-tmp_p * 13 * 3 + i ) + 13 ] * hour_p ; if ( tmp_e < 0 ) { tmp_p = - ( int32_T
-) ( uint32_T ) - ( real_T ) tmp_e ; } else { tmp_p = tmp_e ; } pData_idx_2_i
-+= cbuff2 [ ( tmp_p * 13 * 3 + i ) + 26 ] * hour_p ; } A = ( pData - ( A -
+* 3 + i ] * dUT1 ; if ( tmp_i < 0 ) { tmp_p = - ( int32_T ) ( uint32_T ) - (
+real_T ) tmp_i ; } else { tmp_p = tmp_i ; } pData_idx_2_m += cbuff2 [ ( tmp_p
+* 13 * 3 + i ) + 13 ] * dUT1 ; if ( tmp_e < 0 ) { tmp_p = - ( int32_T ) (
+uint32_T ) - ( real_T ) tmp_e ; } else { tmp_p = tmp_e ; } pData_idx_2_i +=
+cbuff2 [ ( tmp_p * 13 * 3 + i ) + 26 ] * dUT1 ; } A = ( pData - ( A -
 pData_idx_0_e * 0.012150585609624041 ) ) * 1000.0 ; I = ( pData_p - ( I -
 pData_idx_2_m * 0.012150585609624041 ) ) * 1000.0 ; pData_idx_2_i = ( pData_e
 - ( pData_idx_1_e - pData_idx_2_i * 0.012150585609624041 ) ) * 1000.0 ;
@@ -52943,62 +52941,63 @@ pData_idx_0_i ) ) ; if ( muDoubleScalarIsNaN ( dblRecordNum ) ) { tmp_i = 0 ;
 4.294967296E+9 ) ; } dblRecordNum = muDoubleScalarFloor ( 8.0 * pData_idx_0_i
 - muDoubleScalarFloor ( pData_idx_0_i ) ) ; if ( muDoubleScalarIsNaN (
 dblRecordNum ) ) { tmp_e = 0 ; } else { tmp_e = ( int32_T ) muDoubleScalarRem
-( dblRecordNum , 4.294967296E+9 ) ; } for ( i = 0 ; i < 13 ; i ++ ) { hour_p
-= posCoeff_i [ i ] ; if ( i_p < 0 ) { tmp_p = - ( int32_T ) ( uint32_T ) - (
+( dblRecordNum , 4.294967296E+9 ) ; } for ( i = 0 ; i < 13 ; i ++ ) { dUT1 =
+posCoeff_i [ i ] ; if ( i_p < 0 ) { tmp_p = - ( int32_T ) ( uint32_T ) - (
 real_T ) i_p ; } else { tmp_p = i_p ; } pData += cbuff2 [ tmp_p * 13 * 3 + i
-] * hour_p ; if ( tmp_i < 0 ) { tmp_p = - ( int32_T ) ( uint32_T ) - ( real_T
-) tmp_i ; } else { tmp_p = tmp_i ; } pData_p += cbuff2 [ ( tmp_p * 13 * 3 + i
-) + 13 ] * hour_p ; if ( tmp_e < 0 ) { tmp_p = - ( int32_T ) ( uint32_T ) - (
+] * dUT1 ; if ( tmp_i < 0 ) { tmp_p = - ( int32_T ) ( uint32_T ) - ( real_T )
+tmp_i ; } else { tmp_p = tmp_i ; } pData_p += cbuff2 [ ( tmp_p * 13 * 3 + i )
++ 13 ] * dUT1 ; if ( tmp_e < 0 ) { tmp_p = - ( int32_T ) ( uint32_T ) - (
 real_T ) tmp_e ; } else { tmp_p = tmp_e ; } pData_e += cbuff2 [ ( tmp_p * 13
-* 3 + i ) + 26 ] * hour_p ; } pData_idx_0_i = pData * 1000.0 ; jd = pData_p *
-1000.0 ; dblRecordNum = pData_e * 1000.0 ; hour_p = pData_idx_0_i - rtX .
+* 3 + i ) + 26 ] * dUT1 ; } pData_idx_0_i = pData * 1000.0 ; jd = pData_p *
+1000.0 ; dblRecordNum = pData_e * 1000.0 ; dUT1 = pData_idx_0_i - rtX .
 fay2cpmqpg [ 0 ] ; pData_e = jd - rtX . fay2cpmqpg [ 1 ] ; pData_p =
 dblRecordNum - rtX . fay2cpmqpg [ 2 ] ; rtB . gws1dy0r5h [ 0 ] = rtX .
 fay2cpmqpg [ 0 ] ; rtB . gws1dy0r5h [ 1 ] = rtX . fay2cpmqpg [ 1 ] ; rtB .
 gws1dy0r5h [ 2 ] = rtX . fay2cpmqpg [ 2 ] ; rtB . i55c2f2ohg [ 0 ] = rtX .
 fay2cpmqpg [ 3 ] ; rtB . i55c2f2ohg [ 1 ] = rtX . fay2cpmqpg [ 4 ] ; rtB .
-i55c2f2ohg [ 2 ] = rtX . fay2cpmqpg [ 5 ] ; rtDW . h3cflltm3q [ 0 ] = ( (
-pData_idx_0_e / muDoubleScalarPower ( muDoubleScalarSqrt ( ( pData_idx_0_e *
-pData_idx_0_e + pData_idx_1_e * pData_idx_1_e ) + pData_idx_2_m *
-pData_idx_2_m ) , 3.0 ) - A / muDoubleScalarPower ( muDoubleScalarSqrt ( ( A
-* A + I * I ) + pData_idx_2_i * pData_idx_2_i ) , 3.0 ) ) *
-1.32712440017987E+20 + ( hour_p / muDoubleScalarPower ( muDoubleScalarSqrt (
-( hour_p * hour_p + pData_e * pData_e ) + pData_p * pData_p ) , 3.0 ) -
-pData_idx_0_i / muDoubleScalarPower ( muDoubleScalarSqrt ( ( pData_idx_0_i *
-pData_idx_0_i + jd * jd ) + dblRecordNum * dblRecordNum ) , 3.0 ) ) *
-4.902801076E+12 ) + - 3.986004418E+14 / ( ( ( rtX . fay2cpmqpg [ 0 ] * rtX .
+i55c2f2ohg [ 2 ] = rtX . fay2cpmqpg [ 5 ] ; rtDW . h3cflltm3q [ 0 ] = ( -
+3.986004418E+14 / ( ( ( rtX . fay2cpmqpg [ 0 ] * rtX . fay2cpmqpg [ 0 ] + rtX
+. fay2cpmqpg [ 1 ] * rtX . fay2cpmqpg [ 1 ] ) + rtX . fay2cpmqpg [ 2 ] * rtX
+. fay2cpmqpg [ 2 ] ) * muDoubleScalarSqrt ( ( rtX . fay2cpmqpg [ 0 ] * rtX .
+fay2cpmqpg [ 0 ] + rtX . fay2cpmqpg [ 1 ] * rtX . fay2cpmqpg [ 1 ] ) + rtX .
+fay2cpmqpg [ 2 ] * rtX . fay2cpmqpg [ 2 ] ) ) * rtX . fay2cpmqpg [ 0 ] + rtB
+. dclql12erk [ 0 ] ) + ( ( pData_idx_0_e / muDoubleScalarPower (
+muDoubleScalarSqrt ( ( pData_idx_0_e * pData_idx_0_e + pData_idx_1_e *
+pData_idx_1_e ) + pData_idx_2_m * pData_idx_2_m ) , 3.0 ) - A /
+muDoubleScalarPower ( muDoubleScalarSqrt ( ( A * A + I * I ) + pData_idx_2_i
+* pData_idx_2_i ) , 3.0 ) ) * 1.32712440017987E+20 + ( dUT1 /
+muDoubleScalarPower ( muDoubleScalarSqrt ( ( dUT1 * dUT1 + pData_e * pData_e
+) + pData_p * pData_p ) , 3.0 ) - pData_idx_0_i / muDoubleScalarPower (
+muDoubleScalarSqrt ( ( pData_idx_0_i * pData_idx_0_i + jd * jd ) +
+dblRecordNum * dblRecordNum ) , 3.0 ) ) * 4.902801076E+12 ) ; rtDW .
+h3cflltm3q [ 1 ] = ( - 3.986004418E+14 / ( ( ( rtX . fay2cpmqpg [ 0 ] * rtX .
 fay2cpmqpg [ 0 ] + rtX . fay2cpmqpg [ 1 ] * rtX . fay2cpmqpg [ 1 ] ) + rtX .
 fay2cpmqpg [ 2 ] * rtX . fay2cpmqpg [ 2 ] ) * muDoubleScalarSqrt ( ( rtX .
 fay2cpmqpg [ 0 ] * rtX . fay2cpmqpg [ 0 ] + rtX . fay2cpmqpg [ 1 ] * rtX .
 fay2cpmqpg [ 1 ] ) + rtX . fay2cpmqpg [ 2 ] * rtX . fay2cpmqpg [ 2 ] ) ) *
-rtX . fay2cpmqpg [ 0 ] ; rtDW . h3cflltm3q [ 1 ] = ( ( pData_idx_1_e /
+rtX . fay2cpmqpg [ 1 ] + rtB . dclql12erk [ 1 ] ) + ( ( pData_idx_1_e /
 muDoubleScalarPower ( muDoubleScalarSqrt ( ( pData_idx_0_e * pData_idx_0_e +
 pData_idx_1_e * pData_idx_1_e ) + pData_idx_2_m * pData_idx_2_m ) , 3.0 ) - I
 / muDoubleScalarPower ( muDoubleScalarSqrt ( ( A * A + I * I ) +
 pData_idx_2_i * pData_idx_2_i ) , 3.0 ) ) * 1.32712440017987E+20 + ( pData_e
-/ muDoubleScalarPower ( muDoubleScalarSqrt ( ( hour_p * hour_p + pData_e *
+/ muDoubleScalarPower ( muDoubleScalarSqrt ( ( dUT1 * dUT1 + pData_e *
 pData_e ) + pData_p * pData_p ) , 3.0 ) - jd / muDoubleScalarPower (
 muDoubleScalarSqrt ( ( pData_idx_0_i * pData_idx_0_i + jd * jd ) +
-dblRecordNum * dblRecordNum ) , 3.0 ) ) * 4.902801076E+12 ) + -
-3.986004418E+14 / ( ( ( rtX . fay2cpmqpg [ 0 ] * rtX . fay2cpmqpg [ 0 ] + rtX
-. fay2cpmqpg [ 1 ] * rtX . fay2cpmqpg [ 1 ] ) + rtX . fay2cpmqpg [ 2 ] * rtX
-. fay2cpmqpg [ 2 ] ) * muDoubleScalarSqrt ( ( rtX . fay2cpmqpg [ 0 ] * rtX .
+dblRecordNum * dblRecordNum ) , 3.0 ) ) * 4.902801076E+12 ) ; rtDW .
+h3cflltm3q [ 2 ] = ( - 3.986004418E+14 / ( ( ( rtX . fay2cpmqpg [ 0 ] * rtX .
 fay2cpmqpg [ 0 ] + rtX . fay2cpmqpg [ 1 ] * rtX . fay2cpmqpg [ 1 ] ) + rtX .
-fay2cpmqpg [ 2 ] * rtX . fay2cpmqpg [ 2 ] ) ) * rtX . fay2cpmqpg [ 1 ] ; rtDW
-. h3cflltm3q [ 2 ] = ( ( pData_idx_2_m / muDoubleScalarPower (
-muDoubleScalarSqrt ( ( pData_idx_0_e * pData_idx_0_e + pData_idx_1_e *
-pData_idx_1_e ) + pData_idx_2_m * pData_idx_2_m ) , 3.0 ) - pData_idx_2_i /
-muDoubleScalarPower ( muDoubleScalarSqrt ( ( A * A + I * I ) + pData_idx_2_i
-* pData_idx_2_i ) , 3.0 ) ) * 1.32712440017987E+20 + ( pData_p /
-muDoubleScalarPower ( muDoubleScalarSqrt ( ( hour_p * hour_p + pData_e *
-pData_e ) + pData_p * pData_p ) , 3.0 ) - dblRecordNum / muDoubleScalarPower
-( muDoubleScalarSqrt ( ( pData_idx_0_i * pData_idx_0_i + jd * jd ) +
-dblRecordNum * dblRecordNum ) , 3.0 ) ) * 4.902801076E+12 ) + -
-3.986004418E+14 / ( ( ( rtX . fay2cpmqpg [ 0 ] * rtX . fay2cpmqpg [ 0 ] + rtX
-. fay2cpmqpg [ 1 ] * rtX . fay2cpmqpg [ 1 ] ) + rtX . fay2cpmqpg [ 2 ] * rtX
-. fay2cpmqpg [ 2 ] ) * muDoubleScalarSqrt ( ( rtX . fay2cpmqpg [ 0 ] * rtX .
-fay2cpmqpg [ 0 ] + rtX . fay2cpmqpg [ 1 ] * rtX . fay2cpmqpg [ 1 ] ) + rtX .
-fay2cpmqpg [ 2 ] * rtX . fay2cpmqpg [ 2 ] ) ) * rtX . fay2cpmqpg [ 2 ] ; rtB
+fay2cpmqpg [ 2 ] * rtX . fay2cpmqpg [ 2 ] ) * muDoubleScalarSqrt ( ( rtX .
+fay2cpmqpg [ 0 ] * rtX . fay2cpmqpg [ 0 ] + rtX . fay2cpmqpg [ 1 ] * rtX .
+fay2cpmqpg [ 1 ] ) + rtX . fay2cpmqpg [ 2 ] * rtX . fay2cpmqpg [ 2 ] ) ) *
+rtX . fay2cpmqpg [ 2 ] + rtB . dclql12erk [ 2 ] ) + ( ( pData_idx_2_m /
+muDoubleScalarPower ( muDoubleScalarSqrt ( ( pData_idx_0_e * pData_idx_0_e +
+pData_idx_1_e * pData_idx_1_e ) + pData_idx_2_m * pData_idx_2_m ) , 3.0 ) -
+pData_idx_2_i / muDoubleScalarPower ( muDoubleScalarSqrt ( ( A * A + I * I )
++ pData_idx_2_i * pData_idx_2_i ) , 3.0 ) ) * 1.32712440017987E+20 + (
+pData_p / muDoubleScalarPower ( muDoubleScalarSqrt ( ( dUT1 * dUT1 + pData_e
+* pData_e ) + pData_p * pData_p ) , 3.0 ) - dblRecordNum /
+muDoubleScalarPower ( muDoubleScalarSqrt ( ( pData_idx_0_i * pData_idx_0_i +
+jd * jd ) + dblRecordNum * dblRecordNum ) , 3.0 ) ) * 4.902801076E+12 ) ; rtB
 . g5bjapwpnv [ 0 ] = 1.0 / muDoubleScalarSqrt ( ( ( pData_idx_0 * pData_idx_0
 + pData_idx_1_p * pData_idx_1_p ) + pData_idx_2_p * pData_idx_2_p ) +
 pData_idx_3_p * pData_idx_3_p ) * pData_idx_0 ; rtB . g5bjapwpnv [ 1 ] = 1.0
@@ -53037,11 +53036,11 @@ rtP . SpacecraftDynamics_inertia [ 2 ] * rtP . SpacecraftDynamics_inertia [ 3
 SpacecraftDynamics_inertia [ 0 ] * rtP . SpacecraftDynamics_inertia [ 4 ] -
 rtP . SpacecraftDynamics_inertia [ 1 ] * rtP . SpacecraftDynamics_inertia [ 3
 ] ) * ( 1.0 / pData_idx_3_e ) * pData_idx_2_e ; A = fdgkygsjdf_idx_1 ;
-dblRecordNum = fdgkygsjdf_idx_0 ; if ( fdgkygsjdf_idx_0 <= 2.0 ) { A =
-fdgkygsjdf_idx_1 - 1.0 ; dblRecordNum = fdgkygsjdf_idx_0 + 12.0 ; } rtB .
-dp0ykzxsqj = ( ( ( ( muDoubleScalarFloor ( ( A + 4716.0 ) * 365.25 ) +
-muDoubleScalarFloor ( ( dblRecordNum + 1.0 ) * 30.6001 ) ) + o1ci34lyko ) + (
-( 2.0 - muDoubleScalarFloor ( A / 100.0 ) ) + muDoubleScalarFloor (
+dblRecordNum = o1ci34lyko ; if ( o1ci34lyko <= 2.0 ) { A = fdgkygsjdf_idx_1 -
+1.0 ; dblRecordNum = o1ci34lyko + 12.0 ; } rtB . dp0ykzxsqj = ( ( ( (
+muDoubleScalarFloor ( ( A + 4716.0 ) * 365.25 ) + muDoubleScalarFloor ( (
+dblRecordNum + 1.0 ) * 30.6001 ) ) + fdgkygsjdf_idx_0 ) + ( ( 2.0 -
+muDoubleScalarFloor ( A / 100.0 ) ) + muDoubleScalarFloor (
 muDoubleScalarFloor ( A / 100.0 ) / 4.0 ) ) ) - 1524.5 ) + ( ( sec / 60.0 +
 min ) / 60.0 + hour ) / 24.0 ; rtY . hs1awvyyae [ 0 ] = rtB . gws1dy0r5h [ 0
 ] ; rtY . ecbpwue5ri [ 0 ] = rtB . i55c2f2ohg [ 0 ] ; rtY . hs1awvyyae [ 1 ]
@@ -53060,38 +53059,38 @@ dblRecordNum -- ; } pData_idx_0_i = ( ( ( muDoubleScalarFloor ( rtB .
 dp0ykzxsqj - 0.5 ) + 0.5 ) - ( ( dblRecordNum - 1.0 ) * 32.0 + 2.4588325E+6 )
 ) + ( ( rtB . dp0ykzxsqj - 0.5 ) - muDoubleScalarFloor ( rtB . dp0ykzxsqj -
 0.5 ) ) ) / 32.0 ; } if ( muDoubleScalarIsNaN ( dblRecordNum ) ||
-muDoubleScalarIsInf ( dblRecordNum ) ) { dblRecordNum = 0.0 ; } else {
-dblRecordNum = muDoubleScalarRem ( dblRecordNum , 4.294967296E+9 ) ; } if (
-dblRecordNum < 0.0 ) { i_p = - ( int32_T ) ( uint32_T ) - dblRecordNum ; }
-else { i_p = ( int32_T ) ( uint32_T ) dblRecordNum ; } cbuff2 = & tmp [ i_p *
-312 + - 312 ] ; posCoeff_m [ 0 ] = 1.0 ; posCoeff_m [ 1 ] = (
+muDoubleScalarIsInf ( dblRecordNum ) ) { o1ci34lyko = 0.0 ; } else {
+o1ci34lyko = muDoubleScalarRem ( dblRecordNum , 4.294967296E+9 ) ; } if (
+o1ci34lyko < 0.0 ) { i_p = - ( int32_T ) ( uint32_T ) - o1ci34lyko ; } else {
+i_p = ( int32_T ) ( uint32_T ) o1ci34lyko ; } cbuff2 = & tmp [ i_p * 312 + -
+312 ] ; posCoeff_m [ 0 ] = 1.0 ; posCoeff_m [ 1 ] = ( muDoubleScalarMod ( 8.0
+* pData_idx_0_i , 1.0 ) + muDoubleScalarFloor ( pData_idx_0_i ) ) * 2.0 - 1.0
+; for ( i_p = 0 ; i_p < 11 ; i_p ++ ) { posCoeff_m [ i_p + 2 ] = ( (
 muDoubleScalarMod ( 8.0 * pData_idx_0_i , 1.0 ) + muDoubleScalarFloor (
-pData_idx_0_i ) ) * 2.0 - 1.0 ; for ( i_p = 0 ; i_p < 11 ; i_p ++ ) {
-posCoeff_m [ i_p + 2 ] = ( ( muDoubleScalarMod ( 8.0 * pData_idx_0_i , 1.0 )
-+ muDoubleScalarFloor ( pData_idx_0_i ) ) * 2.0 - 1.0 ) * 2.0 * posCoeff_m [
-i_p + 1 ] - posCoeff_m [ i_p ] ; } o1ci34lyko = 0.0 ; fdgkygsjdf_idx_0 = 0.0
-; fdgkygsjdf_idx_1 = 0.0 ; dblRecordNum = muDoubleScalarFloor ( 8.0 *
-pData_idx_0_i - muDoubleScalarFloor ( pData_idx_0_i ) ) ; if (
-muDoubleScalarIsNaN ( dblRecordNum ) || muDoubleScalarIsInf ( dblRecordNum )
-) { dblRecordNum = 0.0 ; } else { dblRecordNum = muDoubleScalarRem (
-dblRecordNum , 4.294967296E+9 ) ; } hour = muDoubleScalarFloor ( 8.0 *
-pData_idx_0_i - muDoubleScalarFloor ( pData_idx_0_i ) ) ; if (
-muDoubleScalarIsNaN ( hour ) || muDoubleScalarIsInf ( hour ) ) { hour = 0.0 ;
-} else { hour = muDoubleScalarRem ( hour , 4.294967296E+9 ) ; } min =
+pData_idx_0_i ) ) * 2.0 - 1.0 ) * 2.0 * posCoeff_m [ i_p + 1 ] - posCoeff_m [
+i_p ] ; } fdgkygsjdf_idx_0 = 0.0 ; fdgkygsjdf_idx_1 = 0.0 ; hour = 0.0 ;
+o1ci34lyko = muDoubleScalarFloor ( 8.0 * pData_idx_0_i - muDoubleScalarFloor
+( pData_idx_0_i ) ) ; if ( muDoubleScalarIsNaN ( o1ci34lyko ) ||
+muDoubleScalarIsInf ( o1ci34lyko ) ) { o1ci34lyko = 0.0 ; } else { o1ci34lyko
+= muDoubleScalarRem ( o1ci34lyko , 4.294967296E+9 ) ; } dblRecordNum =
+muDoubleScalarFloor ( 8.0 * pData_idx_0_i - muDoubleScalarFloor (
+pData_idx_0_i ) ) ; if ( muDoubleScalarIsNaN ( dblRecordNum ) ||
+muDoubleScalarIsInf ( dblRecordNum ) ) { dblRecordNum = 0.0 ; } else {
+dblRecordNum = muDoubleScalarRem ( dblRecordNum , 4.294967296E+9 ) ; } min =
 muDoubleScalarFloor ( 8.0 * pData_idx_0_i - muDoubleScalarFloor (
 pData_idx_0_i ) ) ; if ( muDoubleScalarIsNaN ( min ) || muDoubleScalarIsInf (
 min ) ) { min = 0.0 ; } else { min = muDoubleScalarRem ( min , 4.294967296E+9
-) ; } for ( i_p = 0 ; i_p < 13 ; i_p ++ ) { hour_p = posCoeff_m [ i_p ] ; if
-( dblRecordNum < 0.0 ) { tmp_i = - ( int32_T ) ( uint32_T ) - dblRecordNum ;
-} else { tmp_i = ( int32_T ) ( uint32_T ) dblRecordNum ; } o1ci34lyko +=
-cbuff2 [ tmp_i * 13 * 3 + i_p ] * hour_p ; if ( hour < 0.0 ) { tmp_i = - (
-int32_T ) ( uint32_T ) - hour ; } else { tmp_i = ( int32_T ) ( uint32_T )
-hour ; } fdgkygsjdf_idx_0 += cbuff2 [ ( tmp_i * 13 * 3 + i_p ) + 13 ] *
-hour_p ; if ( min < 0.0 ) { tmp_i = - ( int32_T ) ( uint32_T ) - min ; } else
-{ tmp_i = ( int32_T ) ( uint32_T ) min ; } fdgkygsjdf_idx_1 += cbuff2 [ (
-tmp_i * 13 * 3 + i_p ) + 26 ] * hour_p ; } rtB . jo5kxmwsrg [ 0 ] =
-o1ci34lyko * 1000.0 ; rtB . jo5kxmwsrg [ 1 ] = fdgkygsjdf_idx_0 * 1000.0 ;
-rtB . jo5kxmwsrg [ 2 ] = fdgkygsjdf_idx_1 * 1000.0 ; rtY . fdj51o4wpi [ 0 ] =
+) ; } for ( i_p = 0 ; i_p < 13 ; i_p ++ ) { dUT1 = posCoeff_m [ i_p ] ; if (
+o1ci34lyko < 0.0 ) { tmp_i = - ( int32_T ) ( uint32_T ) - o1ci34lyko ; } else
+{ tmp_i = ( int32_T ) ( uint32_T ) o1ci34lyko ; } fdgkygsjdf_idx_0 += cbuff2
+[ tmp_i * 13 * 3 + i_p ] * dUT1 ; if ( dblRecordNum < 0.0 ) { tmp_i = - (
+int32_T ) ( uint32_T ) - dblRecordNum ; } else { tmp_i = ( int32_T ) (
+uint32_T ) dblRecordNum ; } fdgkygsjdf_idx_1 += cbuff2 [ ( tmp_i * 13 * 3 +
+i_p ) + 13 ] * dUT1 ; if ( min < 0.0 ) { tmp_i = - ( int32_T ) ( uint32_T ) -
+min ; } else { tmp_i = ( int32_T ) ( uint32_T ) min ; } hour += cbuff2 [ (
+tmp_i * 13 * 3 + i_p ) + 26 ] * dUT1 ; } rtB . jo5kxmwsrg [ 0 ] =
+fdgkygsjdf_idx_0 * 1000.0 ; rtB . jo5kxmwsrg [ 1 ] = fdgkygsjdf_idx_1 *
+1000.0 ; rtB . jo5kxmwsrg [ 2 ] = hour * 1000.0 ; rtY . fdj51o4wpi [ 0 ] =
 rtB . jo5kxmwsrg [ 0 ] ; rtY . fdj51o4wpi [ 1 ] = rtB . jo5kxmwsrg [ 1 ] ;
 rtY . fdj51o4wpi [ 2 ] = rtB . jo5kxmwsrg [ 2 ] ; if ( ssIsSampleHit ( rtS ,
 1 , 0 ) ) { { if ( rtDW . chu05kbpxu . AQHandles && ssGetLogOutput ( rtS ) )
@@ -53129,8 +53128,31 @@ ssIsModeUpdateTimeStep ( rtS ) ) { rtDW . irz00m5icq = ( rtB . idx0fxvvk3 >
 rtP . NormalizeVector_maxzero_pntl1pmm30 ) ; } if ( ! rtDW . irz00m5icq ) {
 rtB . mi1sjd5xhd [ 0 ] = rtB . jo5kxmwsrg [ 0 ] * 0.0 ; rtB . mi1sjd5xhd [ 1
 ] = rtB . jo5kxmwsrg [ 1 ] * 0.0 ; rtB . mi1sjd5xhd [ 2 ] = rtB . jo5kxmwsrg
-[ 2 ] * 0.0 ; } UNUSED_PARAMETER ( tid ) ; } void MdlOutputsTID2 ( int_T tid
-) { UNUSED_PARAMETER ( tid ) ; } void MdlUpdate ( int_T tid ) {
+[ 2 ] * 0.0 ; } rtB . mfuo45igdq = ( rtB . i55c2f2ohg [ 0 ] * rtB .
+i55c2f2ohg [ 0 ] + rtB . i55c2f2ohg [ 1 ] * rtB . i55c2f2ohg [ 1 ] ) + rtB .
+i55c2f2ohg [ 2 ] * rtB . i55c2f2ohg [ 2 ] ; if ( rtB . mfuo45igdq < 0.0 ) {
+rtB . d3trp0rw53 = - muDoubleScalarSqrt ( muDoubleScalarAbs ( rtB .
+mfuo45igdq ) ) ; } else { rtB . d3trp0rw53 = muDoubleScalarSqrt ( rtB .
+mfuo45igdq ) ; } if ( ssIsModeUpdateTimeStep ( rtS ) ) { rtDW . mojmy2zhqz =
+( rtB . d3trp0rw53 > rtP . NormalizeVector_maxzero_afn2dyubdl ) ; } if ( rtDW
+. mojmy2zhqz ) { rtB . g34dv5hrtq [ 0 ] = rtB . i55c2f2ohg [ 0 ] ; rtB .
+g34dv5hrtq [ 1 ] = rtB . i55c2f2ohg [ 1 ] ; rtB . g34dv5hrtq [ 2 ] = rtB .
+i55c2f2ohg [ 2 ] ; rtB . g34dv5hrtq [ 3 ] = rtB . d3trp0rw53 ; } else {
+o1ci34lyko = rtB . i55c2f2ohg [ 0 ] * 0.0 ; rtB . lyaqu2ph4w [ 0 ] =
+o1ci34lyko ; rtB . g34dv5hrtq [ 0 ] = o1ci34lyko ; o1ci34lyko = rtB .
+i55c2f2ohg [ 1 ] * 0.0 ; rtB . lyaqu2ph4w [ 1 ] = o1ci34lyko ; rtB .
+g34dv5hrtq [ 1 ] = o1ci34lyko ; o1ci34lyko = rtB . i55c2f2ohg [ 2 ] * 0.0 ;
+rtB . lyaqu2ph4w [ 2 ] = o1ci34lyko ; rtB . g34dv5hrtq [ 2 ] = o1ci34lyko ;
+rtB . g34dv5hrtq [ 3 ] = rtP . Constant_Value_pnqibv1hlu ; } o1ci34lyko = rtB
+. g34dv5hrtq [ 0 ] / rtB . g34dv5hrtq [ 3 ] ; rtB . epczetk5lz [ 0 ] =
+o1ci34lyko ; rtB . dclql12erk [ 0 ] = rtB . hatpfo3hlm * o1ci34lyko ;
+o1ci34lyko = rtB . g34dv5hrtq [ 1 ] / rtB . g34dv5hrtq [ 3 ] ; rtB .
+epczetk5lz [ 1 ] = o1ci34lyko ; rtB . dclql12erk [ 1 ] = rtB . hatpfo3hlm *
+o1ci34lyko ; o1ci34lyko = rtB . g34dv5hrtq [ 2 ] / rtB . g34dv5hrtq [ 3 ] ;
+rtB . epczetk5lz [ 2 ] = o1ci34lyko ; rtB . dclql12erk [ 2 ] = rtB .
+hatpfo3hlm * o1ci34lyko ; UNUSED_PARAMETER ( tid ) ; } void MdlOutputsTID2 (
+int_T tid ) { rtB . hatpfo3hlm = rtP . thrust / rtP . initMass * rtP .
+Burn_Value ; UNUSED_PARAMETER ( tid ) ; } void MdlUpdate ( int_T tid ) {
 UNUSED_PARAMETER ( tid ) ; } void MdlUpdateTID2 ( int_T tid ) {
 UNUSED_PARAMETER ( tid ) ; } void MdlDerivatives ( void ) { XDot * _rtXdot ;
 _rtXdot = ( ( XDot * ) ssGetdX ( rtS ) ) ; _rtXdot -> fay2cpmqpg [ 0 ] = rtX
@@ -53171,27 +53193,29 @@ pData_idx_1 ) + rtX . fay2cpmqpg [ 9 ] * rtX . fay2cpmqpg [ 9 ] ) ; } void
 MdlZeroCrossings ( void ) { ZCV * _rtZCSV ; _rtZCSV = ( ( ZCV * )
 ssGetSolverZcSignalVector ( rtS ) ) ; _rtZCSV -> mry5gqeihh = rtB .
 cm2sh5gwjs - rtP . NormalizeVector_maxzero ; _rtZCSV -> hi2lkxa1hh = rtB .
-idx0fxvvk3 - rtP . NormalizeVector_maxzero_pntl1pmm30 ; } void MdlTerminate (
-void ) { { if ( rtDW . chu05kbpxu . AQHandles ) { sdiTerminateStreaming ( &
-rtDW . chu05kbpxu . AQHandles ) ; } } { if ( rtDW . czhwoklxpu . AQHandles )
-{ sdiTerminateStreaming ( & rtDW . czhwoklxpu . AQHandles ) ; } } { if ( rtDW
-. j4pv5v0dny . AQHandles ) { sdiTerminateStreaming ( & rtDW . j4pv5v0dny .
-AQHandles ) ; } } { if ( rtDW . ovdng33q0b . AQHandles ) {
-sdiTerminateStreaming ( & rtDW . ovdng33q0b . AQHandles ) ; } } { if ( rtDW .
-iwpwwackcm . AQHandles ) { sdiTerminateStreaming ( & rtDW . iwpwwackcm .
-AQHandles ) ; } } } static void mr_propagatorSimple_cacheDataAsMxArray (
-mxArray * destArray , mwIndex i , int j , const void * srcData , size_t
-numBytes ) ; static void mr_propagatorSimple_cacheDataAsMxArray ( mxArray *
-destArray , mwIndex i , int j , const void * srcData , size_t numBytes ) {
-mxArray * newArray = mxCreateUninitNumericMatrix ( ( size_t ) 1 , numBytes ,
-mxUINT8_CLASS , mxREAL ) ; memcpy ( ( uint8_T * ) mxGetData ( newArray ) , (
-const uint8_T * ) srcData , numBytes ) ; mxSetFieldByNumber ( destArray , i ,
-j , newArray ) ; } static void mr_propagatorSimple_restoreDataFromMxArray (
-void * destData , const mxArray * srcArray , mwIndex i , int j , size_t
-numBytes ) ; static void mr_propagatorSimple_restoreDataFromMxArray ( void *
-destData , const mxArray * srcArray , mwIndex i , int j , size_t numBytes ) {
-memcpy ( ( uint8_T * ) destData , ( const uint8_T * ) mxGetData (
-mxGetFieldByNumber ( srcArray , i , j ) ) , numBytes ) ; } static void
+idx0fxvvk3 - rtP . NormalizeVector_maxzero_pntl1pmm30 ; _rtZCSV -> nvpkxxqfbb
+= rtB . d3trp0rw53 - rtP . NormalizeVector_maxzero_afn2dyubdl ; } void
+MdlTerminate ( void ) { { if ( rtDW . chu05kbpxu . AQHandles ) {
+sdiTerminateStreaming ( & rtDW . chu05kbpxu . AQHandles ) ; } } { if ( rtDW .
+czhwoklxpu . AQHandles ) { sdiTerminateStreaming ( & rtDW . czhwoklxpu .
+AQHandles ) ; } } { if ( rtDW . j4pv5v0dny . AQHandles ) {
+sdiTerminateStreaming ( & rtDW . j4pv5v0dny . AQHandles ) ; } } { if ( rtDW .
+ovdng33q0b . AQHandles ) { sdiTerminateStreaming ( & rtDW . ovdng33q0b .
+AQHandles ) ; } } { if ( rtDW . iwpwwackcm . AQHandles ) {
+sdiTerminateStreaming ( & rtDW . iwpwwackcm . AQHandles ) ; } } } static void
+mr_propagatorSimple_cacheDataAsMxArray ( mxArray * destArray , mwIndex i ,
+int j , const void * srcData , size_t numBytes ) ; static void
+mr_propagatorSimple_cacheDataAsMxArray ( mxArray * destArray , mwIndex i ,
+int j , const void * srcData , size_t numBytes ) { mxArray * newArray =
+mxCreateUninitNumericMatrix ( ( size_t ) 1 , numBytes , mxUINT8_CLASS ,
+mxREAL ) ; memcpy ( ( uint8_T * ) mxGetData ( newArray ) , ( const uint8_T *
+) srcData , numBytes ) ; mxSetFieldByNumber ( destArray , i , j , newArray )
+; } static void mr_propagatorSimple_restoreDataFromMxArray ( void * destData
+, const mxArray * srcArray , mwIndex i , int j , size_t numBytes ) ; static
+void mr_propagatorSimple_restoreDataFromMxArray ( void * destData , const
+mxArray * srcArray , mwIndex i , int j , size_t numBytes ) { memcpy ( (
+uint8_T * ) destData , ( const uint8_T * ) mxGetData ( mxGetFieldByNumber (
+srcArray , i , j ) ) , numBytes ) ; } static void
 mr_propagatorSimple_cacheBitFieldToMxArray ( mxArray * destArray , mwIndex i
 , int j , uint_T bitVal ) ; static void
 mr_propagatorSimple_cacheBitFieldToMxArray ( mxArray * destArray , mwIndex i
@@ -53234,23 +53258,28 @@ static const char_T * ssDWFieldNames [ 3 ] = { "rtB" , "rtDW" ,
 "NULL_PrevZCX" , } ; mxArray * ssDW = mxCreateStructMatrix ( 1 , 1 , 3 ,
 ssDWFieldNames ) ; mr_propagatorSimple_cacheDataAsMxArray ( ssDW , 0 , 0 , (
 const void * ) & ( rtB ) , sizeof ( rtB ) ) ; { static const char_T *
-rtdwDataFieldNames [ 7 ] = { "rtDW.h3cflltm3q" , "rtDW.f0h4bwqduk" ,
-"rtDW.lbrqpwfmha" , "rtDW.mjolfyo1k3" , "rtDW.jdbvpmwjyw" , "rtDW.nbxd2gjju2"
-, "rtDW.irz00m5icq" , } ; mxArray * rtdwData = mxCreateStructMatrix ( 1 , 1 ,
-7 , rtdwDataFieldNames ) ; mr_propagatorSimple_cacheDataAsMxArray ( rtdwData
-, 0 , 0 , ( const void * ) & ( rtDW . h3cflltm3q ) , sizeof ( rtDW .
-h3cflltm3q ) ) ; mr_propagatorSimple_cacheDataAsMxArray ( rtdwData , 0 , 1 ,
-( const void * ) & ( rtDW . f0h4bwqduk ) , sizeof ( rtDW . f0h4bwqduk ) ) ;
+rtdwDataFieldNames [ 9 ] = { "rtDW.h3cflltm3q" , "rtDW.f0h4bwqduk" ,
+"rtDW.lbrqpwfmha" , "rtDW.mjolfyo1k3" , "rtDW.pyb2cpctgm" , "rtDW.jdbvpmwjyw"
+, "rtDW.nbxd2gjju2" , "rtDW.irz00m5icq" , "rtDW.mojmy2zhqz" , } ; mxArray *
+rtdwData = mxCreateStructMatrix ( 1 , 1 , 9 , rtdwDataFieldNames ) ;
+mr_propagatorSimple_cacheDataAsMxArray ( rtdwData , 0 , 0 , ( const void * )
+& ( rtDW . h3cflltm3q ) , sizeof ( rtDW . h3cflltm3q ) ) ;
+mr_propagatorSimple_cacheDataAsMxArray ( rtdwData , 0 , 1 , ( const void * )
+& ( rtDW . f0h4bwqduk ) , sizeof ( rtDW . f0h4bwqduk ) ) ;
 mr_propagatorSimple_cacheDataAsMxArray ( rtdwData , 0 , 2 , ( const void * )
 & ( rtDW . lbrqpwfmha ) , sizeof ( rtDW . lbrqpwfmha ) ) ;
 mr_propagatorSimple_cacheDataAsMxArray ( rtdwData , 0 , 3 , ( const void * )
 & ( rtDW . mjolfyo1k3 ) , sizeof ( rtDW . mjolfyo1k3 ) ) ;
 mr_propagatorSimple_cacheDataAsMxArray ( rtdwData , 0 , 4 , ( const void * )
-& ( rtDW . jdbvpmwjyw ) , sizeof ( rtDW . jdbvpmwjyw ) ) ;
+& ( rtDW . pyb2cpctgm ) , sizeof ( rtDW . pyb2cpctgm ) ) ;
 mr_propagatorSimple_cacheDataAsMxArray ( rtdwData , 0 , 5 , ( const void * )
-& ( rtDW . nbxd2gjju2 ) , sizeof ( rtDW . nbxd2gjju2 ) ) ;
+& ( rtDW . jdbvpmwjyw ) , sizeof ( rtDW . jdbvpmwjyw ) ) ;
 mr_propagatorSimple_cacheDataAsMxArray ( rtdwData , 0 , 6 , ( const void * )
-& ( rtDW . irz00m5icq ) , sizeof ( rtDW . irz00m5icq ) ) ; mxSetFieldByNumber
+& ( rtDW . nbxd2gjju2 ) , sizeof ( rtDW . nbxd2gjju2 ) ) ;
+mr_propagatorSimple_cacheDataAsMxArray ( rtdwData , 0 , 7 , ( const void * )
+& ( rtDW . irz00m5icq ) , sizeof ( rtDW . irz00m5icq ) ) ;
+mr_propagatorSimple_cacheDataAsMxArray ( rtdwData , 0 , 8 , ( const void * )
+& ( rtDW . mojmy2zhqz ) , sizeof ( rtDW . mojmy2zhqz ) ) ; mxSetFieldByNumber
 ( ssDW , 0 , 1 , rtdwData ) ; } return ssDW ; } void
 mr_propagatorSimple_SetDWork ( const mxArray * ssDW ) { ( void ) ssDW ;
 mr_propagatorSimple_restoreDataFromMxArray ( ( void * ) & ( rtB ) , ssDW , 0
@@ -53263,23 +53292,27 @@ mr_propagatorSimple_restoreDataFromMxArray ( ( void * ) & ( rtDW . lbrqpwfmha
 ) , rtdwData , 0 , 2 , sizeof ( rtDW . lbrqpwfmha ) ) ;
 mr_propagatorSimple_restoreDataFromMxArray ( ( void * ) & ( rtDW . mjolfyo1k3
 ) , rtdwData , 0 , 3 , sizeof ( rtDW . mjolfyo1k3 ) ) ;
+mr_propagatorSimple_restoreDataFromMxArray ( ( void * ) & ( rtDW . pyb2cpctgm
+) , rtdwData , 0 , 4 , sizeof ( rtDW . pyb2cpctgm ) ) ;
 mr_propagatorSimple_restoreDataFromMxArray ( ( void * ) & ( rtDW . jdbvpmwjyw
-) , rtdwData , 0 , 4 , sizeof ( rtDW . jdbvpmwjyw ) ) ;
+) , rtdwData , 0 , 5 , sizeof ( rtDW . jdbvpmwjyw ) ) ;
 mr_propagatorSimple_restoreDataFromMxArray ( ( void * ) & ( rtDW . nbxd2gjju2
-) , rtdwData , 0 , 5 , sizeof ( rtDW . nbxd2gjju2 ) ) ;
+) , rtdwData , 0 , 6 , sizeof ( rtDW . nbxd2gjju2 ) ) ;
 mr_propagatorSimple_restoreDataFromMxArray ( ( void * ) & ( rtDW . irz00m5icq
-) , rtdwData , 0 , 6 , sizeof ( rtDW . irz00m5icq ) ) ; } } mxArray *
+) , rtdwData , 0 , 7 , sizeof ( rtDW . irz00m5icq ) ) ;
+mr_propagatorSimple_restoreDataFromMxArray ( ( void * ) & ( rtDW . mojmy2zhqz
+) , rtdwData , 0 , 8 , sizeof ( rtDW . mojmy2zhqz ) ) ; } } mxArray *
 mr_propagatorSimple_GetSimStateDisallowedBlocks ( ) { return ( NULL ) ; }
 void MdlInitializeSizes ( void ) { ssSetNumContStates ( rtS , 13 ) ;
 ssSetNumPeriodicContStates ( rtS , 0 ) ; ssSetNumY ( rtS , 14 ) ; ssSetNumU (
 rtS , 0 ) ; ssSetDirectFeedThrough ( rtS , 0 ) ; ssSetNumSampleTimes ( rtS ,
-2 ) ; ssSetNumBlocks ( rtS , 27 ) ; ssSetNumBlockIO ( rtS , 10 ) ;
-ssSetNumBlockParams ( rtS , 105 ) ; } void MdlInitializeSampleTimes ( void )
+2 ) ; ssSetNumBlocks ( rtS , 38 ) ; ssSetNumBlockIO ( rtS , 17 ) ;
+ssSetNumBlockParams ( rtS , 110 ) ; } void MdlInitializeSampleTimes ( void )
 { ssSetSampleTime ( rtS , 0 , 0.0 ) ; ssSetSampleTime ( rtS , 1 , 0.0 ) ;
 ssSetOffsetTime ( rtS , 0 , 0.0 ) ; ssSetOffsetTime ( rtS , 1 , 1.0 ) ; }
-void raccel_set_checksum ( ) { ssSetChecksumVal ( rtS , 0 , 173308293U ) ;
-ssSetChecksumVal ( rtS , 1 , 2939699539U ) ; ssSetChecksumVal ( rtS , 2 ,
-392776264U ) ; ssSetChecksumVal ( rtS , 3 , 601710810U ) ; }
+void raccel_set_checksum ( ) { ssSetChecksumVal ( rtS , 0 , 652227924U ) ;
+ssSetChecksumVal ( rtS , 1 , 3388059650U ) ; ssSetChecksumVal ( rtS , 2 ,
+905212488U ) ; ssSetChecksumVal ( rtS , 3 , 4246678396U ) ; }
 #if defined(_MSC_VER)
 #pragma optimize( "", off )
 #endif
@@ -53332,7 +53365,7 @@ propagatorSimple_InitializeDataMapInfo ( ) ; ssSetIsRapidAcceleratorActive (
 rtS , true ) ; ssSetRootSS ( rtS , rtS ) ; ssSetVersion ( rtS ,
 SIMSTRUCT_VERSION_LEVEL2 ) ; ssSetModelName ( rtS , "propagatorSimple" ) ;
 ssSetPath ( rtS , "propagatorSimple" ) ; ssSetTStart ( rtS , 0.0 ) ;
-ssSetTFinal ( rtS , 1.0E+6 ) ; { static RTWLogInfo rt_DataLoggingInfo ;
+ssSetTFinal ( rtS , 1.0E+8 ) ; { static RTWLogInfo rt_DataLoggingInfo ;
 rt_DataLoggingInfo . loggingInterval = ( NULL ) ; ssSetRTWLogInfo ( rtS , &
 rt_DataLoggingInfo ) ; } { { static int_T rt_LoggedStateWidths [ ] = { 13 } ;
 static int_T rt_LoggedStateNumDimensions [ ] = { 1 } ; static int_T
@@ -53449,22 +53482,23 @@ contStatesDisabled [ 13 ] ; static real_T absTol [ 13 ] = { 1.0E-8 , 1.0E-8 ,
 1.0E-8 , 1.0E-8 , 1.0E-8 } ; static uint8_T absTolControl [ 13 ] = { 0U , 0U
 , 0U , 0U , 0U , 0U , 0U , 0U , 0U , 0U , 0U , 0U , 0U } ; static real_T
 contStateJacPerturbBoundMinVec [ 13 ] ; static real_T
-contStateJacPerturbBoundMaxVec [ 13 ] ; static uint8_T zcAttributes [ 2 ] = {
-( ZC_EVENT_ALL ) , ( ZC_EVENT_ALL ) } ; { int i ; for ( i = 0 ; i < 13 ; ++ i
-) { contStateJacPerturbBoundMinVec [ i ] = 0 ; contStateJacPerturbBoundMaxVec
-[ i ] = rtGetInf ( ) ; } } ssSetSolverRelTol ( rtS , 1.0E-8 ) ; ssSetStepSize
-( rtS , 0.0 ) ; ssSetMinStepSize ( rtS , 0.0 ) ; ssSetMaxNumMinSteps ( rtS ,
-- 1 ) ; ssSetMinStepViolatedError ( rtS , 0 ) ; ssSetMaxStepSize ( rtS ,
-20000.0 ) ; ssSetSolverMaxOrder ( rtS , - 1 ) ; ssSetSolverRefineFactor ( rtS
-, 1 ) ; ssSetOutputTimes ( rtS , ( NULL ) ) ; ssSetNumOutputTimes ( rtS , 0 )
-; ssSetOutputTimesOnly ( rtS , 0 ) ; ssSetOutputTimesIndex ( rtS , 0 ) ;
-ssSetZCCacheNeedsReset ( rtS , 0 ) ; ssSetDerivCacheNeedsReset ( rtS , 0 ) ;
-ssSetNumNonContDerivSigInfos ( rtS , 0 ) ; ssSetNonContDerivSigInfos ( rtS ,
-( NULL ) ) ; ssSetSolverInfo ( rtS , & slvrInfo ) ; ssSetSolverName ( rtS ,
-"VariableStepAuto" ) ; ssSetVariableStepSolver ( rtS , 1 ) ;
-ssSetSolverConsistencyChecking ( rtS , 0 ) ; ssSetSolverAdaptiveZcDetection (
-rtS , 0 ) ; ssSetSolverRobustResetMethod ( rtS , 0 ) ; ssSetAbsTolVector (
-rtS , absTol ) ; ssSetAbsTolControlVector ( rtS , absTolControl ) ;
+contStateJacPerturbBoundMaxVec [ 13 ] ; static uint8_T zcAttributes [ 3 ] = {
+( ZC_EVENT_ALL ) , ( ZC_EVENT_ALL ) , ( ZC_EVENT_ALL ) } ; { int i ; for ( i
+= 0 ; i < 13 ; ++ i ) { contStateJacPerturbBoundMinVec [ i ] = 0 ;
+contStateJacPerturbBoundMaxVec [ i ] = rtGetInf ( ) ; } } ssSetSolverRelTol (
+rtS , 1.0E-8 ) ; ssSetStepSize ( rtS , 0.0 ) ; ssSetMinStepSize ( rtS , 0.0 )
+; ssSetMaxNumMinSteps ( rtS , - 1 ) ; ssSetMinStepViolatedError ( rtS , 0 ) ;
+ssSetMaxStepSize ( rtS , 2.0E+6 ) ; ssSetSolverMaxOrder ( rtS , - 1 ) ;
+ssSetSolverRefineFactor ( rtS , 1 ) ; ssSetOutputTimes ( rtS , ( NULL ) ) ;
+ssSetNumOutputTimes ( rtS , 0 ) ; ssSetOutputTimesOnly ( rtS , 0 ) ;
+ssSetOutputTimesIndex ( rtS , 0 ) ; ssSetZCCacheNeedsReset ( rtS , 0 ) ;
+ssSetDerivCacheNeedsReset ( rtS , 0 ) ; ssSetNumNonContDerivSigInfos ( rtS ,
+0 ) ; ssSetNonContDerivSigInfos ( rtS , ( NULL ) ) ; ssSetSolverInfo ( rtS ,
+& slvrInfo ) ; ssSetSolverName ( rtS , "VariableStepAuto" ) ;
+ssSetVariableStepSolver ( rtS , 1 ) ; ssSetSolverConsistencyChecking ( rtS ,
+0 ) ; ssSetSolverAdaptiveZcDetection ( rtS , 0 ) ;
+ssSetSolverRobustResetMethod ( rtS , 0 ) ; ssSetAbsTolVector ( rtS , absTol )
+; ssSetAbsTolControlVector ( rtS , absTolControl ) ;
 ssSetSolverAbsTol_Obsolete ( rtS , absTol ) ;
 ssSetSolverAbsTolControl_Obsolete ( rtS , absTolControl ) ;
 ssSetJacobianPerturbationBoundsMinVec ( rtS , contStateJacPerturbBoundMinVec
@@ -53478,7 +53512,7 @@ ssSetSolverMassMatrixType ( rtS , ( ssMatrixType ) 0 ) ;
 ssSetSolverMassMatrixNzMax ( rtS , 0 ) ; ssSetModelOutputs ( rtS , MdlOutputs
 ) ; ssSetModelUpdate ( rtS , MdlUpdate ) ; ssSetModelDerivatives ( rtS ,
 MdlDerivatives ) ; ssSetSolverZcSignalAttrib ( rtS , zcAttributes ) ;
-ssSetSolverNumZcSignals ( rtS , 2 ) ; ssSetModelZeroCrossings ( rtS ,
+ssSetSolverNumZcSignals ( rtS , 3 ) ; ssSetModelZeroCrossings ( rtS ,
 MdlZeroCrossings ) ; ssSetSolverConsecutiveZCsStepRelTol ( rtS ,
 2.8421709430404007E-13 ) ; ssSetSolverMaxConsecutiveZCs ( rtS , 1000 ) ;
 ssSetSolverConsecutiveZCsError ( rtS , 2 ) ; ssSetSolverMaskedZcDiagnostic (
@@ -53486,21 +53520,21 @@ rtS , 1 ) ; ssSetSolverIgnoredZcDiagnostic ( rtS , 1 ) ;
 ssSetSolverMaxConsecutiveMinStep ( rtS , 1 ) ;
 ssSetSolverShapePreserveControl ( rtS , 2 ) ; ssSetTNextTid ( rtS , INT_MIN )
 ; ssSetTNext ( rtS , rtMinusInf ) ; ssSetSolverNeedsReset ( rtS ) ;
-ssSetNumNonsampledZCs ( rtS , 2 ) ; ssSetContStateDisabled ( rtS ,
+ssSetNumNonsampledZCs ( rtS , 3 ) ; ssSetContStateDisabled ( rtS ,
 contStatesDisabled ) ; ssSetSolverMaxConsecutiveMinStep ( rtS , 1 ) ; }
-ssSetChecksumVal ( rtS , 0 , 173308293U ) ; ssSetChecksumVal ( rtS , 1 ,
-2939699539U ) ; ssSetChecksumVal ( rtS , 2 , 392776264U ) ; ssSetChecksumVal
-( rtS , 3 , 601710810U ) ; { static const sysRanDType rtAlwaysEnabled =
+ssSetChecksumVal ( rtS , 0 , 652227924U ) ; ssSetChecksumVal ( rtS , 1 ,
+3388059650U ) ; ssSetChecksumVal ( rtS , 2 , 905212488U ) ; ssSetChecksumVal
+( rtS , 3 , 4246678396U ) ; { static const sysRanDType rtAlwaysEnabled =
 SUBSYS_RAN_BC_ENABLE ; static RTWExtModeInfo rt_ExtModeInfo ; static const
-sysRanDType * systemRan [ 3 ] ; gblRTWExtModeInfo = & rt_ExtModeInfo ;
+sysRanDType * systemRan [ 4 ] ; gblRTWExtModeInfo = & rt_ExtModeInfo ;
 ssSetRTWExtModeInfo ( rtS , & rt_ExtModeInfo ) ;
 rteiSetSubSystemActiveVectorAddresses ( & rt_ExtModeInfo , systemRan ) ;
 systemRan [ 0 ] = & rtAlwaysEnabled ; systemRan [ 1 ] = & rtAlwaysEnabled ;
-systemRan [ 2 ] = & rtAlwaysEnabled ; rteiSetModelMappingInfoPtr (
-ssGetRTWExtModeInfo ( rtS ) , & ssGetModelMappingInfo ( rtS ) ) ;
-rteiSetChecksumsPtr ( ssGetRTWExtModeInfo ( rtS ) , ssGetChecksums ( rtS ) )
-; rteiSetTPtr ( ssGetRTWExtModeInfo ( rtS ) , ssGetTPtr ( rtS ) ) ; }
-slsaDisallowedBlocksForSimTargetOP ( rtS ,
+systemRan [ 2 ] = & rtAlwaysEnabled ; systemRan [ 3 ] = & rtAlwaysEnabled ;
+rteiSetModelMappingInfoPtr ( ssGetRTWExtModeInfo ( rtS ) , &
+ssGetModelMappingInfo ( rtS ) ) ; rteiSetChecksumsPtr ( ssGetRTWExtModeInfo (
+rtS ) , ssGetChecksums ( rtS ) ) ; rteiSetTPtr ( ssGetRTWExtModeInfo ( rtS )
+, ssGetTPtr ( rtS ) ) ; } slsaDisallowedBlocksForSimTargetOP ( rtS ,
 mr_propagatorSimple_GetSimStateDisallowedBlocks ) ;
 slsaGetWorkFcnForSimTargetOP ( rtS , mr_propagatorSimple_GetDWork ) ;
 slsaSetWorkFcnForSimTargetOP ( rtS , mr_propagatorSimple_SetDWork ) ;
