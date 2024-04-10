@@ -1,4 +1,4 @@
-function [sma,ecc,inc,RAAN,aop] = state2class(r, v)
+function [sma,ecc,inc,RAAN,aop] = state2class(r, v, deg)
 %STATE2CLASS Transforms ICRF state vectors into classical orbital elements.
 
 mu = 3.986004418e14; % m3 s-2
@@ -24,3 +24,9 @@ else
 end
 % Semi-major axis
 sma = 1 / ( 2/norm(r) - norm(v)^2/mu );
+
+if deg == 1
+    inc = inc*180/pi;
+    RAAN = RAAN*180/pi;
+    aop = aop*180/pi;
+end
