@@ -28,8 +28,8 @@
         ;%
         ;% Auto data (rtP)
         ;%
-            section.nData     = 54;
-            section.data(54)  = dumData; %prealloc
+            section.nData     = 56;
+            section.data(56)  = dumData; %prealloc
 
                     ;% rtP.area
                     section.data(1).logicalSrcIdx = 0;
@@ -55,197 +55,205 @@
                     section.data(6).logicalSrcIdx = 5;
                     section.data(6).dtTransOffset = 5;
 
-                    ;% rtP.NormalizeVector_maxzero
+                    ;% rtP.NormalizeVector1_maxzero
                     section.data(7).logicalSrcIdx = 6;
                     section.data(7).dtTransOffset = 6;
 
-                    ;% rtP.NormalizeVector_maxzero_pntl1pmm30
+                    ;% rtP.NormalizeVector_maxzero
                     section.data(8).logicalSrcIdx = 7;
                     section.data(8).dtTransOffset = 7;
 
-                    ;% rtP.NormalizeVector_maxzero_afn2dyubdl
+                    ;% rtP.NormalizeVector_maxzero_pntl1pmm30
                     section.data(9).logicalSrcIdx = 8;
                     section.data(9).dtTransOffset = 8;
 
-                    ;% rtP.SpacecraftDynamics_startDate
+                    ;% rtP.NormalizeVector_maxzero_afn2dyubdl
                     section.data(10).logicalSrcIdx = 9;
                     section.data(10).dtTransOffset = 9;
 
-                    ;% rtP.SpacecraftDynamics_mass
+                    ;% rtP.SpacecraftDynamics_startDate
                     section.data(11).logicalSrcIdx = 10;
                     section.data(11).dtTransOffset = 10;
 
-                    ;% rtP.SpacecraftDynamics_emptyMass
+                    ;% rtP.SpacecraftDynamics_mass
                     section.data(12).logicalSrcIdx = 11;
                     section.data(12).dtTransOffset = 11;
 
-                    ;% rtP.SpacecraftDynamics_fullMass
+                    ;% rtP.SpacecraftDynamics_emptyMass
                     section.data(13).logicalSrcIdx = 12;
                     section.data(13).dtTransOffset = 12;
 
-                    ;% rtP.SpacecraftDynamics_inertia
+                    ;% rtP.SpacecraftDynamics_fullMass
                     section.data(14).logicalSrcIdx = 13;
                     section.data(14).dtTransOffset = 13;
 
-                    ;% rtP.SpacecraftDynamics_emptyInertia
+                    ;% rtP.SpacecraftDynamics_inertia
                     section.data(15).logicalSrcIdx = 14;
-                    section.data(15).dtTransOffset = 22;
+                    section.data(15).dtTransOffset = 14;
+
+                    ;% rtP.SpacecraftDynamics_emptyInertia
+                    section.data(16).logicalSrcIdx = 15;
+                    section.data(16).dtTransOffset = 23;
 
                     ;% rtP.SpacecraftDynamics_fullInertia
-                    section.data(16).logicalSrcIdx = 15;
-                    section.data(16).dtTransOffset = 31;
+                    section.data(17).logicalSrcIdx = 16;
+                    section.data(17).dtTransOffset = 32;
 
                     ;% rtP.SpacecraftDynamics_semiMajorAxis
-                    section.data(17).logicalSrcIdx = 16;
-                    section.data(17).dtTransOffset = 40;
-
-                    ;% rtP.SpacecraftDynamics_eccentricity
                     section.data(18).logicalSrcIdx = 17;
                     section.data(18).dtTransOffset = 41;
 
-                    ;% rtP.SpacecraftDynamics_inclination
+                    ;% rtP.SpacecraftDynamics_eccentricity
                     section.data(19).logicalSrcIdx = 18;
                     section.data(19).dtTransOffset = 42;
 
-                    ;% rtP.SpacecraftDynamics_raan
+                    ;% rtP.SpacecraftDynamics_inclination
                     section.data(20).logicalSrcIdx = 19;
                     section.data(20).dtTransOffset = 43;
 
-                    ;% rtP.SpacecraftDynamics_argPeriapsis
+                    ;% rtP.SpacecraftDynamics_raan
                     section.data(21).logicalSrcIdx = 20;
                     section.data(21).dtTransOffset = 44;
 
-                    ;% rtP.SpacecraftDynamics_trueAnomaly
+                    ;% rtP.SpacecraftDynamics_argPeriapsis
                     section.data(22).logicalSrcIdx = 21;
                     section.data(22).dtTransOffset = 45;
 
-                    ;% rtP.SpacecraftDynamics_trueLon
+                    ;% rtP.SpacecraftDynamics_trueAnomaly
                     section.data(23).logicalSrcIdx = 22;
                     section.data(23).dtTransOffset = 46;
 
-                    ;% rtP.SpacecraftDynamics_argLat
+                    ;% rtP.SpacecraftDynamics_trueLon
                     section.data(24).logicalSrcIdx = 23;
                     section.data(24).dtTransOffset = 47;
 
-                    ;% rtP.SpacecraftDynamics_lonPeriapsis
+                    ;% rtP.SpacecraftDynamics_argLat
                     section.data(25).logicalSrcIdx = 24;
                     section.data(25).dtTransOffset = 48;
 
-                    ;% rtP.SpacecraftDynamics_inertialPosition
+                    ;% rtP.SpacecraftDynamics_lonPeriapsis
                     section.data(26).logicalSrcIdx = 25;
                     section.data(26).dtTransOffset = 49;
 
-                    ;% rtP.SpacecraftDynamics_inertialVelocity
+                    ;% rtP.SpacecraftDynamics_inertialPosition
                     section.data(27).logicalSrcIdx = 26;
-                    section.data(27).dtTransOffset = 52;
+                    section.data(27).dtTransOffset = 50;
+
+                    ;% rtP.SpacecraftDynamics_inertialVelocity
+                    section.data(28).logicalSrcIdx = 27;
+                    section.data(28).dtTransOffset = 53;
 
                     ;% rtP.SpacecraftDynamics_fixedPosition
-                    section.data(28).logicalSrcIdx = 27;
-                    section.data(28).dtTransOffset = 55;
+                    section.data(29).logicalSrcIdx = 28;
+                    section.data(29).dtTransOffset = 56;
 
                     ;% rtP.SpacecraftDynamics_fixedVelocity
-                    section.data(29).logicalSrcIdx = 28;
-                    section.data(29).dtTransOffset = 58;
+                    section.data(30).logicalSrcIdx = 29;
+                    section.data(30).dtTransOffset = 59;
 
                     ;% rtP.SpacecraftDynamics_attitude
-                    section.data(30).logicalSrcIdx = 29;
-                    section.data(30).dtTransOffset = 61;
+                    section.data(31).logicalSrcIdx = 30;
+                    section.data(31).dtTransOffset = 62;
 
                     ;% rtP.SpacecraftDynamics_attitudeRate
-                    section.data(31).logicalSrcIdx = 30;
-                    section.data(31).dtTransOffset = 65;
+                    section.data(32).logicalSrcIdx = 31;
+                    section.data(32).dtTransOffset = 66;
 
                     ;% rtP.SpacecraftDynamics_customR
-                    section.data(32).logicalSrcIdx = 31;
-                    section.data(32).dtTransOffset = 68;
-
-                    ;% rtP.SpacecraftDynamics_customF
                     section.data(33).logicalSrcIdx = 32;
                     section.data(33).dtTransOffset = 69;
 
-                    ;% rtP.SpacecraftDynamics_customMu
+                    ;% rtP.SpacecraftDynamics_customF
                     section.data(34).logicalSrcIdx = 33;
                     section.data(34).dtTransOffset = 70;
 
-                    ;% rtP.SpacecraftDynamics_customJ2
+                    ;% rtP.SpacecraftDynamics_customMu
                     section.data(35).logicalSrcIdx = 34;
                     section.data(35).dtTransOffset = 71;
 
-                    ;% rtP.SpacecraftDynamics_customOmega
+                    ;% rtP.SpacecraftDynamics_customJ2
                     section.data(36).logicalSrcIdx = 35;
                     section.data(36).dtTransOffset = 72;
 
-                    ;% rtP.SpacecraftDynamics_cbRA
+                    ;% rtP.SpacecraftDynamics_customOmega
                     section.data(37).logicalSrcIdx = 36;
                     section.data(37).dtTransOffset = 73;
 
-                    ;% rtP.SpacecraftDynamics_cbRARate
+                    ;% rtP.SpacecraftDynamics_cbRA
                     section.data(38).logicalSrcIdx = 37;
                     section.data(38).dtTransOffset = 74;
 
-                    ;% rtP.SpacecraftDynamics_cbDec
+                    ;% rtP.SpacecraftDynamics_cbRARate
                     section.data(39).logicalSrcIdx = 38;
                     section.data(39).dtTransOffset = 75;
 
-                    ;% rtP.SpacecraftDynamics_cbDecRate
+                    ;% rtP.SpacecraftDynamics_cbDec
                     section.data(40).logicalSrcIdx = 39;
                     section.data(40).dtTransOffset = 76;
 
-                    ;% rtP.SpacecraftDynamics_cbRotAngle
+                    ;% rtP.SpacecraftDynamics_cbDecRate
                     section.data(41).logicalSrcIdx = 40;
                     section.data(41).dtTransOffset = 77;
 
-                    ;% rtP.SpacecraftDynamics_cbRotRate
+                    ;% rtP.SpacecraftDynamics_cbRotAngle
                     section.data(42).logicalSrcIdx = 41;
                     section.data(42).dtTransOffset = 78;
 
-                    ;% rtP.SpacecraftDynamics_F107ExtrapValue
+                    ;% rtP.SpacecraftDynamics_cbRotRate
                     section.data(43).logicalSrcIdx = 42;
                     section.data(43).dtTransOffset = 79;
 
-                    ;% rtP.SpacecraftDynamics_MagneticIndexExtrapValue
+                    ;% rtP.SpacecraftDynamics_F107ExtrapValue
                     section.data(44).logicalSrcIdx = 43;
                     section.data(44).dtTransOffset = 80;
 
-                    ;% rtP.SpacecraftDynamics_fluxFlags
+                    ;% rtP.SpacecraftDynamics_MagneticIndexExtrapValue
                     section.data(45).logicalSrcIdx = 44;
                     section.data(45).dtTransOffset = 81;
 
-                    ;% rtP.SpacecraftDynamics_dragCoeff
+                    ;% rtP.SpacecraftDynamics_fluxFlags
                     section.data(46).logicalSrcIdx = 45;
-                    section.data(46).dtTransOffset = 104;
+                    section.data(46).dtTransOffset = 82;
 
-                    ;% rtP.SpacecraftDynamics_dragArea
+                    ;% rtP.SpacecraftDynamics_dragCoeff
                     section.data(47).logicalSrcIdx = 46;
                     section.data(47).dtTransOffset = 105;
 
-                    ;% rtP.SpacecraftDynamics_customThirdBodyMu
+                    ;% rtP.SpacecraftDynamics_dragArea
                     section.data(48).logicalSrcIdx = 47;
                     section.data(48).dtTransOffset = 106;
 
-                    ;% rtP.SpacecraftDynamics_fluxPressure
+                    ;% rtP.SpacecraftDynamics_customThirdBodyMu
                     section.data(49).logicalSrcIdx = 48;
                     section.data(49).dtTransOffset = 107;
 
-                    ;% rtP.Saturation_UpperSat
+                    ;% rtP.SpacecraftDynamics_fluxPressure
                     section.data(50).logicalSrcIdx = 49;
                     section.data(50).dtTransOffset = 108;
 
-                    ;% rtP.Saturation_LowerSat
+                    ;% rtP.Saturation_UpperSat
                     section.data(51).logicalSrcIdx = 50;
                     section.data(51).dtTransOffset = 109;
 
-                    ;% rtP.Constant_Value
+                    ;% rtP.Saturation_LowerSat
                     section.data(52).logicalSrcIdx = 51;
                     section.data(52).dtTransOffset = 110;
 
-                    ;% rtP.Constant_Value_ln0uq0icxn
+                    ;% rtP.Constant_Value
                     section.data(53).logicalSrcIdx = 52;
                     section.data(53).dtTransOffset = 111;
 
-                    ;% rtP.Constant_Value_pnqibv1hlu
+                    ;% rtP.Constant_Value_ln0uq0icxn
                     section.data(54).logicalSrcIdx = 53;
                     section.data(54).dtTransOffset = 112;
+
+                    ;% rtP.Constant_Value_pnqibv1hlu
+                    section.data(55).logicalSrcIdx = 54;
+                    section.data(55).dtTransOffset = 113;
+
+                    ;% rtP.Constant_Value_o4isoro52y
+                    section.data(56).logicalSrcIdx = 55;
+                    section.data(56).dtTransOffset = 114;
 
             nTotData = nTotData + section.nData;
             paramMap.sections(1) = section;
@@ -292,8 +300,8 @@
         ;%
         ;% Auto data (rtB)
         ;%
-            section.nData     = 18;
-            section.data(18)  = dumData; %prealloc
+            section.nData     = 28;
+            section.data(28)  = dumData; %prealloc
 
                     ;% rtB.gws1dy0r5h
                     section.data(1).logicalSrcIdx = 0;
@@ -315,57 +323,97 @@
                     section.data(5).logicalSrcIdx = 4;
                     section.data(5).dtTransOffset = 11;
 
-                    ;% rtB.hpqqv1x55k
+                    ;% rtB.e5avjshcym
                     section.data(6).logicalSrcIdx = 5;
                     section.data(6).dtTransOffset = 14;
 
-                    ;% rtB.hatpfo3hlm
+                    ;% rtB.okd1bno3dz
                     section.data(7).logicalSrcIdx = 6;
-                    section.data(7).dtTransOffset = 15;
+                    section.data(7).dtTransOffset = 17;
 
-                    ;% rtB.dl1iix2aol
+                    ;% rtB.aphuuotnaa
                     section.data(8).logicalSrcIdx = 7;
-                    section.data(8).dtTransOffset = 16;
+                    section.data(8).dtTransOffset = 18;
 
-                    ;% rtB.cm2sh5gwjs
+                    ;% rtB.fke25c2lg0
                     section.data(9).logicalSrcIdx = 8;
                     section.data(9).dtTransOffset = 19;
 
-                    ;% rtB.idx0fxvvk3
+                    ;% rtB.i1ocln1mfn
                     section.data(10).logicalSrcIdx = 9;
-                    section.data(10).dtTransOffset = 20;
+                    section.data(10).dtTransOffset = 23;
 
-                    ;% rtB.mfuo45igdq
+                    ;% rtB.l32o5rugbc
                     section.data(11).logicalSrcIdx = 10;
-                    section.data(11).dtTransOffset = 21;
+                    section.data(11).dtTransOffset = 26;
 
-                    ;% rtB.d3trp0rw53
+                    ;% rtB.i5rdyvyzhc
                     section.data(12).logicalSrcIdx = 11;
-                    section.data(12).dtTransOffset = 22;
+                    section.data(12).dtTransOffset = 29;
 
-                    ;% rtB.g34dv5hrtq
+                    ;% rtB.h03wa5ojtf
                     section.data(13).logicalSrcIdx = 12;
-                    section.data(13).dtTransOffset = 23;
+                    section.data(13).dtTransOffset = 32;
 
-                    ;% rtB.epczetk5lz
+                    ;% rtB.hpqqv1x55k
                     section.data(14).logicalSrcIdx = 13;
-                    section.data(14).dtTransOffset = 27;
+                    section.data(14).dtTransOffset = 33;
 
-                    ;% rtB.dclql12erk
+                    ;% rtB.hatpfo3hlm
                     section.data(15).logicalSrcIdx = 14;
-                    section.data(15).dtTransOffset = 30;
+                    section.data(15).dtTransOffset = 34;
 
-                    ;% rtB.lyaqu2ph4w
+                    ;% rtB.dl1iix2aol
                     section.data(16).logicalSrcIdx = 15;
-                    section.data(16).dtTransOffset = 33;
+                    section.data(16).dtTransOffset = 35;
 
-                    ;% rtB.mi1sjd5xhd
+                    ;% rtB.cm2sh5gwjs
                     section.data(17).logicalSrcIdx = 16;
-                    section.data(17).dtTransOffset = 36;
+                    section.data(17).dtTransOffset = 38;
 
-                    ;% rtB.axt2x3q3hy
+                    ;% rtB.idx0fxvvk3
                     section.data(18).logicalSrcIdx = 17;
                     section.data(18).dtTransOffset = 39;
+
+                    ;% rtB.mfuo45igdq
+                    section.data(19).logicalSrcIdx = 18;
+                    section.data(19).dtTransOffset = 40;
+
+                    ;% rtB.d3trp0rw53
+                    section.data(20).logicalSrcIdx = 19;
+                    section.data(20).dtTransOffset = 41;
+
+                    ;% rtB.g34dv5hrtq
+                    section.data(21).logicalSrcIdx = 20;
+                    section.data(21).dtTransOffset = 42;
+
+                    ;% rtB.epczetk5lz
+                    section.data(22).logicalSrcIdx = 21;
+                    section.data(22).dtTransOffset = 46;
+
+                    ;% rtB.dclql12erk
+                    section.data(23).logicalSrcIdx = 22;
+                    section.data(23).dtTransOffset = 49;
+
+                    ;% rtB.jlqp2xyqeo
+                    section.data(24).logicalSrcIdx = 23;
+                    section.data(24).dtTransOffset = 52;
+
+                    ;% rtB.da0wq0ncuu
+                    section.data(25).logicalSrcIdx = 24;
+                    section.data(25).dtTransOffset = 55;
+
+                    ;% rtB.lyaqu2ph4w
+                    section.data(26).logicalSrcIdx = 25;
+                    section.data(26).dtTransOffset = 58;
+
+                    ;% rtB.mi1sjd5xhd
+                    section.data(27).logicalSrcIdx = 26;
+                    section.data(27).dtTransOffset = 61;
+
+                    ;% rtB.axt2x3q3hy
+                    section.data(28).logicalSrcIdx = 27;
+                    section.data(28).dtTransOffset = 64;
 
             nTotData = nTotData + section.nData;
             sigMap.sections(1) = section;
@@ -427,8 +475,8 @@
             dworkMap.sections(1) = section;
             clear section
 
-            section.nData     = 5;
-            section.data(5)  = dumData; %prealloc
+            section.nData     = 6;
+            section.data(6)  = dumData; %prealloc
 
                     ;% rtDW.chu05kbpxu.AQHandles
                     section.data(1).logicalSrcIdx = 2;
@@ -450,55 +498,71 @@
                     section.data(5).logicalSrcIdx = 6;
                     section.data(5).dtTransOffset = 4;
 
+                    ;% rtDW.mnprgchfjq.AQHandles
+                    section.data(6).logicalSrcIdx = 7;
+                    section.data(6).dtTransOffset = 5;
+
             nTotData = nTotData + section.nData;
             dworkMap.sections(2) = section;
             clear section
 
-            section.nData     = 4;
-            section.data(4)  = dumData; %prealloc
+            section.nData     = 6;
+            section.data(6)  = dumData; %prealloc
 
-                    ;% rtDW.oqf0svuwls
-                    section.data(1).logicalSrcIdx = 7;
+                    ;% rtDW.g4aaasm3l1
+                    section.data(1).logicalSrcIdx = 8;
                     section.data(1).dtTransOffset = 0;
 
-                    ;% rtDW.lbrqpwfmha
-                    section.data(2).logicalSrcIdx = 8;
+                    ;% rtDW.odwn4dj4lo
+                    section.data(2).logicalSrcIdx = 9;
                     section.data(2).dtTransOffset = 1;
 
-                    ;% rtDW.mjolfyo1k3
-                    section.data(3).logicalSrcIdx = 9;
+                    ;% rtDW.oqf0svuwls
+                    section.data(3).logicalSrcIdx = 10;
                     section.data(3).dtTransOffset = 2;
 
-                    ;% rtDW.pyb2cpctgm
-                    section.data(4).logicalSrcIdx = 10;
+                    ;% rtDW.lbrqpwfmha
+                    section.data(4).logicalSrcIdx = 11;
                     section.data(4).dtTransOffset = 3;
+
+                    ;% rtDW.mjolfyo1k3
+                    section.data(5).logicalSrcIdx = 12;
+                    section.data(5).dtTransOffset = 4;
+
+                    ;% rtDW.pyb2cpctgm
+                    section.data(6).logicalSrcIdx = 13;
+                    section.data(6).dtTransOffset = 5;
 
             nTotData = nTotData + section.nData;
             dworkMap.sections(3) = section;
             clear section
 
-            section.nData     = 5;
-            section.data(5)  = dumData; %prealloc
+            section.nData     = 6;
+            section.data(6)  = dumData; %prealloc
 
                     ;% rtDW.jdbvpmwjyw
-                    section.data(1).logicalSrcIdx = 11;
+                    section.data(1).logicalSrcIdx = 14;
                     section.data(1).dtTransOffset = 0;
 
-                    ;% rtDW.ah5wpklf0e
-                    section.data(2).logicalSrcIdx = 12;
+                    ;% rtDW.a2s0znbkm5
+                    section.data(2).logicalSrcIdx = 15;
                     section.data(2).dtTransOffset = 1;
 
-                    ;% rtDW.nbxd2gjju2
-                    section.data(3).logicalSrcIdx = 13;
+                    ;% rtDW.ah5wpklf0e
+                    section.data(3).logicalSrcIdx = 16;
                     section.data(3).dtTransOffset = 2;
 
-                    ;% rtDW.irz00m5icq
-                    section.data(4).logicalSrcIdx = 14;
+                    ;% rtDW.nbxd2gjju2
+                    section.data(4).logicalSrcIdx = 17;
                     section.data(4).dtTransOffset = 3;
 
-                    ;% rtDW.mojmy2zhqz
-                    section.data(5).logicalSrcIdx = 15;
+                    ;% rtDW.irz00m5icq
+                    section.data(5).logicalSrcIdx = 18;
                     section.data(5).dtTransOffset = 4;
+
+                    ;% rtDW.mojmy2zhqz
+                    section.data(6).logicalSrcIdx = 19;
+                    section.data(6).dtTransOffset = 5;
 
             nTotData = nTotData + section.nData;
             dworkMap.sections(4) = section;
@@ -530,8 +594,8 @@
     ;%
 
 
-    targMap.checksum0 = 1578332936;
-    targMap.checksum1 = 472356459;
-    targMap.checksum2 = 3469800916;
-    targMap.checksum3 = 68753850;
+    targMap.checksum0 = 4161687776;
+    targMap.checksum1 = 2107647370;
+    targMap.checksum2 = 2153743093;
+    targMap.checksum3 = 1605640579;
 

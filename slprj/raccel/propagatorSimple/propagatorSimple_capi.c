@@ -27,146 +27,170 @@
 #endif
 static const rtwCAPI_Signals rtBlockSignals [ ] = { { 0 , 0 , TARGET_STRING (
 "propagatorSimple/Gain" ) , TARGET_STRING ( "" ) , 0 , 0 , 0 , 0 , 0 } , { 1
-, 0 , TARGET_STRING ( "propagatorSimple/Product" ) , TARGET_STRING ( "" ) , 0
-, 0 , 1 , 0 , 1 } , { 2 , 0 , TARGET_STRING (
-"propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "" ) , 0 , 0 , 1 ,
-0 , 1 } , { 3 , 0 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" )
-, TARGET_STRING ( "" ) , 1 , 0 , 1 , 0 , 1 } , { 4 , 0 , TARGET_STRING (
-"propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "" ) , 2 , 0 , 2 ,
-0 , 1 } , { 5 , 0 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" )
-, TARGET_STRING ( "" ) , 4 , 0 , 0 , 0 , 1 } , { 6 , 0 , TARGET_STRING (
+, 0 , TARGET_STRING ( "propagatorSimple/Gain1" ) , TARGET_STRING ( "" ) , 0 ,
+0 , 1 , 0 , 1 } , { 2 , 0 , TARGET_STRING ( "propagatorSimple/Divide" ) ,
+TARGET_STRING ( "" ) , 0 , 0 , 1 , 0 , 1 } , { 3 , 0 , TARGET_STRING (
+"propagatorSimple/Product" ) , TARGET_STRING ( "" ) , 0 , 0 , 1 , 0 , 1 } , {
+4 , 0 , TARGET_STRING ( "propagatorSimple/Sum" ) , TARGET_STRING ( "" ) , 0 ,
+0 , 1 , 0 , 1 } , { 5 , 0 , TARGET_STRING (
+"propagatorSimple/Planetary Ephemeris" ) , TARGET_STRING ( "" ) , 0 , 0 , 1 ,
+0 , 1 } , { 6 , 0 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" )
+, TARGET_STRING ( "" ) , 0 , 0 , 1 , 0 , 1 } , { 7 , 0 , TARGET_STRING (
+"propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "" ) , 1 , 0 , 1 ,
+0 , 1 } , { 8 , 0 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" )
+, TARGET_STRING ( "" ) , 2 , 0 , 2 , 0 , 1 } , { 9 , 0 , TARGET_STRING (
+"propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "" ) , 4 , 0 , 0 ,
+0 , 1 } , { 10 , 0 , TARGET_STRING ( "propagatorSimple/Sqrt" ) ,
+TARGET_STRING ( "" ) , 0 , 0 , 0 , 0 , 1 } , { 11 , 0 , TARGET_STRING (
 "propagatorSimple/Moon/Sum" ) , TARGET_STRING ( "" ) , 0 , 0 , 1 , 0 , 1 } ,
-{ 7 , 0 , TARGET_STRING ( "propagatorSimple/Moon/Earth-Moon Position" ) ,
-TARGET_STRING ( "" ) , 0 , 0 , 1 , 0 , 1 } , { 8 , 0 , TARGET_STRING (
+{ 12 , 0 , TARGET_STRING ( "propagatorSimple/Moon/Earth-Moon Position" ) ,
+TARGET_STRING ( "" ) , 0 , 0 , 1 , 0 , 1 } , { 13 , 0 , TARGET_STRING (
 "propagatorSimple/Normalize Vector/Math Function1" ) , TARGET_STRING ( "" ) ,
-0 , 0 , 0 , 0 , 1 } , { 9 , 0 , TARGET_STRING (
+0 , 0 , 0 , 0 , 1 } , { 14 , 0 , TARGET_STRING (
 "propagatorSimple/Normalize Vector/Divide" ) , TARGET_STRING ( "" ) , 0 , 0 ,
-1 , 0 , 1 } , { 10 , 3 , TARGET_STRING (
+1 , 0 , 1 } , { 15 , 3 , TARGET_STRING (
 "propagatorSimple/Normalize Vector/Product" ) , TARGET_STRING ( "" ) , 0 , 0
-, 1 , 0 , 1 } , { 11 , 0 , TARGET_STRING (
+, 1 , 0 , 1 } , { 16 , 0 , TARGET_STRING (
 "propagatorSimple/Normalize Vector/Sum of Elements" ) , TARGET_STRING ( "" )
-, 0 , 0 , 0 , 0 , 1 } , { 12 , 0 , TARGET_STRING (
+, 0 , 0 , 0 , 0 , 1 } , { 17 , 0 , TARGET_STRING (
 "propagatorSimple/Normalize Vector/Switch" ) , TARGET_STRING ( "" ) , 0 , 0 ,
-2 , 0 , 1 } , { 13 , 0 , TARGET_STRING (
+2 , 0 , 1 } , { 18 , 0 , TARGET_STRING (
+"propagatorSimple/Normalize Vector1/Math Function1" ) , TARGET_STRING ( "" )
+, 0 , 0 , 0 , 0 , 1 } , { 19 , 0 , TARGET_STRING (
+"propagatorSimple/Normalize Vector1/Divide" ) , TARGET_STRING ( "" ) , 0 , 0
+, 1 , 0 , 1 } , { 20 , 4 , TARGET_STRING (
+"propagatorSimple/Normalize Vector1/Product" ) , TARGET_STRING ( "" ) , 0 , 0
+, 1 , 0 , 1 } , { 21 , 0 , TARGET_STRING (
+"propagatorSimple/Normalize Vector1/Sum of Elements" ) , TARGET_STRING ( "" )
+, 0 , 0 , 0 , 0 , 1 } , { 22 , 0 , TARGET_STRING (
+"propagatorSimple/Normalize Vector1/Switch" ) , TARGET_STRING ( "" ) , 0 , 0
+, 2 , 0 , 1 } , { 23 , 0 , TARGET_STRING (
 "propagatorSimple/Periapsis burn/Sqrt" ) , TARGET_STRING ( "" ) , 0 , 0 , 0 ,
-0 , 1 } , { 14 , 0 , TARGET_STRING (
+0 , 1 } , { 24 , 0 , TARGET_STRING (
 "propagatorSimple/Moon/r over cubed norm/Normalize Vector/Math Function1" ) ,
-TARGET_STRING ( "" ) , 0 , 0 , 0 , 0 , 1 } , { 15 , 1 , TARGET_STRING (
+TARGET_STRING ( "" ) , 0 , 0 , 0 , 0 , 1 } , { 25 , 1 , TARGET_STRING (
 "propagatorSimple/Moon/r over cubed norm/Normalize Vector/Product" ) ,
-TARGET_STRING ( "" ) , 0 , 0 , 1 , 0 , 1 } , { 16 , 0 , TARGET_STRING (
+TARGET_STRING ( "" ) , 0 , 0 , 1 , 0 , 1 } , { 26 , 0 , TARGET_STRING (
 "propagatorSimple/Moon/r over cubed norm1/Normalize Vector/Math Function1" )
-, TARGET_STRING ( "" ) , 0 , 0 , 0 , 0 , 1 } , { 17 , 2 , TARGET_STRING (
+, TARGET_STRING ( "" ) , 0 , 0 , 0 , 0 , 1 } , { 27 , 2 , TARGET_STRING (
 "propagatorSimple/Moon/r over cubed norm1/Normalize Vector/Product" ) ,
 TARGET_STRING ( "" ) , 0 , 0 , 1 , 0 , 1 } , { 0 , 0 , ( NULL ) , ( NULL ) ,
 0 , 0 , 0 , 0 , 0 } } ; static const rtwCAPI_BlockParameters
-rtBlockParameters [ ] = { { 18 , TARGET_STRING (
+rtBlockParameters [ ] = { { 28 , TARGET_STRING (
 "propagatorSimple/Normalize Vector" ) , TARGET_STRING ( "maxzero" ) , 0 , 0 ,
-0 } , { 19 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" ) ,
-TARGET_STRING ( "startDate" ) , 0 , 0 , 0 } , { 20 , TARGET_STRING (
-"propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "mass" ) , 0 , 0 ,
-0 } , { 21 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" ) ,
-TARGET_STRING ( "emptyMass" ) , 0 , 0 , 0 } , { 22 , TARGET_STRING (
-"propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "fullMass" ) , 0 ,
-0 , 0 } , { 23 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" ) ,
-TARGET_STRING ( "inertia" ) , 0 , 3 , 0 } , { 24 , TARGET_STRING (
-"propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "emptyInertia" ) ,
-0 , 3 , 0 } , { 25 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" )
-, TARGET_STRING ( "fullInertia" ) , 0 , 3 , 0 } , { 26 , TARGET_STRING (
-"propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "semiMajorAxis" )
-, 0 , 0 , 0 } , { 27 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics"
-) , TARGET_STRING ( "eccentricity" ) , 0 , 0 , 0 } , { 28 , TARGET_STRING (
-"propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "inclination" ) ,
-0 , 0 , 0 } , { 29 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" )
-, TARGET_STRING ( "raan" ) , 0 , 0 , 0 } , { 30 , TARGET_STRING (
-"propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "argPeriapsis" ) ,
-0 , 0 , 0 } , { 31 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" )
-, TARGET_STRING ( "trueAnomaly" ) , 0 , 0 , 0 } , { 32 , TARGET_STRING (
-"propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "trueLon" ) , 0 ,
-0 , 0 } , { 33 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" ) ,
-TARGET_STRING ( "argLat" ) , 0 , 0 , 0 } , { 34 , TARGET_STRING (
-"propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "lonPeriapsis" ) ,
-0 , 0 , 0 } , { 35 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" )
-, TARGET_STRING ( "inertialPosition" ) , 0 , 4 , 0 } , { 36 , TARGET_STRING (
+0 } , { 29 , TARGET_STRING ( "propagatorSimple/Normalize Vector1" ) ,
+TARGET_STRING ( "maxzero" ) , 0 , 0 , 0 } , { 30 , TARGET_STRING (
+"propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "startDate" ) , 0
+, 0 , 0 } , { 31 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" ) ,
+TARGET_STRING ( "mass" ) , 0 , 0 , 0 } , { 32 , TARGET_STRING (
+"propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "emptyMass" ) , 0
+, 0 , 0 } , { 33 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" ) ,
+TARGET_STRING ( "fullMass" ) , 0 , 0 , 0 } , { 34 , TARGET_STRING (
+"propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "inertia" ) , 0 ,
+3 , 0 } , { 35 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" ) ,
+TARGET_STRING ( "emptyInertia" ) , 0 , 3 , 0 } , { 36 , TARGET_STRING (
+"propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "fullInertia" ) ,
+0 , 3 , 0 } , { 37 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" )
+, TARGET_STRING ( "semiMajorAxis" ) , 0 , 0 , 0 } , { 38 , TARGET_STRING (
+"propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "eccentricity" ) ,
+0 , 0 , 0 } , { 39 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" )
+, TARGET_STRING ( "inclination" ) , 0 , 0 , 0 } , { 40 , TARGET_STRING (
+"propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "raan" ) , 0 , 0 ,
+0 } , { 41 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" ) ,
+TARGET_STRING ( "argPeriapsis" ) , 0 , 0 , 0 } , { 42 , TARGET_STRING (
+"propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "trueAnomaly" ) ,
+0 , 0 , 0 } , { 43 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" )
+, TARGET_STRING ( "trueLon" ) , 0 , 0 , 0 } , { 44 , TARGET_STRING (
+"propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "argLat" ) , 0 , 0
+, 0 } , { 45 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" ) ,
+TARGET_STRING ( "lonPeriapsis" ) , 0 , 0 , 0 } , { 46 , TARGET_STRING (
+"propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "inertialPosition"
+) , 0 , 4 , 0 } , { 47 , TARGET_STRING (
 "propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "inertialVelocity"
-) , 0 , 4 , 0 } , { 37 , TARGET_STRING (
+) , 0 , 4 , 0 } , { 48 , TARGET_STRING (
 "propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "fixedPosition" )
-, 0 , 4 , 0 } , { 38 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics"
-) , TARGET_STRING ( "fixedVelocity" ) , 0 , 4 , 0 } , { 39 , TARGET_STRING (
+, 0 , 4 , 0 } , { 49 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics"
+) , TARGET_STRING ( "fixedVelocity" ) , 0 , 4 , 0 } , { 50 , TARGET_STRING (
 "propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "attitude" ) , 0 ,
-5 , 0 } , { 40 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" ) ,
-TARGET_STRING ( "attitudeRate" ) , 0 , 4 , 0 } , { 41 , TARGET_STRING (
+5 , 0 } , { 51 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" ) ,
+TARGET_STRING ( "attitudeRate" ) , 0 , 4 , 0 } , { 52 , TARGET_STRING (
 "propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "customR" ) , 0 ,
-0 , 0 } , { 42 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" ) ,
-TARGET_STRING ( "customF" ) , 0 , 0 , 0 } , { 43 , TARGET_STRING (
+0 , 0 } , { 53 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" ) ,
+TARGET_STRING ( "customF" ) , 0 , 0 , 0 } , { 54 , TARGET_STRING (
 "propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "customMu" ) , 0 ,
-0 , 0 } , { 44 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" ) ,
-TARGET_STRING ( "customJ2" ) , 0 , 0 , 0 } , { 45 , TARGET_STRING (
+0 , 0 } , { 55 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" ) ,
+TARGET_STRING ( "customJ2" ) , 0 , 0 , 0 } , { 56 , TARGET_STRING (
 "propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "customOmega" ) ,
-0 , 0 , 0 } , { 46 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" )
-, TARGET_STRING ( "cbRA" ) , 0 , 0 , 0 } , { 47 , TARGET_STRING (
+0 , 0 , 0 } , { 57 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" )
+, TARGET_STRING ( "cbRA" ) , 0 , 0 , 0 } , { 58 , TARGET_STRING (
 "propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "cbRARate" ) , 0 ,
-0 , 0 } , { 48 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" ) ,
-TARGET_STRING ( "cbDec" ) , 0 , 0 , 0 } , { 49 , TARGET_STRING (
+0 , 0 } , { 59 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" ) ,
+TARGET_STRING ( "cbDec" ) , 0 , 0 , 0 } , { 60 , TARGET_STRING (
 "propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "cbDecRate" ) , 0
-, 0 , 0 } , { 50 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" ) ,
-TARGET_STRING ( "cbRotAngle" ) , 0 , 0 , 0 } , { 51 , TARGET_STRING (
+, 0 , 0 } , { 61 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" ) ,
+TARGET_STRING ( "cbRotAngle" ) , 0 , 0 , 0 } , { 62 , TARGET_STRING (
 "propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "cbRotRate" ) , 0
-, 0 , 0 } , { 52 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" ) ,
-TARGET_STRING ( "F107ExtrapValue" ) , 0 , 0 , 0 } , { 53 , TARGET_STRING (
+, 0 , 0 } , { 63 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" ) ,
+TARGET_STRING ( "F107ExtrapValue" ) , 0 , 0 , 0 } , { 64 , TARGET_STRING (
 "propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING (
-"MagneticIndexExtrapValue" ) , 0 , 0 , 0 } , { 54 , TARGET_STRING (
+"MagneticIndexExtrapValue" ) , 0 , 0 , 0 } , { 65 , TARGET_STRING (
 "propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "fluxFlags" ) , 0
-, 6 , 0 } , { 55 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" ) ,
-TARGET_STRING ( "dragCoeff" ) , 0 , 0 , 0 } , { 56 , TARGET_STRING (
+, 6 , 0 } , { 66 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" ) ,
+TARGET_STRING ( "dragCoeff" ) , 0 , 0 , 0 } , { 67 , TARGET_STRING (
 "propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "dragArea" ) , 0 ,
-0 , 0 } , { 57 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" ) ,
-TARGET_STRING ( "customThirdBodyMu" ) , 0 , 0 , 0 } , { 58 , TARGET_STRING (
+0 , 0 } , { 68 , TARGET_STRING ( "propagatorSimple/Spacecraft Dynamics" ) ,
+TARGET_STRING ( "customThirdBodyMu" ) , 0 , 0 , 0 } , { 69 , TARGET_STRING (
 "propagatorSimple/Spacecraft Dynamics" ) , TARGET_STRING ( "fluxPressure" ) ,
-0 , 0 , 0 } , { 59 , TARGET_STRING (
+0 , 0 , 0 } , { 70 , TARGET_STRING (
 "propagatorSimple/Burn override/Saturation" ) , TARGET_STRING ( "UpperLimit"
-) , 0 , 0 , 0 } , { 60 , TARGET_STRING (
+) , 0 , 0 , 0 } , { 71 , TARGET_STRING (
 "propagatorSimple/Burn override/Saturation" ) , TARGET_STRING ( "LowerLimit"
-) , 0 , 0 , 0 } , { 61 , TARGET_STRING (
+) , 0 , 0 , 0 } , { 72 , TARGET_STRING (
 "propagatorSimple/Normalize Vector/Constant" ) , TARGET_STRING ( "Value" ) ,
-0 , 0 , 0 } , { 62 , TARGET_STRING (
+0 , 0 , 0 } , { 73 , TARGET_STRING (
+"propagatorSimple/Normalize Vector1/Constant" ) , TARGET_STRING ( "Value" ) ,
+0 , 0 , 0 } , { 74 , TARGET_STRING (
 "propagatorSimple/Moon/r over cubed norm/Normalize Vector" ) , TARGET_STRING
-( "maxzero" ) , 0 , 0 , 0 } , { 63 , TARGET_STRING (
+( "maxzero" ) , 0 , 0 , 0 } , { 75 , TARGET_STRING (
 "propagatorSimple/Moon/r over cubed norm1/Normalize Vector" ) , TARGET_STRING
-( "maxzero" ) , 0 , 0 , 0 } , { 64 , TARGET_STRING (
+( "maxzero" ) , 0 , 0 , 0 } , { 76 , TARGET_STRING (
 "propagatorSimple/Moon/r over cubed norm/Normalize Vector/Constant" ) ,
-TARGET_STRING ( "Value" ) , 0 , 0 , 0 } , { 65 , TARGET_STRING (
+TARGET_STRING ( "Value" ) , 0 , 0 , 0 } , { 77 , TARGET_STRING (
 "propagatorSimple/Moon/r over cubed norm1/Normalize Vector/Constant" ) ,
 TARGET_STRING ( "Value" ) , 0 , 0 , 0 } , { 0 , ( NULL ) , ( NULL ) , 0 , 0 ,
 0 } } ; static int_T rt_LoggedStateIdxList [ ] = { - 1 } ; static const
 rtwCAPI_Signals rtRootInputs [ ] = { { 0 , 0 , ( NULL ) , ( NULL ) , 0 , 0 ,
-0 , 0 , 0 } } ; static const rtwCAPI_Signals rtRootOutputs [ ] = { { 66 , 0 ,
+0 , 0 , 0 } } ; static const rtwCAPI_Signals rtRootOutputs [ ] = { { 78 , 0 ,
 TARGET_STRING ( "propagatorSimple/x_icrf (m)" ) , TARGET_STRING ( "" ) , 1 ,
-0 , 1 , 0 , 1 } , { 67 , 0 , TARGET_STRING ( "propagatorSimple/v_icrf (m//s)"
-) , TARGET_STRING ( "" ) , 2 , 0 , 1 , 0 , 1 } , { 68 , 0 , TARGET_STRING (
+0 , 1 , 0 , 1 } , { 79 , 0 , TARGET_STRING ( "propagatorSimple/v_icrf (m//s)"
+) , TARGET_STRING ( "" ) , 2 , 0 , 1 , 0 , 1 } , { 80 , 0 , TARGET_STRING (
 "propagatorSimple/q_icrf2b" ) , TARGET_STRING ( "" ) , 3 , 0 , 2 , 0 , 1 } ,
-{ 69 , 0 , TARGET_STRING ( "propagatorSimple/t_UTC (JD)" ) , TARGET_STRING (
-"" ) , 4 , 0 , 0 , 0 , 1 } , { 70 , 0 , TARGET_STRING (
+{ 81 , 0 , TARGET_STRING ( "propagatorSimple/t_UTC (JD)" ) , TARGET_STRING (
+"" ) , 4 , 0 , 0 , 0 , 1 } , { 82 , 0 , TARGET_STRING (
 "propagatorSimple/Moon position" ) , TARGET_STRING ( "" ) , 5 , 0 , 1 , 0 , 1
 } , { 0 , 0 , ( NULL ) , ( NULL ) , 0 , 0 , 0 , 0 , 0 } } ; static const
-rtwCAPI_ModelParameters rtModelParameters [ ] = { { 71 , TARGET_STRING (
-"area" ) , 0 , 0 , 0 } , { 72 , TARGET_STRING ( "burnOverride" ) , 0 , 0 , 0
-} , { 73 , TARGET_STRING ( "initMass" ) , 0 , 0 , 0 } , { 74 , TARGET_STRING
-( "ref" ) , 0 , 0 , 0 } , { 75 , TARGET_STRING ( "thrust" ) , 0 , 0 , 0 } , {
-76 , TARGET_STRING ( "thrustingThreshold" ) , 0 , 0 , 0 } , { 0 , ( NULL ) ,
+rtwCAPI_ModelParameters rtModelParameters [ ] = { { 83 , TARGET_STRING (
+"area" ) , 0 , 0 , 0 } , { 84 , TARGET_STRING ( "burnOverride" ) , 0 , 0 , 0
+} , { 85 , TARGET_STRING ( "initMass" ) , 0 , 0 , 0 } , { 86 , TARGET_STRING
+( "ref" ) , 0 , 0 , 0 } , { 87 , TARGET_STRING ( "thrust" ) , 0 , 0 , 0 } , {
+88 , TARGET_STRING ( "thrustingThreshold" ) , 0 , 0 , 0 } , { 0 , ( NULL ) ,
 0 , 0 , 0 } } ;
 #ifndef HOST_CAPI_BUILD
-static void * rtDataAddrMap [ ] = { & rtB . hatpfo3hlm , & rtB . dclql12erk [
-0 ] , & rtB . gws1dy0r5h [ 0 ] , & rtB . i55c2f2ohg [ 0 ] , & rtB .
-g5bjapwpnv [ 0 ] , & rtB . dp0ykzxsqj , & rtB . dl1iix2aol [ 0 ] , & rtB .
-jo5kxmwsrg [ 0 ] , & rtB . d3trp0rw53 , & rtB . epczetk5lz [ 0 ] , & rtB .
-lyaqu2ph4w [ 0 ] , & rtB . mfuo45igdq , & rtB . g34dv5hrtq [ 0 ] , & rtB .
-hpqqv1x55k , & rtB . cm2sh5gwjs , & rtB . axt2x3q3hy [ 0 ] , & rtB .
-idx0fxvvk3 , & rtB . mi1sjd5xhd [ 0 ] , & rtP .
-NormalizeVector_maxzero_afn2dyubdl , & rtP . SpacecraftDynamics_startDate , &
-rtP . SpacecraftDynamics_mass , & rtP . SpacecraftDynamics_emptyMass , & rtP
-. SpacecraftDynamics_fullMass , & rtP . SpacecraftDynamics_inertia [ 0 ] , &
-rtP . SpacecraftDynamics_emptyInertia [ 0 ] , & rtP .
-SpacecraftDynamics_fullInertia [ 0 ] , & rtP .
+static void * rtDataAddrMap [ ] = { & rtB . hatpfo3hlm , & rtB . l32o5rugbc [
+0 ] , & rtB . i5rdyvyzhc [ 0 ] , & rtB . dclql12erk [ 0 ] , & rtB .
+jlqp2xyqeo [ 0 ] , & rtB . e5avjshcym [ 0 ] , & rtB . gws1dy0r5h [ 0 ] , &
+rtB . i55c2f2ohg [ 0 ] , & rtB . g5bjapwpnv [ 0 ] , & rtB . dp0ykzxsqj , &
+rtB . h03wa5ojtf , & rtB . dl1iix2aol [ 0 ] , & rtB . jo5kxmwsrg [ 0 ] , &
+rtB . d3trp0rw53 , & rtB . epczetk5lz [ 0 ] , & rtB . lyaqu2ph4w [ 0 ] , &
+rtB . mfuo45igdq , & rtB . g34dv5hrtq [ 0 ] , & rtB . aphuuotnaa , & rtB .
+i1ocln1mfn [ 0 ] , & rtB . da0wq0ncuu [ 0 ] , & rtB . okd1bno3dz , & rtB .
+fke25c2lg0 [ 0 ] , & rtB . hpqqv1x55k , & rtB . cm2sh5gwjs , & rtB .
+axt2x3q3hy [ 0 ] , & rtB . idx0fxvvk3 , & rtB . mi1sjd5xhd [ 0 ] , & rtP .
+NormalizeVector_maxzero_afn2dyubdl , & rtP . NormalizeVector1_maxzero , & rtP
+. SpacecraftDynamics_startDate , & rtP . SpacecraftDynamics_mass , & rtP .
+SpacecraftDynamics_emptyMass , & rtP . SpacecraftDynamics_fullMass , & rtP .
+SpacecraftDynamics_inertia [ 0 ] , & rtP . SpacecraftDynamics_emptyInertia [
+0 ] , & rtP . SpacecraftDynamics_fullInertia [ 0 ] , & rtP .
 SpacecraftDynamics_semiMajorAxis , & rtP . SpacecraftDynamics_eccentricity ,
 & rtP . SpacecraftDynamics_inclination , & rtP . SpacecraftDynamics_raan , &
 rtP . SpacecraftDynamics_argPeriapsis , & rtP .
@@ -189,12 +213,13 @@ rtP . SpacecraftDynamics_dragArea , & rtP .
 SpacecraftDynamics_customThirdBodyMu , & rtP .
 SpacecraftDynamics_fluxPressure , & rtP . Saturation_UpperSat , & rtP .
 Saturation_LowerSat , & rtP . Constant_Value_pnqibv1hlu , & rtP .
-NormalizeVector_maxzero , & rtP . NormalizeVector_maxzero_pntl1pmm30 , & rtP
-. Constant_Value , & rtP . Constant_Value_ln0uq0icxn , & rtY . hs1awvyyae [ 0
-] , & rtY . ecbpwue5ri [ 0 ] , & rtY . dtc4ufbswj [ 0 ] , & rtY . prj3orfldf
-, & rtY . fdj51o4wpi [ 0 ] , & rtP . area , & rtP . burnOverride , & rtP .
-initMass , & rtP . ref , & rtP . thrust , & rtP . thrustingThreshold , } ;
-static int32_T * rtVarDimsAddrMap [ ] = { ( NULL ) } ;
+Constant_Value_o4isoro52y , & rtP . NormalizeVector_maxzero , & rtP .
+NormalizeVector_maxzero_pntl1pmm30 , & rtP . Constant_Value , & rtP .
+Constant_Value_ln0uq0icxn , & rtY . hs1awvyyae [ 0 ] , & rtY . ecbpwue5ri [ 0
+] , & rtY . dtc4ufbswj [ 0 ] , & rtY . prj3orfldf , & rtY . fdj51o4wpi [ 0 ]
+, & rtP . area , & rtP . burnOverride , & rtP . initMass , & rtP . ref , &
+rtP . thrust , & rtP . thrustingThreshold , } ; static int32_T *
+rtVarDimsAddrMap [ ] = { ( NULL ) } ;
 #endif
 static TARGET_CONST rtwCAPI_DataTypeMap rtDataTypeMap [ ] = { { "double" ,
 "real_T" , 0 , 0 , sizeof ( real_T ) , ( uint8_T ) SS_DOUBLE , 0 , 0 , 0 } }
@@ -216,11 +241,11 @@ boolean_T ) 0 } , } ; static const rtwCAPI_SampleTimeMap rtSampleTimeMap [ ]
 rtcapiStoredFloats [ 1 ] , ( int8_T ) 1 , ( uint8_T ) 0 } , { ( const void *
 ) & rtcapiStoredFloats [ 0 ] , ( const void * ) & rtcapiStoredFloats [ 0 ] ,
 ( int8_T ) 0 , ( uint8_T ) 0 } } ; static rtwCAPI_ModelMappingStaticInfo
-mmiStatic = { { rtBlockSignals , 18 , rtRootInputs , 0 , rtRootOutputs , 5 }
-, { rtBlockParameters , 48 , rtModelParameters , 6 } , { ( NULL ) , 0 } , {
+mmiStatic = { { rtBlockSignals , 28 , rtRootInputs , 0 , rtRootOutputs , 5 }
+, { rtBlockParameters , 50 , rtModelParameters , 6 } , { ( NULL ) , 0 } , {
 rtDataTypeMap , rtDimensionMap , rtFixPtMap , rtElementMap , rtSampleTimeMap
-, rtDimensionArray } , "float" , { 1578332936U , 472356459U , 3469800916U ,
-68753850U } , ( NULL ) , 0 , ( boolean_T ) 0 , rt_LoggedStateIdxList } ;
+, rtDimensionArray } , "float" , { 4161687776U , 2107647370U , 2153743093U ,
+1605640579U } , ( NULL ) , 0 , ( boolean_T ) 0 , rt_LoggedStateIdxList } ;
 const rtwCAPI_ModelMappingStaticInfo * propagatorSimple_GetCAPIStaticMap (
 void ) { return & mmiStatic ; }
 #ifndef HOST_CAPI_BUILD
