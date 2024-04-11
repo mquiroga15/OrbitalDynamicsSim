@@ -29,7 +29,7 @@
 #define NSAMPLE_TIMES (3) 
 #define NINPUTS (0)       
 #define NOUTPUTS (14)     
-#define NBLOCKIO (28) 
+#define NBLOCKIO (27) 
 #define NUM_ZC_EVENTS (0) 
 #ifndef NCSTATES
 #define NCSTATES (13)   
@@ -46,34 +46,33 @@
 #endif
 typedef struct { real_T gws1dy0r5h [ 3 ] ; real_T i55c2f2ohg [ 3 ] ; real_T
 g5bjapwpnv [ 4 ] ; real_T dp0ykzxsqj ; real_T jo5kxmwsrg [ 3 ] ; real_T
+hpqqv1x55k ; real_T hatpfo3hlm ; real_T dl1iix2aol [ 3 ] ; real_T cm2sh5gwjs
+; real_T idx0fxvvk3 ; real_T mfuo45igdq ; real_T d3trp0rw53 ; real_T
+g34dv5hrtq [ 4 ] ; real_T epczetk5lz [ 3 ] ; real_T dclql12erk [ 3 ] ; real_T
 e5avjshcym [ 3 ] ; real_T okd1bno3dz ; real_T aphuuotnaa ; real_T fke25c2lg0
 [ 4 ] ; real_T i1ocln1mfn [ 3 ] ; real_T l32o5rugbc [ 3 ] ; real_T i5rdyvyzhc
-[ 3 ] ; real_T h03wa5ojtf ; real_T hpqqv1x55k ; real_T hatpfo3hlm ; real_T
-dl1iix2aol [ 3 ] ; real_T cm2sh5gwjs ; real_T idx0fxvvk3 ; real_T mfuo45igdq
-; real_T d3trp0rw53 ; real_T g34dv5hrtq [ 4 ] ; real_T epczetk5lz [ 3 ] ;
-real_T dclql12erk [ 3 ] ; real_T jlqp2xyqeo [ 3 ] ; real_T da0wq0ncuu [ 3 ] ;
-real_T lyaqu2ph4w [ 3 ] ; real_T mi1sjd5xhd [ 3 ] ; real_T axt2x3q3hy [ 3 ] ;
-} B ; typedef struct { real_T h3cflltm3q [ 3 ] ; real_T f0h4bwqduk [ 3 ] ;
-struct { void * AQHandles ; } chu05kbpxu ; struct { void * AQHandles ; }
-czhwoklxpu ; struct { void * AQHandles ; } j4pv5v0dny ; struct { void *
-AQHandles ; } ovdng33q0b ; struct { void * AQHandles ; } iwpwwackcm ; struct
-{ void * AQHandles ; } mnprgchfjq ; int8_T g4aaasm3l1 ; int8_T odwn4dj4lo ;
-int8_T oqf0svuwls ; int8_T lbrqpwfmha ; int8_T mjolfyo1k3 ; int8_T pyb2cpctgm
-; boolean_T jdbvpmwjyw ; boolean_T a2s0znbkm5 ; boolean_T ah5wpklf0e ;
-boolean_T nbxd2gjju2 ; boolean_T irz00m5icq ; boolean_T mojmy2zhqz ; } DW ;
+[ 3 ] ; real_T jlqp2xyqeo [ 3 ] ; real_T da0wq0ncuu [ 3 ] ; real_T lyaqu2ph4w
+[ 3 ] ; real_T mi1sjd5xhd [ 3 ] ; real_T axt2x3q3hy [ 3 ] ; } B ; typedef
+struct { real_T h3cflltm3q [ 3 ] ; real_T f0h4bwqduk [ 3 ] ; struct { void *
+AQHandles ; } chu05kbpxu ; struct { void * AQHandles ; } czhwoklxpu ; struct
+{ void * AQHandles ; } j4pv5v0dny ; struct { void * AQHandles ; } ovdng33q0b
+; struct { void * AQHandles ; } iwpwwackcm ; int8_T oqf0svuwls ; int8_T
+lbrqpwfmha ; int8_T mjolfyo1k3 ; int8_T pyb2cpctgm ; int8_T g4aaasm3l1 ;
+boolean_T jdbvpmwjyw ; boolean_T ah5wpklf0e ; boolean_T nbxd2gjju2 ;
+boolean_T irz00m5icq ; boolean_T mojmy2zhqz ; boolean_T a2s0znbkm5 ; } DW ;
 typedef struct { real_T fay2cpmqpg [ 13 ] ; } X ; typedef struct { real_T
 fay2cpmqpg [ 13 ] ; } XDot ; typedef struct { boolean_T fay2cpmqpg [ 13 ] ; }
 XDis ; typedef struct { real_T fay2cpmqpg [ 13 ] ; } CStateAbsTol ; typedef
 struct { real_T fay2cpmqpg [ 13 ] ; } CXPtMin ; typedef struct { real_T
-fay2cpmqpg [ 13 ] ; } CXPtMax ; typedef struct { real_T nitbrmp5jx ; real_T
-cxmntq42lq ; real_T mry5gqeihh ; real_T hi2lkxa1hh ; real_T nvpkxxqfbb ; }
+fay2cpmqpg [ 13 ] ; } CXPtMax ; typedef struct { real_T cxmntq42lq ; real_T
+mry5gqeihh ; real_T hi2lkxa1hh ; real_T nvpkxxqfbb ; real_T nitbrmp5jx ; }
 ZCV ; typedef struct { real_T hs1awvyyae [ 3 ] ; real_T ecbpwue5ri [ 3 ] ;
 real_T dtc4ufbswj [ 4 ] ; real_T prj3orfldf ; real_T fdj51o4wpi [ 3 ] ; }
 ExtY ; typedef struct { rtwCAPI_ModelMappingInfo mmi ; } DataMapInfo ; struct
 P_ { real_T area ; real_T burnOverride ; real_T initMass ; real_T ref ;
-real_T thrust ; real_T thrustingThreshold ; real_T NormalizeVector1_maxzero ;
-real_T NormalizeVector_maxzero ; real_T NormalizeVector_maxzero_pntl1pmm30 ;
-real_T NormalizeVector_maxzero_afn2dyubdl ; real_T
+real_T thrust ; real_T thrustingThreshold ; real_T NormalizeVector_maxzero ;
+real_T NormalizeVector_maxzero_pntl1pmm30 ; real_T
+NormalizeVector_maxzero_afn2dyubdl ; real_T NormalizeVector1_maxzero ; real_T
 SpacecraftDynamics_startDate ; real_T SpacecraftDynamics_mass ; real_T
 SpacecraftDynamics_emptyMass ; real_T SpacecraftDynamics_fullMass ; real_T
 SpacecraftDynamics_inertia [ 9 ] ; real_T SpacecraftDynamics_emptyInertia [ 9

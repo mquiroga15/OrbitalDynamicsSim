@@ -21,9 +21,9 @@ char_T * rtDataTypeNames [ ] = { "real_T" , "real32_T" , "int8_T" , "uint8_T"
 "physical_connection" , "int64_T" , "uint64_T" , "uint64_T" , "int64_T" ,
 "uint_T" , "char_T" , "uchar_T" , "time_T" } ; static DataTypeTransition
 rtBTransitions [ ] = { { ( char_T * ) ( & rtB . gws1dy0r5h [ 0 ] ) , 0 , 0 ,
-67 } , { ( char_T * ) ( & rtDW . h3cflltm3q [ 0 ] ) , 0 , 0 , 6 } , { (
-char_T * ) ( & rtDW . chu05kbpxu . AQHandles ) , 11 , 0 , 6 } , { ( char_T *
-) ( & rtDW . g4aaasm3l1 ) , 2 , 0 , 6 } , { ( char_T * ) ( & rtDW .
+66 } , { ( char_T * ) ( & rtDW . h3cflltm3q [ 0 ] ) , 0 , 0 , 6 } , { (
+char_T * ) ( & rtDW . chu05kbpxu . AQHandles ) , 11 , 0 , 5 } , { ( char_T *
+) ( & rtDW . oqf0svuwls ) , 2 , 0 , 5 } , { ( char_T * ) ( & rtDW .
 jdbvpmwjyw ) , 8 , 0 , 6 } } ; static DataTypeTransitionTable rtBTransTable =
 { 5U , rtBTransitions } ; static DataTypeTransition rtPTransitions [ ] = { {
 ( char_T * ) ( & rtP . area ) , 0 , 0 , 115 } } ; static
