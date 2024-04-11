@@ -244,8 +244,8 @@ rtcapiStoredFloats [ 1 ] , ( int8_T ) 1 , ( uint8_T ) 0 } , { ( const void *
 mmiStatic = { { rtBlockSignals , 28 , rtRootInputs , 0 , rtRootOutputs , 5 }
 , { rtBlockParameters , 50 , rtModelParameters , 6 } , { ( NULL ) , 0 } , {
 rtDataTypeMap , rtDimensionMap , rtFixPtMap , rtElementMap , rtSampleTimeMap
-, rtDimensionArray } , "float" , { 4161687776U , 2107647370U , 2153743093U ,
-1605640579U } , ( NULL ) , 0 , ( boolean_T ) 0 , rt_LoggedStateIdxList } ;
+, rtDimensionArray } , "float" , { 2639844118U , 3422975241U , 2519071147U ,
+1712228663U } , ( NULL ) , 0 , ( boolean_T ) 0 , rt_LoggedStateIdxList } ;
 const rtwCAPI_ModelMappingStaticInfo * propagatorSimple_GetCAPIStaticMap (
 void ) { return & mmiStatic ; }
 #ifndef HOST_CAPI_BUILD
