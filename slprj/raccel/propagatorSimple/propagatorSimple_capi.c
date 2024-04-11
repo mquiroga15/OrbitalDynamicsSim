@@ -53,8 +53,8 @@ TARGET_STRING ( "" ) , 0 , 0 , 1 , 0 , 1 } , { 9 , 0 , TARGET_STRING (
 0 , 1 } , { 15 , 0 , TARGET_STRING ( "propagatorSimple/SRP/Gain1" ) ,
 TARGET_STRING ( "" ) , 0 , 0 , 1 , 0 , 1 } , { 16 , 0 , TARGET_STRING (
 "propagatorSimple/SRP/Divide" ) , TARGET_STRING ( "" ) , 0 , 0 , 1 , 0 , 1 }
-, { 17 , 0 , TARGET_STRING ( "propagatorSimple/SRP/Planetary Ephemeris" ) ,
-TARGET_STRING ( "" ) , 0 , 0 , 1 , 0 , 1 } , { 18 , 0 , TARGET_STRING (
+, { 17 , 0 , TARGET_STRING ( "propagatorSimple/SRP/Sum" ) , TARGET_STRING (
+"" ) , 0 , 0 , 1 , 0 , 1 } , { 18 , 0 , TARGET_STRING (
 "propagatorSimple/SRP/Normalize Vector1/Math Function1" ) , TARGET_STRING (
 "" ) , 0 , 0 , 0 , 0 , 1 } , { 19 , 0 , TARGET_STRING (
 "propagatorSimple/SRP/Normalize Vector1/Divide" ) , TARGET_STRING ( "" ) , 0
@@ -179,7 +179,7 @@ i55c2f2ohg [ 0 ] , & rtB . g5bjapwpnv [ 0 ] , & rtB . dp0ykzxsqj , & rtB .
 dl1iix2aol [ 0 ] , & rtB . jo5kxmwsrg [ 0 ] , & rtB . d3trp0rw53 , & rtB .
 epczetk5lz [ 0 ] , & rtB . lyaqu2ph4w [ 0 ] , & rtB . mfuo45igdq , & rtB .
 g34dv5hrtq [ 0 ] , & rtB . hpqqv1x55k , & rtB . l32o5rugbc [ 0 ] , & rtB .
-i5rdyvyzhc [ 0 ] , & rtB . e5avjshcym [ 0 ] , & rtB . aphuuotnaa , & rtB .
+i5rdyvyzhc [ 0 ] , & rtB . kjn2jj22l2 [ 0 ] , & rtB . aphuuotnaa , & rtB .
 i1ocln1mfn [ 0 ] , & rtB . da0wq0ncuu [ 0 ] , & rtB . okd1bno3dz , & rtB .
 fke25c2lg0 [ 0 ] , & rtB . cm2sh5gwjs , & rtB . axt2x3q3hy [ 0 ] , & rtB .
 idx0fxvvk3 , & rtB . mi1sjd5xhd [ 0 ] , & rtP .
@@ -241,8 +241,8 @@ rtcapiStoredFloats [ 1 ] , ( int8_T ) 1 , ( uint8_T ) 0 } , { ( const void *
 mmiStatic = { { rtBlockSignals , 27 , rtRootInputs , 0 , rtRootOutputs , 5 }
 , { rtBlockParameters , 50 , rtModelParameters , 6 } , { ( NULL ) , 0 } , {
 rtDataTypeMap , rtDimensionMap , rtFixPtMap , rtElementMap , rtSampleTimeMap
-, rtDimensionArray } , "float" , { 1000470367U , 854394837U , 3719742085U ,
-2021984709U } , ( NULL ) , 0 , ( boolean_T ) 0 , rt_LoggedStateIdxList } ;
+, rtDimensionArray } , "float" , { 1546992258U , 3800706779U , 621087585U ,
+1314787068U } , ( NULL ) , 0 , ( boolean_T ) 0 , rt_LoggedStateIdxList } ;
 const rtwCAPI_ModelMappingStaticInfo * propagatorSimple_GetCAPIStaticMap (
 void ) { return & mmiStatic ; }
 #ifndef HOST_CAPI_BUILD
