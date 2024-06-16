@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/slsa_mm_rtp_registry/R2023a">
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="d249fa0a-3983-4ce3-a6fb-2990e8033934">
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="9cd93025-a68a-4a73-94af-f39e1a769a99"/>
+    <valueIndices>1</valueIndices>
+    <valueIndices>1</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+  <slsa.mm.rtpregistry.ModelMetadata type="slsa.mm.rtpregistry.ModelMetadata" uuid="02d09a3d-9080-4932-ba52-b4af90fcaac9">
+    <modelName>propagatorMain</modelName>
+  </slsa.mm.rtpregistry.ModelMetadata>
+  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="08235e82-7c7b-4f92-8629-9d33c53e3c4f">
+    <id type="slsa.mm.rtpregistry.VariableId" uuid="fef99946-db4a-41a6-a6ee-430a081a1100"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="542a3cad-8809-4e71-a24b-023476c63ef0"/>
+  </slsa.mm.rtpregistry.Parameter>
+  <slsa.mm.rtpregistry.VariableId type="slsa.mm.rtpregistry.VariableId" uuid="7e1b4d65-9e8a-4b84-91d1-217e49c4d3c1">
+    <workspaceName>global-workspace</workspaceName>
+    <name>ref</name>
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="6feed950-3487-4827-828c-c616c4fc002b"/>
+  </slsa.mm.rtpregistry.VariableId>
+  <slsa.mm.rtpregistry.VariableId type="slsa.mm.rtpregistry.VariableId" uuid="fef99946-db4a-41a6-a6ee-430a081a1100">
+    <workspaceName>global-workspace</workspaceName>
+    <name>area</name>
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="08235e82-7c7b-4f92-8629-9d33c53e3c4f"/>
+  </slsa.mm.rtpregistry.VariableId>
+  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="9cd93025-a68a-4a73-94af-f39e1a769a99">
+    <id type="slsa.mm.rtpregistry.VariableId" uuid="03e79223-44cb-4b51-b9e5-d2acd779892e"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="d249fa0a-3983-4ce3-a6fb-2990e8033934"/>
+  </slsa.mm.rtpregistry.Parameter>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="542a3cad-8809-4e71-a24b-023476c63ef0">
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="08235e82-7c7b-4f92-8629-9d33c53e3c4f"/>
+    <valueIndices>0</valueIndices>
+    <valueIndices>0</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+  <slsa.mm.rtpregistry.VariableId type="slsa.mm.rtpregistry.VariableId" uuid="03e79223-44cb-4b51-b9e5-d2acd779892e">
+    <workspaceName>global-workspace</workspaceName>
+    <name>burnOverride</name>
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="9cd93025-a68a-4a73-94af-f39e1a769a99"/>
+  </slsa.mm.rtpregistry.VariableId>
+  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="2746a5a6-d347-42f5-b70d-c543a2bd62fb">
+    <id type="slsa.mm.rtpregistry.VariableId" uuid="934b3b1b-80f6-4a88-97c7-dc97aaa32182"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="78c5c7a6-2bd2-4a6d-a175-a27ef55e3df6"/>
+  </slsa.mm.rtpregistry.Parameter>
+  <slsa.mm.rtpregistry.VariableId type="slsa.mm.rtpregistry.VariableId" uuid="934b3b1b-80f6-4a88-97c7-dc97aaa32182">
+    <workspaceName>global-workspace</workspaceName>
+    <name>initMass</name>
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="2746a5a6-d347-42f5-b70d-c543a2bd62fb"/>
+  </slsa.mm.rtpregistry.VariableId>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="78c5c7a6-2bd2-4a6d-a175-a27ef55e3df6">
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="2746a5a6-d347-42f5-b70d-c543a2bd62fb"/>
+    <valueIndices>2</valueIndices>
+    <valueIndices>2</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="632a4f0d-a0c7-4c5b-8b21-214cabb7abca">
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="edaaaa4a-9c4f-4d75-a289-7ebfaef2b580"/>
+    <valueIndices>5</valueIndices>
+    <valueIndices>5</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="e32695f9-c6ef-4991-a277-23745f459b4e">
+    <id type="slsa.mm.rtpregistry.VariableId" uuid="66e3ec23-cff3-4b43-83d0-92e821a425ad"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="2d202b8f-2588-4ee0-991e-9ec8d293b655"/>
+  </slsa.mm.rtpregistry.Parameter>
+  <slsa.mm.rtpregistry.VariableId type="slsa.mm.rtpregistry.VariableId" uuid="66e3ec23-cff3-4b43-83d0-92e821a425ad">
+    <workspaceName>global-workspace</workspaceName>
+    <name>mDot</name>
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="e32695f9-c6ef-4991-a277-23745f459b4e"/>
+  </slsa.mm.rtpregistry.VariableId>
+  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="edaaaa4a-9c4f-4d75-a289-7ebfaef2b580">
+    <id type="slsa.mm.rtpregistry.VariableId" uuid="a562fa7d-27c8-480f-b88a-5767631c7f47"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="632a4f0d-a0c7-4c5b-8b21-214cabb7abca"/>
+  </slsa.mm.rtpregistry.Parameter>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="2d202b8f-2588-4ee0-991e-9ec8d293b655">
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="e32695f9-c6ef-4991-a277-23745f459b4e"/>
+    <valueIndices>3</valueIndices>
+    <valueIndices>3</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="6feed950-3487-4827-828c-c616c4fc002b">
+    <id type="slsa.mm.rtpregistry.VariableId" uuid="7e1b4d65-9e8a-4b84-91d1-217e49c4d3c1"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="688da688-7919-4fea-bc66-8ff8c7fdb442"/>
+  </slsa.mm.rtpregistry.Parameter>
+  <slsa.mm.rtpregistry.VariableId type="slsa.mm.rtpregistry.VariableId" uuid="e8e7e68e-80d8-4dc2-bbc6-37324506ee04">
+    <workspaceName>global-workspace</workspaceName>
+    <name>thrustingThreshold</name>
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="df0c7b5d-6fe8-4a60-862e-0c41f4d05931"/>
+  </slsa.mm.rtpregistry.VariableId>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="688da688-7919-4fea-bc66-8ff8c7fdb442">
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="6feed950-3487-4827-828c-c616c4fc002b"/>
+    <valueIndices>4</valueIndices>
+    <valueIndices>4</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+  <slsa.mm.rtpregistry.VariableId type="slsa.mm.rtpregistry.VariableId" uuid="a562fa7d-27c8-480f-b88a-5767631c7f47">
+    <workspaceName>global-workspace</workspaceName>
+    <name>thrust</name>
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="edaaaa4a-9c4f-4d75-a289-7ebfaef2b580"/>
+  </slsa.mm.rtpregistry.VariableId>
+  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="df0c7b5d-6fe8-4a60-862e-0c41f4d05931">
+    <id type="slsa.mm.rtpregistry.VariableId" uuid="e8e7e68e-80d8-4dc2-bbc6-37324506ee04"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="69b6253a-a383-4910-8a4d-8f84d479189a"/>
+  </slsa.mm.rtpregistry.Parameter>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="69b6253a-a383-4910-8a4d-8f84d479189a">
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="df0c7b5d-6fe8-4a60-862e-0c41f4d05931"/>
+    <valueIndices>6</valueIndices>
+    <valueIndices>6</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+</MF0>
